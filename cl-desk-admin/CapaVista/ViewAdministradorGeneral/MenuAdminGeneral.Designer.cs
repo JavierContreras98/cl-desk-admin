@@ -39,6 +39,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarTipoUsuario = new System.Windows.Forms.Button();
             this.btnAdministrarPaciente = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAdministrarReportes = new System.Windows.Forms.Button();
             this.btnAdministrarCitas = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -74,7 +75,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarEspecialidades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdministrarEspecialidades.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
             this.btnAdministrarEspecialidades.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarEspecialidades.Location = new System.Drawing.Point(335, 345);
+            this.btnAdministrarEspecialidades.Location = new System.Drawing.Point(194, 345);
             this.btnAdministrarEspecialidades.Name = "btnAdministrarEspecialidades";
             this.btnAdministrarEspecialidades.Size = new System.Drawing.Size(119, 50);
             this.btnAdministrarEspecialidades.TabIndex = 35;
@@ -170,6 +171,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnAdministrarReportes);
             this.panel1.Controls.Add(this.btnAdministrarCitas);
             this.panel1.Controls.Add(this.btnAdministrarPaciente);
             this.panel1.Controls.Add(this.btnAdministrarEspecialidades);
@@ -182,6 +184,21 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(774, 449);
             this.panel1.TabIndex = 37;
+            // 
+            // btnAdministrarReportes
+            // 
+            this.btnAdministrarReportes.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnAdministrarReportes.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAdministrarReportes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdministrarReportes.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
+            this.btnAdministrarReportes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAdministrarReportes.Location = new System.Drawing.Point(484, 345);
+            this.btnAdministrarReportes.Name = "btnAdministrarReportes";
+            this.btnAdministrarReportes.Size = new System.Drawing.Size(119, 50);
+            this.btnAdministrarReportes.TabIndex = 38;
+            this.btnAdministrarReportes.Text = "ADMINISTRAR REPORTES";
+            this.btnAdministrarReportes.UseVisualStyleBackColor = false;
+            this.btnAdministrarReportes.Click += new System.EventHandler(this.btnAdministrarReportes_Click);
             // 
             // btnAdministrarCitas
             // 
@@ -228,5 +245,6 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
         private System.Windows.Forms.Button btnAdministrarPaciente;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAdministrarCitas;
+        private System.Windows.Forms.Button btnAdministrarReportes;
     }
 }

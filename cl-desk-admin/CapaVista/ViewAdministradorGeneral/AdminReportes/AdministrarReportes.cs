@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
+namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminReportes
 {
-    public partial class frmMenuAdminGeneral : Form
+    public partial class frmAdministrarReportes : Form
     {
-        public frmMenuAdminGeneral()
+        public frmAdministrarReportes()
         {
             InitializeComponent();
-        }
-
-        private void btnAdministrarReportes_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

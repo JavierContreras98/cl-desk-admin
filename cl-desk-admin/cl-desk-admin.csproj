@@ -52,6 +52,12 @@
     <Compile Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.Designer.cs">
       <DependentUpon>AdministarHistorialCitas.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminReportes\AdministrarReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminReportes\AdministrarReportes.Designer.cs">
+      <DependentUpon>AdministrarReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaVista\ViewAdministradorGeneral\AdminUsuarioCambios\AdministrarUsuarioCambios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -584,6 +590,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.resx">
       <DependentUpon>AdministarHistorialCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminReportes\AdministrarReportes.resx">
+      <DependentUpon>AdministrarReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminUsuarioCambios\AdministrarUsuarioCambios.resx">
       <DependentUpon>AdministrarUsuarioCambios.cs</DependentUpon>
