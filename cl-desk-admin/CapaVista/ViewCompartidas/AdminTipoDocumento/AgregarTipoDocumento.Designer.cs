@@ -43,7 +43,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             // 
             // lblBanner
             // 
-            this.lblBanner.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.lblBanner.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBanner.Font = new System.Drawing.Font("Arial Rounded MT Bold", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBanner.ForeColor = System.Drawing.Color.DodgerBlue;
@@ -106,6 +106,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             this.btnCrear.TabIndex = 8;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnCancelar
             // 
@@ -150,7 +151,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             this.label2.TabIndex = 3;
             this.label2.Text = "NOMBRE:";
             // 
-            // frmAgregarTipoDocumento
+            // AgregarTipoDocumento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -158,7 +159,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             this.ClientSize = new System.Drawing.Size(1025, 612);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblBanner);
-            this.Name = "frmAgregarTipoDocumento";
+            this.Name = "AgregarTipoDocumento";
             this.Text = "Agregar Tipo de Documento";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
