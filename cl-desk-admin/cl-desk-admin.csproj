@@ -806,6 +806,9 @@
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminTipoDocumento\AgregarTipoDocumento.resx">
       <DependentUpon>AgregarTipoDocumento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminTipoDocumento\ModificarTipoDocumento.resx">
+      <DependentUpon>ModificarTipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminTipoSangre\AdministrarTipoSangre.resx">
       <DependentUpon>AdministrarTipoSangre.cs</DependentUpon>
     </EmbeddedResource>

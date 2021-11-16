@@ -12,9 +12,24 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
 {
     public partial class ModificarTipoDocumento : Form
     {
+        string id;
+
+        public string Id { get => id; set => id = value; }
+
         public ModificarTipoDocumento()
         {
             InitializeComponent();
+        }
+
+        private void ModificarTipoDocumento_Load(object sender, EventArgs e)
+        {
+            AdministrarTipoDocumento tipodocumento = new AdministrarTipoDocumento();
+
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
