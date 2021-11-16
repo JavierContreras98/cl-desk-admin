@@ -18,24 +18,17 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
 {
     public partial class AdministrarTipoDocumento : Form
     {
-
         string URI = "https://localhost:44310/api/tipo_documento";
-
-        int id;
-
-        public int Id { get => id; set => id = value; }
 
         public AdministrarTipoDocumento()
         {
-            
             InitializeComponent();
         }
 
         private async void AdministrarTipoDocumento_Load(object sender, EventArgs e)
         {
-            
-            radiobModificar();
             GetAllProdutos();
+            radiobModificar();
         }
 
 
@@ -60,44 +53,22 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             }
         }
 
-        
-
-
         private void btnCrearTipoDocumento_Click(object sender, EventArgs e)
         {
             AgregarTipoDocumento crear = new AgregarTipoDocumento();
             crear.Show();
         }
 
-        private void dgvTipoDocumento_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnModificarTipoDocumento_Click(object sender, EventArgs e)
         {
-            try
-            {
-                int myNumber = Int32.Parse(txtNumero.Text);
-            }
-            catch (FormatException ex)
-            {
-                //failed, not a valid number in string
-                throw;
-            }
-
             ModificarTipoDocumento modificarTipoDocumento = new ModificarTipoDocumento();
+            modificarTipoDocumento.Id = Convert.ToInt32(txtNumero.Text);
             modificarTipoDocumento.Show();
-
-          
-
-            
-
         }
 
         private void radiobModificar()
         {
-      
+            txtNumero.Enabled = false;
             btnEliminarTipoDocumento.Enabled = false;
             btnModificarTipoDocumento.Enabled = false;
             if (rbModificar.Checked == true)
@@ -107,7 +78,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
                 btnModificarTipoDocumento.Enabled = true;
                 btnEliminarTipoDocumento.Enabled = false;
             }
-            if(rbEliminar.Checked == true)
+            if (rbEliminar.Checked == true)
             {
                 lblInformacion.Text = "Ingrese el ID del dato a eliminar";
                 txtNumero.Enabled = true;
@@ -116,19 +87,40 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             }
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
         {
-                /*if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-                {
-                    MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    e.Handled = true;
-                    return;
-                }*/
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
         }
 
         private void btnEliminarTipoDocumento_Click(object sender, EventArgs e)
         {
-
+            DeleteTipoDocumento(Convert.ToInt32(txtNumero.Text));
         }
+
+        private async void DeleteTipoDocumento(int id)
+        {
+            URI = URI;
+            int TipoDocumentoID = id;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(URI);
+                HttpResponseMessage responseMessage = await client.DeleteAsync(String.Format("{0}/{1}", URI, TipoDocumentoID));
+                if (responseMessage.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("Tipo documento Eliminado con exito");
+                }
+                else
+                {
+                    MessageBox.Show("Error: No se puedo eliminar el tipo de documento " + responseMessage.StatusCode);
+                }
+            }
+            GetAllProdutos();
+        }
+
     }
 }
