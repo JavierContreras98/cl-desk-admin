@@ -139,6 +139,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminTipoUsuario
             this.btnModificarTipoUsuario.Text = "MODIFICAR";
             this.btnModificarTipoUsuario.UseMnemonic = false;
             this.btnModificarTipoUsuario.UseVisualStyleBackColor = false;
+            this.btnModificarTipoUsuario.Click += new System.EventHandler(this.btnModificarTipoUsuario_Click);
             // 
             // btnEliminarTipoUsuario
             // 
@@ -175,6 +176,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminTipoUsuario
             this.Name = "frmAdministrarTipoUsuario";
             this.Text = "Administrar Tipo de Usuario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmAdministrarTipoUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTipoUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
