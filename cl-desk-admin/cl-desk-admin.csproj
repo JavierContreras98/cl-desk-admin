@@ -502,7 +502,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CapaModels\TextFile1.txt" />
-    <Content Include="CapaLogica\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
