@@ -16,5 +16,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
         {
             InitializeComponent();
         }
+
+        public int Id { get; internal set; }
     }
 }
