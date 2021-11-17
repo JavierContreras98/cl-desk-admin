@@ -41,14 +41,14 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            actualizarProducto(Id);
+            actualizarTipoDocumento(Id);
             AdministrarTipoDocumento tipodocumento = new AdministrarTipoDocumento();
             this.Hide();
             tipodocumento.Show();
             tipodocumento.Refresh();
         }
 
-        private async void actualizarProducto(int id)
+        private async void actualizarTipoDocumento(int id)
         {
             Tipo_DocumentoModels tipodocumento = new Tipo_DocumentoModels();
             tipodocumento.Id = id;

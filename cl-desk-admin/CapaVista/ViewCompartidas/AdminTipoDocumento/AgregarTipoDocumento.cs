@@ -31,7 +31,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
         {
             try
             {
-                this.AddProduto();
+                this.AddTipodocumento();
             }catch(Exception)
             {
                 Console.WriteLine("Algo salio mal");
@@ -43,18 +43,16 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             
         }
 
-        private async void AddProduto()
+        private async void AddTipodocumento()
         {
-            URI = URI;
             Tipo_DocumentoModels tipodocumento = new Tipo_DocumentoModels();
-            //prod.Id = codProduto;
             tipodocumento.Nombre = txtNombre.Text;
             tipodocumento.Descripcion = txtDescripcion.Text;
 
             using (var client = new HttpClient())
             {
-                var serializedProduto = JsonConvert.SerializeObject(tipodocumento);
-                var content = new StringContent(serializedProduto, Encoding.UTF8, "application/json");
+                var serializedTipoDocumento = JsonConvert.SerializeObject(tipodocumento);
+                var content = new StringContent(serializedTipoDocumento, Encoding.UTF8, "application/json");
                 var result = await client.PostAsync(URI, content);
             }
         }
