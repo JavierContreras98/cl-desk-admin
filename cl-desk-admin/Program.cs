@@ -16,7 +16,8 @@ namespace cl_desk_admin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CapaVista.ViewCompartidas.AdminTipoDocumento.AdministrarTipoDocumento());
+            //Application.Run(new CapaVista.ViewCompartidas.AdminTipoDocumento.AdministrarTipoDocumento());
+            Application.Run(new CapaVista.ViewAdministradorGeneral.AdminTipoUsuario.frmAdministrarTipoUsuario());
         }
     }
 }
