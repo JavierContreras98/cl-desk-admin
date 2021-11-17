@@ -38,6 +38,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             this.dvgHorarioCita = new System.Windows.Forms.DataGridView();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.rbEliminar = new System.Windows.Forms.RadioButton();
+            this.rbModificar = new System.Windows.Forms.RadioButton();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvgHorarioCita)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,6 +130,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             this.btnCrear.TabIndex = 10;
             this.btnCrear.Text = "CREAR NUEVO";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // dvgHorarioCita
             // 
@@ -157,6 +161,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             this.btnModificar.TabIndex = 13;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -177,12 +182,50 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = false;
             // 
+            // rbEliminar
+            // 
+            this.rbEliminar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rbEliminar.AutoSize = true;
+            this.rbEliminar.Location = new System.Drawing.Point(794, 501);
+            this.rbEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.rbEliminar.Name = "rbEliminar";
+            this.rbEliminar.Size = new System.Drawing.Size(120, 17);
+            this.rbEliminar.TabIndex = 20;
+            this.rbEliminar.TabStop = true;
+            this.rbEliminar.Text = "Activar para eliminar";
+            this.rbEliminar.UseVisualStyleBackColor = true;
+            // 
+            // rbModificar
+            // 
+            this.rbModificar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rbModificar.AutoSize = true;
+            this.rbModificar.Location = new System.Drawing.Point(130, 501);
+            this.rbModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.rbModificar.Name = "rbModificar";
+            this.rbModificar.Size = new System.Drawing.Size(127, 17);
+            this.rbModificar.TabIndex = 19;
+            this.rbModificar.TabStop = true;
+            this.rbModificar.Text = "Activar para modificar";
+            this.rbModificar.UseVisualStyleBackColor = true;
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNumero.Location = new System.Drawing.Point(398, 538);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(275, 20);
+            this.txtNumero.TabIndex = 18;
+            // 
             // AdministrarHorarioCitas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.Controls.Add(this.rbEliminar);
+            this.Controls.Add(this.rbModificar);
+            this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.dvgHorarioCita);
@@ -212,5 +255,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
         private System.Windows.Forms.DataGridView dvgHorarioCita;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.RadioButton rbEliminar;
+        private System.Windows.Forms.RadioButton rbModificar;
+        private System.Windows.Forms.TextBox txtNumero;
     }
 }

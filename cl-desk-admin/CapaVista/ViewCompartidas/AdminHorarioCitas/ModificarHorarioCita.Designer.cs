@@ -115,6 +115,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             this.btnModificar.TabIndex = 23;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnCancelar
             // 
@@ -164,6 +165,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             this.Name = "ModificarHorarioCita";
             this.Text = "Modificar Horario Cita";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.ModificarHorarioCita_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
