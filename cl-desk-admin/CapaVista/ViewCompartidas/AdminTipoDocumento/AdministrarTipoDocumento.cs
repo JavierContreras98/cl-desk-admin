@@ -27,6 +27,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
 
         private async void AdministrarTipoDocumento_Load(object sender, EventArgs e)
         {
+            dgvTipoDocumento.Refresh();
+            this.Refresh();
             GetAllProdutos();
             radiobModificar();
         }
@@ -34,7 +36,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
 
         private async void GetAllProdutos()
         {
-            URI = URI;
             using (var client = new HttpClient())
             {
                 using (var response = await client.GetAsync(URI))
@@ -55,15 +56,27 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
 
         private void btnCrearTipoDocumento_Click(object sender, EventArgs e)
         {
-            AgregarTipoDocumento crear = new AgregarTipoDocumento();
-            crear.Show();
+            AgregarTipoDocumento agregartipodocumento = new AgregarTipoDocumento();
+            agregartipodocumento.Show();
+            this.Hide();
         }
 
         private void btnModificarTipoDocumento_Click(object sender, EventArgs e)
         {
-            ModificarTipoDocumento modificarTipoDocumento = new ModificarTipoDocumento();
-            modificarTipoDocumento.Id = Convert.ToInt32(txtNumero.Text);
-            modificarTipoDocumento.Show();
+            if (string.IsNullOrEmpty(txtNumero.Text))
+            {
+                if (rbModificar.Enabled == true)
+                {
+                    MessageBox.Show("Para modificar un tipo de documento debe ingresar el numero de ID a modificar");
+                }
+                else
+                {
+                    ModificarTipoDocumento modificarTipoDocumento = new ModificarTipoDocumento();
+                    modificarTipoDocumento.Id = Convert.ToInt32(txtNumero.Text);
+                    modificarTipoDocumento.Show();
+                    this.Hide();
+                }
+            } 
         }
 
         private void radiobModificar()
@@ -99,12 +112,21 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
 
         private void btnEliminarTipoDocumento_Click(object sender, EventArgs e)
         {
-            DeleteTipoDocumento(Convert.ToInt32(txtNumero.Text));
+            if (string.IsNullOrEmpty(txtNumero.Text))
+            {
+                if (rbEliminar.Enabled == true)
+                {
+                    MessageBox.Show("Para eliminar un tipo de documento debe ingresar el numero de ID a eliminar");
+                }
+                else
+                {
+                    DeleteTipoDocumento(Convert.ToInt32(txtNumero.Text));
+                }
+            }
         }
 
         private async void DeleteTipoDocumento(int id)
         {
-            URI = URI;
             int TipoDocumentoID = id;
             using (var client = new HttpClient())
             {
@@ -112,7 +134,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
                 HttpResponseMessage responseMessage = await client.DeleteAsync(String.Format("{0}/{1}", URI, TipoDocumentoID));
                 if (responseMessage.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Tipo documento Eliminado con exito");
+                    
                 }
                 else
                 {
@@ -121,6 +143,5 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             }
             GetAllProdutos();
         }
-
     }
 }

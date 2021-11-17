@@ -90,24 +90,6 @@
     <Compile Include="CapaVista\ViewAdministradorGeneral\AdminTipoUsuario\ModificarTipoUsuario.Designer.cs">
       <DependentUpon>ModificarTipoUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminTipoUsuario\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminTipoUsuario\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminTipoUsuario\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminTipoUsuario\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminTipoUsuario\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminTipoUsuario\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </Compile>
     <Compile Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\AdministrarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,24 +107,6 @@
     </Compile>
     <Compile Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\ModificarUsuario.Designer.cs">
       <DependentUpon>ModificarUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </Compile>
     <Compile Include="CapaVista\ViewAdministradorGeneral\MenuAdminGeneral.cs">
       <SubType>Form</SubType>
@@ -174,24 +138,6 @@
     <Compile Include="CapaVista\ViewCompartidas\AdminCitas\ModificarCita.Designer.cs">
       <DependentUpon>ModificarCita.cs</DependentUpon>
     </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminCitas\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminCitas\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminCitas\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminCitas\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminCitas\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminCitas\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminDepartamentos\AdministrarDepartamentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,24 +155,6 @@
     </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminDepartamentos\ModificarDepartamento.Designer.cs">
       <DependentUpon>ModificarDepartamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminDepartamentos\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminDepartamentos\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminDepartamentos\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminDepartamentos\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminDepartamentos\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminDepartamentos\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminEmpleados\AdministrarEmpleados.cs">
       <SubType>Form</SubType>
@@ -246,24 +174,6 @@
     <Compile Include="CapaVista\ViewCompartidas\AdminEmpleados\ModificarEmpleado.Designer.cs">
       <DependentUpon>ModificarEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminEmpleados\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminEmpleados\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminEmpleados\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminEmpleados\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminEmpleados\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminEmpleados\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminEspecialidades\AdministrarEspecialidades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,24 +191,6 @@
     </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminEspecialidades\ModificarEspecialidades.Designer.cs">
       <DependentUpon>ModificarEspecialidades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminEspecialidades\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminEspecialidades\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminEspecialidades\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminEspecialidades\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminEspecialidades\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminEspecialidades\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminHorarioCitas\AdministrarHorarioCitas.cs">
       <SubType>Form</SubType>
@@ -318,24 +210,6 @@
     <Compile Include="CapaVista\ViewCompartidas\AdminHorarioCitas\ModificarHorarioCita.Designer.cs">
       <DependentUpon>ModificarHorarioCita.cs</DependentUpon>
     </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminHorarioCitas\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminHorarioCitas\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminHorarioCitas\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminHorarioCitas\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminHorarioCitas\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminHorarioCitas\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminInforMedicos\AdministarInforMedicos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -353,24 +227,6 @@
     </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminInforMedicos\ModificarInforMedicos.Designer.cs">
       <DependentUpon>ModificarInforMedicos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminInforMedicos\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminInforMedicos\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminInforMedicos\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminInforMedicos\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminInforMedicos\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminInforMedicos\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminMunicipios\AdministrarMunicipios.cs">
       <SubType>Form</SubType>
@@ -390,24 +246,6 @@
     <Compile Include="CapaVista\ViewCompartidas\AdminMunicipios\ModificarMunicipio.Designer.cs">
       <DependentUpon>ModificarMunicipio.cs</DependentUpon>
     </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminMunicipios\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminMunicipios\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminMunicipios\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminMunicipios\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminMunicipios\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminMunicipios\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminPacientes\AdministrarPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -425,24 +263,6 @@
     </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminPacientes\ModificarPaciente.Designer.cs">
       <DependentUpon>ModificarPaciente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminPacientes\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminPacientes\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminPacientes\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminPacientes\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminPacientes\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminPacientes\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminPais\AdministrarPais.cs">
       <SubType>Form</SubType>
@@ -462,24 +282,6 @@
     <Compile Include="CapaVista\ViewCompartidas\AdminPais\ModificarPais.Designer.cs">
       <DependentUpon>ModificarPais.cs</DependentUpon>
     </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminPais\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminPais\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminPais\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminPais\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminPais\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminPais\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminProfesion\AdministrarProfesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -497,24 +299,6 @@
     </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminProfesion\ModificarProfesion.Designer.cs">
       <DependentUpon>ModificarProfesion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminProfesion\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminProfesion\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminProfesion\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminProfesion\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminProfesion\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminProfesion\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminTipoDocumento\AdministrarTipoDocumento.cs">
       <SubType>Form</SubType>
@@ -534,24 +318,6 @@
     <Compile Include="CapaVista\ViewCompartidas\AdminTipoDocumento\ModificarTipoDocumento.Designer.cs">
       <DependentUpon>ModificarTipoDocumento.cs</DependentUpon>
     </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminTipoDocumento\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminTipoDocumento\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminTipoDocumento\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminTipoDocumento\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminTipoDocumento\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminTipoDocumento\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\AdministrarTipoSangre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -569,24 +335,6 @@
     </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ModificarTipoSangre.Designer.cs">
       <DependentUpon>ModificarTipoSangre.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ViewEmergenteCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ViewEmergenteCrear.Designer.cs">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ViewEmergenteEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ViewEmergenteEliminar.Designer.cs">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ViewEmergenteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ViewEmergenteModificar.Designer.cs">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </Compile>
     <Compile Include="IniciarSesion.cs">
       <SubType>Form</SubType>
@@ -611,15 +359,6 @@
     <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminTipoUsuario\ModificarTipoUsuario.resx">
       <DependentUpon>ModificarTipoUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminTipoUsuario\ViewEmergenteCrear.resx">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminTipoUsuario\ViewEmergenteEliminar.resx">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminTipoUsuario\ViewEmergenteModificar.resx">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\AdministrarUsuario.resx">
       <DependentUpon>AdministrarUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -628,15 +367,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\ModificarUsuario.resx">
       <DependentUpon>ModificarUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\ViewEmergenteCrear.resx">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\ViewEmergenteEliminar.resx">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminUsuario\ViewEmergenteModificar.resx">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\MenuAdminGeneral.resx">
       <DependentUpon>MenuAdminGeneral.cs</DependentUpon>
@@ -653,15 +383,6 @@
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminCitas\ModificarCita.resx">
       <DependentUpon>ModificarCita.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminCitas\ViewEmergenteCrear.resx">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminCitas\ViewEmergenteEliminar.resx">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminCitas\ViewEmergenteModificar.resx">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminDepartamentos\AdministrarDepartamentos.resx">
       <DependentUpon>AdministrarDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
@@ -670,15 +391,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminDepartamentos\ModificarDepartamento.resx">
       <DependentUpon>ModificarDepartamento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminDepartamentos\ViewEmergenteCrear.resx">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminDepartamentos\ViewEmergenteEliminar.resx">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminDepartamentos\ViewEmergenteModificar.resx">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminEmpleados\AdministrarEmpleados.resx">
       <DependentUpon>AdministrarEmpleados.cs</DependentUpon>
@@ -689,15 +401,6 @@
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminEmpleados\ModificarEmpleado.resx">
       <DependentUpon>ModificarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminEmpleados\ViewEmergenteCrear.resx">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminEmpleados\ViewEmergenteEliminar.resx">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminEmpleados\ViewEmergenteModificar.resx">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminEspecialidades\AdministrarEspecialidades.resx">
       <DependentUpon>AdministrarEspecialidades.cs</DependentUpon>
     </EmbeddedResource>
@@ -706,15 +409,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminEspecialidades\ModificarEspecialidades.resx">
       <DependentUpon>ModificarEspecialidades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminEspecialidades\ViewEmergenteCrear.resx">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminEspecialidades\ViewEmergenteEliminar.resx">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminEspecialidades\ViewEmergenteModificar.resx">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminHorarioCitas\AdministrarHorarioCitas.resx">
       <DependentUpon>AdministrarHorarioCitas.cs</DependentUpon>
@@ -725,15 +419,6 @@
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminHorarioCitas\ModificarHorarioCita.resx">
       <DependentUpon>ModificarHorarioCita.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminHorarioCitas\ViewEmergenteCrear.resx">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminHorarioCitas\ViewEmergenteEliminar.resx">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminHorarioCitas\ViewEmergenteModificar.resx">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminInforMedicos\AdministarInforMedicos.resx">
       <DependentUpon>AdministarInforMedicos.cs</DependentUpon>
     </EmbeddedResource>
@@ -742,15 +427,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminInforMedicos\ModificarInforMedicos.resx">
       <DependentUpon>ModificarInforMedicos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminInforMedicos\ViewEmergenteCrear.resx">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminInforMedicos\ViewEmergenteEliminar.resx">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminInforMedicos\ViewEmergenteModificar.resx">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminMunicipios\AdministrarMunicipios.resx">
       <DependentUpon>AdministrarMunicipios.cs</DependentUpon>
@@ -761,15 +437,6 @@
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminMunicipios\ModificarMunicipio.resx">
       <DependentUpon>ModificarMunicipio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminMunicipios\ViewEmergenteCrear.resx">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminMunicipios\ViewEmergenteEliminar.resx">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminMunicipios\ViewEmergenteModificar.resx">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminPacientes\AdministrarPacientes.resx">
       <DependentUpon>AdministrarPacientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -779,15 +446,6 @@
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminPacientes\ModificarPaciente.resx">
       <DependentUpon>ModificarPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminPacientes\ViewEmergenteCrear.resx">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminPacientes\ViewEmergenteEliminar.resx">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminPacientes\ViewEmergenteModificar.resx">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminPais\AdministrarPais.resx">
       <DependentUpon>AdministrarPais.cs</DependentUpon>
     </EmbeddedResource>
@@ -796,15 +454,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminPais\ModificarPais.resx">
       <DependentUpon>ModificarPais.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminPais\ViewEmergenteCrear.resx">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminPais\ViewEmergenteEliminar.resx">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminPais\ViewEmergenteModificar.resx">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminTipoDocumento\AdministrarTipoDocumento.resx">
       <DependentUpon>AdministrarTipoDocumento.cs</DependentUpon>
@@ -823,15 +472,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminTipoSangre\ModificarTipoSangre.resx">
       <DependentUpon>ModificarTipoSangre.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminTipoSangre\ViewEmergenteCrear.resx">
-      <DependentUpon>ViewEmergenteCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminTipoSangre\ViewEmergenteEliminar.resx">
-      <DependentUpon>ViewEmergenteEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminTipoSangre\ViewEmergenteModificar.resx">
-      <DependentUpon>ViewEmergenteModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IniciarSesion.resx">
       <DependentUpon>IniciarSesion.cs</DependentUpon>

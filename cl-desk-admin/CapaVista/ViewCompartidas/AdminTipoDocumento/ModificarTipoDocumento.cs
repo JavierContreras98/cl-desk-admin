@@ -23,7 +23,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
 
         int id;
 
+        string data;
+
         public int Id { get => id; set => id = value; }
+        public string Data { get => data; set => data = value; }
 
         public ModificarTipoDocumento()
         {
@@ -33,16 +36,20 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
         private void ModificarTipoDocumento_Load(object sender, EventArgs e)
         {
             lblId.Text = Id.ToString();
+            this.CargarDatos();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
             actualizarProducto(Id);
+            AdministrarTipoDocumento tipodocumento = new AdministrarTipoDocumento();
+            this.Hide();
+            tipodocumento.Show();
+            tipodocumento.Refresh();
         }
 
         private async void actualizarProducto(int id)
         {
-            URI = URI;
             Tipo_DocumentoModels tipodocumento = new Tipo_DocumentoModels();
             tipodocumento.Id = id;
             tipodocumento.Nombre = txtNombre.Text;
@@ -53,13 +60,41 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
                 HttpResponseMessage responseMessage = await client.PutAsJsonAsync(URI + "/" + tipodocumento.Id, tipodocumento);
                 if (responseMessage.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Tipo Documento Actualziado");
+                    
                 }
                 else
                 {
-                    MessageBox.Show("Error:Al intentar axtualizar el Tipo de Documento " + responseMessage.StatusCode);
+                    MessageBox.Show("Error:Al intentar actualizar el Tipo de Documento " + responseMessage.StatusCode);
                 }
             }
+        }
+
+        private async Task<string> Get(int id)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                using (HttpResponseMessage res = await client.GetAsync(URI + "/" + id))
+                {
+                    using (HttpContent content = res.Content)
+                    {
+                        Data = await content.ReadAsStringAsync();
+                        if (Data != null)
+                        {
+                            return Data;
+
+                        }
+                    }
+                }
+            }
+            return string.Empty;
+        }
+
+        private async void CargarDatos()
+        {
+            var response = await Get(Id);
+            var res = JsonConvert.DeserializeObject<dynamic>(response);
+            txtNombre.Text = res[0].NOMBRE;
+            txtDescripcion.Text = res[0].DESCRIPCION;
         }
 
     }

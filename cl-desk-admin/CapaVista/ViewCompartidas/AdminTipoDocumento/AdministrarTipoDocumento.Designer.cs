@@ -51,10 +51,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBanner.Font = new System.Drawing.Font("Arial Rounded MT Bold", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBanner.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblBanner.Location = new System.Drawing.Point(11, 9);
-            this.lblBanner.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBanner.Location = new System.Drawing.Point(16, 14);
             this.lblBanner.Name = "lblBanner";
-            this.lblBanner.Size = new System.Drawing.Size(1003, 44);
+            this.lblBanner.Size = new System.Drawing.Size(1504, 68);
             this.lblBanner.TabIndex = 0;
             this.lblBanner.Text = "CLINICA EL CARMELO";
             this.lblBanner.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -65,10 +64,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             this.btnMenuPrincipal.BackColor = System.Drawing.Color.SkyBlue;
             this.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMenuPrincipal.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPrincipal.Location = new System.Drawing.Point(19, 78);
-            this.btnMenuPrincipal.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMenuPrincipal.Location = new System.Drawing.Point(28, 120);
             this.btnMenuPrincipal.Name = "btnMenuPrincipal";
-            this.btnMenuPrincipal.Size = new System.Drawing.Size(119, 50);
+            this.btnMenuPrincipal.Size = new System.Drawing.Size(178, 77);
             this.btnMenuPrincipal.TabIndex = 1;
             this.btnMenuPrincipal.Text = "MENU PRINCIPAL";
             this.btnMenuPrincipal.UseVisualStyleBackColor = false;
@@ -78,9 +76,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             this.lblBusquedaAvanzada.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBusquedaAvanzada.AutoSize = true;
             this.lblBusquedaAvanzada.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBusquedaAvanzada.Location = new System.Drawing.Point(242, 110);
+            this.lblBusquedaAvanzada.Location = new System.Drawing.Point(363, 169);
+            this.lblBusquedaAvanzada.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBusquedaAvanzada.Name = "lblBusquedaAvanzada";
-            this.lblBusquedaAvanzada.Size = new System.Drawing.Size(153, 16);
+            this.lblBusquedaAvanzada.Size = new System.Drawing.Size(210, 23);
             this.lblBusquedaAvanzada.TabIndex = 4;
             this.lblBusquedaAvanzada.Text = "BUSQUEDA AVANZADA:";
             this.lblBusquedaAvanzada.Visible = false;
@@ -88,9 +87,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             // txtBuscarTipoDocumento
             // 
             this.txtBuscarTipoDocumento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscarTipoDocumento.Location = new System.Drawing.Point(398, 108);
+            this.txtBuscarTipoDocumento.Location = new System.Drawing.Point(597, 166);
+            this.txtBuscarTipoDocumento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBuscarTipoDocumento.Name = "txtBuscarTipoDocumento";
-            this.txtBuscarTipoDocumento.Size = new System.Drawing.Size(275, 20);
+            this.txtBuscarTipoDocumento.Size = new System.Drawing.Size(410, 26);
             this.txtBuscarTipoDocumento.TabIndex = 5;
             this.txtBuscarTipoDocumento.Visible = false;
             // 
@@ -102,9 +102,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
             this.btnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscar.Location = new System.Drawing.Point(679, 105);
+            this.btnBuscar.Location = new System.Drawing.Point(1018, 162);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(119, 26);
+            this.btnBuscar.Size = new System.Drawing.Size(178, 40);
             this.btnBuscar.TabIndex = 6;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -118,12 +119,13 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             this.dgvTipoDocumento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvTipoDocumento.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dgvTipoDocumento.ColumnHeadersHeight = 34;
-            this.dgvTipoDocumento.Location = new System.Drawing.Point(130, 197);
+            this.dgvTipoDocumento.Location = new System.Drawing.Point(195, 303);
+            this.dgvTipoDocumento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvTipoDocumento.MultiSelect = false;
             this.dgvTipoDocumento.Name = "dgvTipoDocumento";
             this.dgvTipoDocumento.RowHeadersVisible = false;
             this.dgvTipoDocumento.RowHeadersWidth = 62;
-            this.dgvTipoDocumento.Size = new System.Drawing.Size(785, 291);
+            this.dgvTipoDocumento.Size = new System.Drawing.Size(1178, 448);
             this.dgvTipoDocumento.TabIndex = 7;
             // 
             // btnCrearTipoDocumento
@@ -132,9 +134,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             this.btnCrearTipoDocumento.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btnCrearTipoDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCrearTipoDocumento.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnCrearTipoDocumento.Location = new System.Drawing.Point(894, 78);
+            this.btnCrearTipoDocumento.Location = new System.Drawing.Point(1341, 120);
+            this.btnCrearTipoDocumento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCrearTipoDocumento.Name = "btnCrearTipoDocumento";
-            this.btnCrearTipoDocumento.Size = new System.Drawing.Size(119, 50);
+            this.btnCrearTipoDocumento.Size = new System.Drawing.Size(178, 77);
             this.btnCrearTipoDocumento.TabIndex = 8;
             this.btnCrearTipoDocumento.Text = "CREAR NUEVO";
             this.btnCrearTipoDocumento.UseVisualStyleBackColor = false;
@@ -146,9 +149,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             this.btnModificarTipoDocumento.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btnModificarTipoDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModificarTipoDocumento.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnModificarTipoDocumento.Location = new System.Drawing.Point(130, 523);
+            this.btnModificarTipoDocumento.Location = new System.Drawing.Point(195, 805);
+            this.btnModificarTipoDocumento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnModificarTipoDocumento.Name = "btnModificarTipoDocumento";
-            this.btnModificarTipoDocumento.Size = new System.Drawing.Size(119, 50);
+            this.btnModificarTipoDocumento.Size = new System.Drawing.Size(178, 77);
             this.btnModificarTipoDocumento.TabIndex = 10;
             this.btnModificarTipoDocumento.Text = "MODIFICAR";
             this.btnModificarTipoDocumento.UseMnemonic = false;
@@ -161,9 +165,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             this.btnEliminarTipoDocumento.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btnEliminarTipoDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminarTipoDocumento.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnEliminarTipoDocumento.Location = new System.Drawing.Point(796, 523);
+            this.btnEliminarTipoDocumento.Location = new System.Drawing.Point(1194, 805);
+            this.btnEliminarTipoDocumento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEliminarTipoDocumento.Name = "btnEliminarTipoDocumento";
-            this.btnEliminarTipoDocumento.Size = new System.Drawing.Size(119, 50);
+            this.btnEliminarTipoDocumento.Size = new System.Drawing.Size(178, 77);
             this.btnEliminarTipoDocumento.TabIndex = 11;
             this.btnEliminarTipoDocumento.Text = "ELIMINAR";
             this.btnEliminarTipoDocumento.UseMnemonic = false;
@@ -174,10 +179,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             // 
             this.lblInformacion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblInformacion.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblInformacion.Location = new System.Drawing.Point(395, 521);
-            this.lblInformacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInformacion.Location = new System.Drawing.Point(592, 802);
             this.lblInformacion.Name = "lblInformacion";
-            this.lblInformacion.Size = new System.Drawing.Size(278, 15);
+            this.lblInformacion.Size = new System.Drawing.Size(417, 23);
             this.lblInformacion.TabIndex = 14;
             this.lblInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -185,10 +189,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             // 
             this.rbModificar.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.rbModificar.AutoSize = true;
-            this.rbModificar.Location = new System.Drawing.Point(130, 501);
-            this.rbModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.rbModificar.Location = new System.Drawing.Point(195, 771);
             this.rbModificar.Name = "rbModificar";
-            this.rbModificar.Size = new System.Drawing.Size(127, 17);
+            this.rbModificar.Size = new System.Drawing.Size(186, 24);
             this.rbModificar.TabIndex = 16;
             this.rbModificar.TabStop = true;
             this.rbModificar.Text = "Activar para modificar";
@@ -199,10 +202,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             // 
             this.rbEliminar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.rbEliminar.AutoSize = true;
-            this.rbEliminar.Location = new System.Drawing.Point(795, 501);
-            this.rbEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.rbEliminar.Location = new System.Drawing.Point(1196, 771);
             this.rbEliminar.Name = "rbEliminar";
-            this.rbEliminar.Size = new System.Drawing.Size(120, 17);
+            this.rbEliminar.Size = new System.Drawing.Size(176, 24);
             this.rbEliminar.TabIndex = 17;
             this.rbEliminar.TabStop = true;
             this.rbEliminar.Text = "Activar para eliminar";
@@ -212,20 +214,19 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             // txtNumero
             // 
             this.txtNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNumero.Location = new System.Drawing.Point(398, 538);
-            this.txtNumero.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNumero.Location = new System.Drawing.Point(597, 828);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(275, 20);
+            this.txtNumero.Size = new System.Drawing.Size(410, 26);
             this.txtNumero.TabIndex = 13;
             this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
             // 
             // AdministrarTipoDocumento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.ClientSize = new System.Drawing.Size(1538, 942);
             this.Controls.Add(this.rbEliminar);
             this.Controls.Add(this.rbModificar);
             this.Controls.Add(this.lblInformacion);
@@ -240,7 +241,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             this.Controls.Add(this.btnMenuPrincipal);
             this.Controls.Add(this.lblBanner);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdministrarTipoDocumento";
             this.Text = "Administrar Tipo de  Documento";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

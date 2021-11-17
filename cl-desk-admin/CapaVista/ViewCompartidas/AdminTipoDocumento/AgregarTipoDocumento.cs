@@ -38,7 +38,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             }
             AdministrarTipoDocumento tipodocumento = new AdministrarTipoDocumento();
             this.Close();
+            tipodocumento.Refresh();
             tipodocumento.Show();
+            
         }
 
         private async void AddProduto()
