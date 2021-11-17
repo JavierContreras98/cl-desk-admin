@@ -143,5 +143,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             }
             GetAllProdutos();
         }
+
+       
     }
 }

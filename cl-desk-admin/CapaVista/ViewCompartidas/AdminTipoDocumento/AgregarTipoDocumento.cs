@@ -62,5 +62,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
         {
 
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

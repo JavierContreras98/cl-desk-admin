@@ -217,6 +217,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(275, 20);
             this.txtNumero.TabIndex = 13;
+            
             this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
             // 
             // AdministrarTipoDocumento

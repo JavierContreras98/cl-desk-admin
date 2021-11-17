@@ -49,7 +49,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
         {
             HorarioCitaModels horariocita = new HorarioCitaModels();
             horariocita.Id = id;
-           // tipodocumento.Hora_cita =
+            horariocita.Hora_cita = txHora.Text;
             
             using (var client = new HttpClient())
             {
@@ -89,8 +89,13 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
         {
             var response = await Get(Id);
             var res = JsonConvert.DeserializeObject<dynamic>(response);
-            txHora.Text = res[0].NOMBRE;
+            txHora.Text = res[0].HORA_CITA;
            
+        }
+
+        private void txthora_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
