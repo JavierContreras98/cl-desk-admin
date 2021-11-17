@@ -43,7 +43,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
             // 
             // lblBanner
             // 
-            this.lblBanner.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.lblBanner.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBanner.Font = new System.Drawing.Font("Arial Rounded MT Bold", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBanner.ForeColor = System.Drawing.Color.DodgerBlue;
@@ -106,7 +106,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
             this.btnCrear.TabIndex = 8;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
-
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnCancelar
             // 
@@ -120,7 +120,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
-
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtNombre
             // 
@@ -152,7 +152,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
             this.label2.TabIndex = 3;
             this.label2.Text = "NOMBRE:";
             // 
-            // frmAgregarTipoUsuario
+            // AgregarProfesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -160,10 +160,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
             this.ClientSize = new System.Drawing.Size(1025, 612);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblBanner);
-            this.Name = "frmAgregarTipoUsuario";
+            this.Name = "AgregarProfesion";
             this.Text = "Agregar Tipo de Usuario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

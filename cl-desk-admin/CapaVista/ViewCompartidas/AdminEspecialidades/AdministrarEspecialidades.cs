@@ -122,11 +122,11 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
 
         private async void DeleteEspecialidad(int id)
         {
-            int TipoUsuarioID = id;
+            int EspecialidadID = id;
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(URI);
-                HttpResponseMessage responseMessage = await client.DeleteAsync(String.Format("{0}/{1}", URI, TipoUsuarioID));
+                HttpResponseMessage responseMessage = await client.DeleteAsync(String.Format("{0}/{1}", URI, EspecialidadID));
                 if (responseMessage.IsSuccessStatusCode)
                 {
 

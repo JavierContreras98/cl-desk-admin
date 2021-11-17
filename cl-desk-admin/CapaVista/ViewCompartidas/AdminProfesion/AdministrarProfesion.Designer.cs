@@ -38,12 +38,16 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
             this.btnCrearProfesion = new System.Windows.Forms.Button();
             this.btnModificarProfesion = new System.Windows.Forms.Button();
             this.btnEliminarProfesion = new System.Windows.Forms.Button();
+            this.rbModificar = new System.Windows.Forms.RadioButton();
+            this.rbEliminar = new System.Windows.Forms.RadioButton();
+            this.lblInformacion = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfesion)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBanner
             // 
-            this.lblBanner.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.lblBanner.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBanner.Font = new System.Drawing.Font("Arial Rounded MT Bold", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBanner.ForeColor = System.Drawing.Color.DodgerBlue;
@@ -80,11 +84,11 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
             this.lblBusquedaAvanzada.TabIndex = 4;
             this.lblBusquedaAvanzada.Text = "BUSQUEDA AVANZADA:";
             // 
-            // txtBuscarTipoUsuario
+            // txtBuscarProfesion
             // 
             this.txtBuscarProfesion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBuscarProfesion.Location = new System.Drawing.Point(398, 108);
-            this.txtBuscarProfesion.Name = "txtBuscarTipoUsuario";
+            this.txtBuscarProfesion.Name = "txtBuscarProfesion";
             this.txtBuscarProfesion.Size = new System.Drawing.Size(275, 20);
             this.txtBuscarProfesion.TabIndex = 5;
             // 
@@ -103,68 +107,115 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
-            // dgvTipoUsuario
+            // dgvProfesion
             // 
             this.dgvProfesion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvProfesion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProfesion.Location = new System.Drawing.Point(130, 197);
             this.dgvProfesion.MultiSelect = false;
-            this.dgvProfesion.Name = "dgvTipoUsuario";
+            this.dgvProfesion.Name = "dgvProfesion";
             this.dgvProfesion.Size = new System.Drawing.Size(785, 291);
             this.dgvProfesion.TabIndex = 7;
-
             // 
-            // btnCrearTipoUsuario
+            // btnCrearProfesion
             // 
             this.btnCrearProfesion.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnCrearProfesion.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btnCrearProfesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCrearProfesion.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
             this.btnCrearProfesion.Location = new System.Drawing.Point(894, 78);
-            this.btnCrearProfesion.Name = "btnCrearTipoUsuario";
+            this.btnCrearProfesion.Name = "btnCrearProfesion";
             this.btnCrearProfesion.Size = new System.Drawing.Size(119, 50);
             this.btnCrearProfesion.TabIndex = 8;
             this.btnCrearProfesion.Text = "CREAR NUEVO";
             this.btnCrearProfesion.UseVisualStyleBackColor = false;
-
+            this.btnCrearProfesion.Click += new System.EventHandler(this.btnCrearProfesion_Click);
             // 
-            // btnModificarTipoUsuario
+            // btnModificarProfesion
             // 
             this.btnModificarProfesion.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnModificarProfesion.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btnModificarProfesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModificarProfesion.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
             this.btnModificarProfesion.Location = new System.Drawing.Point(130, 523);
-            this.btnModificarProfesion.Name = "btnModificarTipoUsuario";
+            this.btnModificarProfesion.Name = "btnModificarProfesion";
             this.btnModificarProfesion.Size = new System.Drawing.Size(119, 50);
             this.btnModificarProfesion.TabIndex = 10;
             this.btnModificarProfesion.Text = "MODIFICAR";
             this.btnModificarProfesion.UseMnemonic = false;
             this.btnModificarProfesion.UseVisualStyleBackColor = false;
-
+            this.btnModificarProfesion.Click += new System.EventHandler(this.btnModificarProfesion_Click);
             // 
-            // btnEliminarTipoUsuario
+            // btnEliminarProfesion
             // 
             this.btnEliminarProfesion.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnEliminarProfesion.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btnEliminarProfesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminarProfesion.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
             this.btnEliminarProfesion.Location = new System.Drawing.Point(796, 523);
-            this.btnEliminarProfesion.Name = "btnEliminarTipoUsuario";
+            this.btnEliminarProfesion.Name = "btnEliminarProfesion";
             this.btnEliminarProfesion.Size = new System.Drawing.Size(119, 50);
             this.btnEliminarProfesion.TabIndex = 11;
             this.btnEliminarProfesion.Text = "ELIMINAR";
             this.btnEliminarProfesion.UseMnemonic = false;
             this.btnEliminarProfesion.UseVisualStyleBackColor = false;
-
+            this.btnEliminarProfesion.Click += new System.EventHandler(this.btnEliminarProfesion_Click);
             // 
-            // frmAdminTipoUsuario
+            // rbModificar
+            // 
+            this.rbModificar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rbModificar.AutoSize = true;
+            this.rbModificar.Location = new System.Drawing.Point(130, 500);
+            this.rbModificar.Name = "rbModificar";
+            this.rbModificar.Size = new System.Drawing.Size(127, 17);
+            this.rbModificar.TabIndex = 12;
+            this.rbModificar.TabStop = true;
+            this.rbModificar.Text = "Activar para modificar";
+            this.rbModificar.UseVisualStyleBackColor = true;
+            this.rbModificar.CheckedChanged += new System.EventHandler(this.AdministrarProfesion_Load);
+            // 
+            // rbEliminar
+            // 
+            this.rbEliminar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rbEliminar.AutoSize = true;
+            this.rbEliminar.Location = new System.Drawing.Point(796, 500);
+            this.rbEliminar.Name = "rbEliminar";
+            this.rbEliminar.Size = new System.Drawing.Size(120, 17);
+            this.rbEliminar.TabIndex = 13;
+            this.rbEliminar.TabStop = true;
+            this.rbEliminar.Text = "Activar para eliminar";
+            this.rbEliminar.UseVisualStyleBackColor = true;
+            this.rbEliminar.CheckedChanged += new System.EventHandler(this.AdministrarProfesion_Load);
+            // 
+            // lblInformacion
+            // 
+            this.lblInformacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblInformacion.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblInformacion.Location = new System.Drawing.Point(391, 525);
+            this.lblInformacion.Name = "lblInformacion";
+            this.lblInformacion.Size = new System.Drawing.Size(278, 15);
+            this.lblInformacion.TabIndex = 14;
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNumero.Location = new System.Drawing.Point(394, 542);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(275, 20);
+            this.txtNumero.TabIndex = 15;
+            this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
+            // 
+            // AdministrarProfesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.Controls.Add(this.txtNumero);
+            this.Controls.Add(this.lblInformacion);
+            this.Controls.Add(this.rbEliminar);
+            this.Controls.Add(this.rbModificar);
             this.Controls.Add(this.btnEliminarProfesion);
             this.Controls.Add(this.btnModificarProfesion);
             this.Controls.Add(this.btnCrearProfesion);
@@ -176,9 +227,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
             this.Controls.Add(this.lblBanner);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "frmAdminTipoUsuario";
-            this.Text = "Administrar Tipo de Usuario";
+            this.Name = "AdministrarProfesion";
+            this.Text = "Administrar Profesion";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.AdministrarProfesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfesion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -205,5 +257,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
 
 
         #endregion
+
+        private System.Windows.Forms.RadioButton rbModificar;
+        private System.Windows.Forms.RadioButton rbEliminar;
+        private System.Windows.Forms.Label lblInformacion;
+        private System.Windows.Forms.TextBox txtNumero;
     }
 }

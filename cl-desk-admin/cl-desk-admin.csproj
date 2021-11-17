@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CapaModels\EspecialidadModels.cs" />
+    <Compile Include="CapaModels\ProfesionModels.cs" />
     <Compile Include="CapaModels\Tipo_DocumentoModels.cs" />
     <Compile Include="CapaModels\Tipo_UsuarioModels.cs" />
     <Compile Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.cs">
@@ -456,6 +457,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminPais\ModificarPais.resx">
       <DependentUpon>ModificarPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminProfesion\AdministrarProfesion.resx">
+      <DependentUpon>AdministrarProfesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminProfesion\AgregarProfesion.resx">
+      <DependentUpon>AgregarProfesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminProfesion\ModificarProfesion.resx">
+      <DependentUpon>ModificarProfesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminTipoDocumento\AdministrarTipoDocumento.resx">
       <DependentUpon>AdministrarTipoDocumento.cs</DependentUpon>
