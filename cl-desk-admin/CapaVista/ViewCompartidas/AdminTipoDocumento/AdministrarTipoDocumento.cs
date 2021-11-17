@@ -30,7 +30,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             dgvTipoDocumento.Refresh();
             this.Refresh();
             GetAllProdutos();
-            radiobModificar();
+            radioButtonValidation();
         }
 
 
@@ -42,7 +42,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        //clienteUri = response.Headers.Location;
                         var TipodocumentoJsonString = await response.Content.ReadAsStringAsync();
                         dgvTipoDocumento.DataSource = JsonConvert.DeserializeObject<Tipo_DocumentoModels[]>(TipodocumentoJsonString).ToList();
                     }
@@ -57,8 +56,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
         private void btnCrearTipoDocumento_Click(object sender, EventArgs e)
         {
             AgregarTipoDocumento agregartipodocumento = new AgregarTipoDocumento();
-            agregartipodocumento.Show();
             this.Hide();
+            agregartipodocumento.Show();
         }
 
         private void btnModificarTipoDocumento_Click(object sender, EventArgs e)
@@ -69,17 +68,17 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
                 {
                     MessageBox.Show("Para modificar un tipo de documento debe ingresar el numero de ID a modificar");
                 }
-                else
-                {
+            }
+            else
+            {
                     ModificarTipoDocumento modificarTipoDocumento = new ModificarTipoDocumento();
                     modificarTipoDocumento.Id = Convert.ToInt32(txtNumero.Text);
                     modificarTipoDocumento.Show();
                     this.Hide();
-                }
-            } 
+            }
         }
 
-        private void radiobModificar()
+        private void radioButtonValidation()
         {
             txtNumero.Enabled = false;
             btnEliminarTipoDocumento.Enabled = false;
@@ -118,10 +117,11 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
                 {
                     MessageBox.Show("Para eliminar un tipo de documento debe ingresar el numero de ID a eliminar");
                 }
-                else
-                {
-                    DeleteTipoDocumento(Convert.ToInt32(txtNumero.Text));
-                }
+            }
+            else
+            {
+                DeleteTipoDocumento(Convert.ToInt32(txtNumero.Text));
+                txtNumero.Text = string.Empty;
             }
         }
 
