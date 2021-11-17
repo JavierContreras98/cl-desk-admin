@@ -34,11 +34,15 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dvgAdministrarEspecialidad = new System.Windows.Forms.DataGridView();
+            this.dgvEspecialidad = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgAdministrarEspecialidad)).BeginInit();
+            this.rbModificar = new System.Windows.Forms.RadioButton();
+            this.rbEliminar = new System.Windows.Forms.RadioButton();
+            this.lblInformacion = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEspecialidad)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMenuPrincipal
@@ -66,6 +70,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.btnCrear.TabIndex = 1;
             this.btnCrear.Text = "CREAR NUEVO";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnModificar
             // 
@@ -79,6 +84,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.btnModificar.TabIndex = 2;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -92,6 +98,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label1
             // 
@@ -105,14 +112,14 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.label1.Text = "CLINICA CARMELO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dvgAdministrarEspecialidad
+            // dgvEspecialidad
             // 
-            this.dvgAdministrarEspecialidad.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dvgAdministrarEspecialidad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgAdministrarEspecialidad.Location = new System.Drawing.Point(130, 197);
-            this.dvgAdministrarEspecialidad.Name = "dvgAdministrarEspecialidad";
-            this.dvgAdministrarEspecialidad.Size = new System.Drawing.Size(785, 291);
-            this.dvgAdministrarEspecialidad.TabIndex = 5;
+            this.dgvEspecialidad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvEspecialidad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEspecialidad.Location = new System.Drawing.Point(130, 197);
+            this.dgvEspecialidad.Name = "dgvEspecialidad";
+            this.dgvEspecialidad.Size = new System.Drawing.Size(785, 291);
+            this.dgvEspecialidad.TabIndex = 5;
             // 
             // label2
             // 
@@ -147,16 +154,65 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
+            // rbModificar
+            // 
+            this.rbModificar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rbModificar.AutoSize = true;
+            this.rbModificar.Location = new System.Drawing.Point(130, 500);
+            this.rbModificar.Name = "rbModificar";
+            this.rbModificar.Size = new System.Drawing.Size(127, 17);
+            this.rbModificar.TabIndex = 9;
+            this.rbModificar.TabStop = true;
+            this.rbModificar.Text = "Activar para modificar";
+            this.rbModificar.UseVisualStyleBackColor = true;
+            this.rbModificar.CheckedChanged += new System.EventHandler(this.AdministrarEspecialidades_Load);
+            // 
+            // rbEliminar
+            // 
+            this.rbEliminar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rbEliminar.AutoSize = true;
+            this.rbEliminar.Location = new System.Drawing.Point(796, 500);
+            this.rbEliminar.Name = "rbEliminar";
+            this.rbEliminar.Size = new System.Drawing.Size(120, 17);
+            this.rbEliminar.TabIndex = 10;
+            this.rbEliminar.TabStop = true;
+            this.rbEliminar.Text = "Activar para eliminar";
+            this.rbEliminar.UseVisualStyleBackColor = true;
+            this.rbEliminar.CheckedChanged += new System.EventHandler(this.AdministrarEspecialidades_Load);
+            // 
+            // lblInformacion
+            // 
+            this.lblInformacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblInformacion.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblInformacion.Location = new System.Drawing.Point(391, 525);
+            this.lblInformacion.Name = "lblInformacion";
+            this.lblInformacion.Size = new System.Drawing.Size(278, 15);
+            this.lblInformacion.TabIndex = 11;
+            this.lblInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNumero.Location = new System.Drawing.Point(394, 542);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(275, 20);
+            this.txtNumero.TabIndex = 12;
+            this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
+            // 
             // AdministrarEspecialidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.Controls.Add(this.txtNumero);
+            this.Controls.Add(this.lblInformacion);
+            this.Controls.Add(this.rbEliminar);
+            this.Controls.Add(this.rbModificar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dvgAdministrarEspecialidad);
+            this.Controls.Add(this.dgvEspecialidad);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
@@ -165,7 +221,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.Name = "AdministrarEspecialidades";
             this.Text = "Administrar Especialidades";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.dvgAdministrarEspecialidad)).EndInit();
+            this.Load += new System.EventHandler(this.AdministrarEspecialidades_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEspecialidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,9 +235,13 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dvgAdministrarEspecialidad;
+        private System.Windows.Forms.DataGridView dgvEspecialidad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.RadioButton rbModificar;
+        private System.Windows.Forms.RadioButton rbEliminar;
+        private System.Windows.Forms.Label lblInformacion;
+        private System.Windows.Forms.TextBox txtNumero;
     }
 }

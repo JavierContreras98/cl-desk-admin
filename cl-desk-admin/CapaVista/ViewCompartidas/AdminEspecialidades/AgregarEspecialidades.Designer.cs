@@ -105,6 +105,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.btnCrear.TabIndex = 12;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnCancelar
             // 
@@ -118,6 +119,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.btnCancelar.TabIndex = 11;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtDescripcion
             // 
@@ -127,7 +129,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(275, 74);
             this.txtDescripcion.TabIndex = 10;
-            this.txtDescripcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtNombre
             // 
@@ -136,7 +137,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(275, 20);
             this.txtNombre.TabIndex = 9;
-            this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 

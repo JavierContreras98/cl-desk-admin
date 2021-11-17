@@ -35,10 +35,10 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminTipoUsuario
                 Console.WriteLine("Algo salio mal");
             }
 
-            frmAdministrarTipoUsuario tipodocumento = new frmAdministrarTipoUsuario();
+            frmAdministrarTipoUsuario tipousuario = new frmAdministrarTipoUsuario();
             this.Close();
-            tipodocumento.Refresh();
-            tipodocumento.Show();
+            tipousuario.Refresh();
+            tipousuario.Show();
         }
 
         private async void AddTipousuario()
@@ -49,8 +49,8 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminTipoUsuario
 
             using (var client = new HttpClient())
             {
-                var serializedTipoDocumento = JsonConvert.SerializeObject(tipousuario);
-                var content = new StringContent(serializedTipoDocumento, Encoding.UTF8, "application/json");
+                var serializedTipoUsuario = JsonConvert.SerializeObject(tipousuario);
+                var content = new StringContent(serializedTipoUsuario, Encoding.UTF8, "application/json");
                 var result = await client.PostAsync(URI, content);
             }
         }
