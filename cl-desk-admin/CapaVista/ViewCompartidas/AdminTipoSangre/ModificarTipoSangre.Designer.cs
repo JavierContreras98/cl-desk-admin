@@ -77,6 +77,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
             this.btnModificar.TabIndex = 1;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnCancelar
             // 
@@ -159,6 +160,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
             this.Name = "frmModificarTipoSangre";
             this.Text = "Modificar Tipo de Sangre";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.ModificarTipoSangre_Load);
             this.pnlModificarTipoSangre.ResumeLayout(false);
             this.pnlModificarTipoSangre.PerformLayout();
             this.ResumeLayout(false);

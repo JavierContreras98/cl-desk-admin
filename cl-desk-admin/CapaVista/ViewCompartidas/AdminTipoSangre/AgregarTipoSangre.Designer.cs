@@ -97,6 +97,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
             this.btnCrear.TabIndex = 1;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // lblCrearTipoSangre
             // 
@@ -133,6 +134,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
             this.Name = "frmAgregarTipoSangre";
             this.Text = "Agregar Tipo de Sangre";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.AgregarTipoSangre_Load);
             this.pnlCrearTipoSangre.ResumeLayout(false);
             this.pnlCrearTipoSangre.PerformLayout();
             this.ResumeLayout(false);
