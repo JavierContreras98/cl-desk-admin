@@ -30,6 +30,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txHora = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,7 +38,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblInicio = new System.Windows.Forms.Label();
-            this.txHora = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +56,15 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 443);
             this.panel1.TabIndex = 17;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txHora
+            // 
+            this.txHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txHora.Location = new System.Drawing.Point(299, 178);
+            this.txHora.Name = "txHora";
+            this.txHora.Size = new System.Drawing.Size(275, 20);
+            this.txHora.TabIndex = 30;
             // 
             // lblID
             // 
@@ -145,14 +154,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             this.lblInicio.TabIndex = 16;
             this.lblInicio.Text = "CLINICA EL CARMELO";
             this.lblInicio.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txHora
-            // 
-            this.txHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txHora.Location = new System.Drawing.Point(299, 178);
-            this.txHora.Name = "txHora";
-            this.txHora.Size = new System.Drawing.Size(275, 20);
-            this.txHora.TabIndex = 30;
             // 
             // ModificarHorarioCita
             // 

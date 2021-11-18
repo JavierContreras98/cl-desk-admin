@@ -43,7 +43,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
         private async void Addhorario()
         {
             HorarioCitaModels horario = new HorarioCitaModels();
-            horario.Hora_cita = txHora.Text;
+            horario.Hora_cita = TimeSpan.Parse(txHora.Text);
            
 
             using (var client = new HttpClient())

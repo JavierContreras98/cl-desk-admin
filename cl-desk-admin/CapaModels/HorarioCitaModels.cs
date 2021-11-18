@@ -9,9 +9,9 @@ namespace cl_desk_admin.CapaModels
     class HorarioCitaModels
     {
         int id;
-        string hora_cita;
+        TimeSpan hora_cita;
 
         public int Id { get => id; set => id = value; }
-        public string Hora_cita { get => hora_cita; set => hora_cita = value; }
+        public TimeSpan Hora_cita { get => hora_cita; set => hora_cita = value; }
     }
 }

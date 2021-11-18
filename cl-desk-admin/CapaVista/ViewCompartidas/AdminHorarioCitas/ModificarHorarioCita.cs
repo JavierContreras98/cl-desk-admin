@@ -49,7 +49,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
         {
             HorarioCitaModels horariocita = new HorarioCitaModels();
             horariocita.Id = id;
-            horariocita.Hora_cita = txHora.Text;
+            horariocita.Hora_cita =TimeSpan.Parse(txHora.Text);
             
             using (var client = new HttpClient())
             {
@@ -94,6 +94,11 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
         }
 
         private void txthora_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
