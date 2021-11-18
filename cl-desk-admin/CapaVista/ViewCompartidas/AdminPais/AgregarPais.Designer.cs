@@ -32,11 +32,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
             this.lblBanner = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.btnCrear = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -73,26 +71,15 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.Info;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.txtDescripcion);
             this.panel1.Controls.Add(this.btnCrear);
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.txtNombre);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(152, 103);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 443);
             this.panel1.TabIndex = 3;
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescripcion.Location = new System.Drawing.Point(277, 219);
-            this.txtDescripcion.Multiline = true;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(275, 74);
-            this.txtDescripcion.TabIndex = 9;
             // 
             // btnCrear
             // 
@@ -106,6 +93,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
             this.btnCrear.TabIndex = 8;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnCancelar
             // 
@@ -123,28 +111,17 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
             // txtNombre
             // 
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(277, 138);
+            this.txtNombre.Location = new System.Drawing.Point(277, 217);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(275, 20);
             this.txtNombre.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(173, 219);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "DESCRIPCION:";
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 10F);
-            this.label2.Location = new System.Drawing.Point(173, 142);
+            this.label2.Location = new System.Drawing.Point(173, 221);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 16);
             this.label2.TabIndex = 3;
@@ -161,6 +138,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
             this.Name = "frmAgregarPais";
             this.Text = "Agregar Pais";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmAgregarPais_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -175,9 +153,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtDescripcion;
         #region Windows Form Designer generated code
 
         /// <summary>
