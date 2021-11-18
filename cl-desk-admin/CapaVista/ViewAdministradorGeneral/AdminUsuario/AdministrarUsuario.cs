@@ -36,11 +36,8 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
                     {
 
                         var UsuarioJsonString = await response.Content.ReadAsStringAsync();
-                        //dgvUsuario.DataSource = JsonConvert.DeserializeObject<UsuarioModels[]>(UsuarioJsonString).ToList();
-                        List<UsuarioModels> list =
-                              JsonConvert.DeserializeObject<List<UsuarioModels>>(UsuarioJsonString);
-                               dgvUsuario.DataSource = list;
-                               dgvUsuario.Refresh();
+                        DataTable listado = JsonConvert.DeserializeObject<DataTable>(UsuarioJsonString);
+                        dgvUsuario.DataSource = listado;
                     }
                     else
                     {
