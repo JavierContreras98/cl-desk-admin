@@ -36,10 +36,10 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
         {
             string respuesta = await GetHttp();
             List<Root> lst = JsonConvert.DeserializeObject<List<Root>>(respuesta);
-            cbxUsuario.DataSource = lst;
-            cbxUsuario.ValueMember = "ID";
-            cbxUsuario.DisplayMember = "NOMBRE";
-            cbxUsuario.Refresh();
+            //cbxUsuario.DataSource = lst;
+            //cbxUsuario.ValueMember = "ID";
+            //cbxUsuario.DisplayMember = "NOMBRE";
+            //cbxUsuario.Refresh();
 
             lblId.Text = Id.ToString();
             this.CargarDatos();
@@ -60,7 +60,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             usuario.Id = id;
             usuario.Nom_Usuario = txtNombre.Text;
             usuario.Pass = txtDescripcion.Text;
-            usuario.Id_Tipo = Convert.ToInt32(cbxUsuario.SelectedValue);
+            usuario.Id_Tipo = 1;
 
             using (var client = new HttpClient())
             {
