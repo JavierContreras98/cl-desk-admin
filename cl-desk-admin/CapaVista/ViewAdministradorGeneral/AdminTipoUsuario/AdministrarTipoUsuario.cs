@@ -110,7 +110,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminTipoUsuario
             {
                 if (rbEliminar.Enabled == true)
                 {
-                    MessageBox.Show("Para eliminar un tipo de documento debe ingresar el numero de ID a eliminar");
+                    MessageBox.Show("Para eliminar un tipo de usuario debe ingresar el numero de ID a eliminar");
                 }
             }
             else

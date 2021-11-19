@@ -23,7 +23,10 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
 
         private async void frmAdministrarUsuario_Load(object sender, EventArgs e)
         {
+            dgvUsuario.Refresh();
+            this.Refresh();
             GetAllUsuarios();
+            radioButtonValidation();
         }
 
         private async void GetAllUsuarios()
@@ -47,11 +50,95 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             }
         }
 
+        private void radioButtonValidation()
+        {
+            txtNumero.Enabled = false;
+            btnEliminarUsuario.Enabled = false;
+            btnModificarUsuario.Enabled = false;
+            if (rbModificar.Checked == true)
+            {
+                lblInformacion.Text = "Ingrese el ID del dato a modificar";
+                txtNumero.Enabled = true;
+                btnModificarUsuario.Enabled = true;
+                btnEliminarUsuario.Enabled = false;
+            }
+            if (rbEliminar.Checked == true)
+            {
+                lblInformacion.Text = "Ingrese el ID del dato a eliminar";
+                txtNumero.Enabled = true;
+                btnEliminarUsuario.Enabled = true;
+                btnModificarUsuario.Enabled = false;
+            }
+        }
+
+        private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
         private void btnCrearUsuario_Click(object sender, EventArgs e)
         {
             frmAgregarUsuario agregarUsuario = new frmAgregarUsuario();
             this.Hide();
             agregarUsuario.Show();
+        }
+
+        private void btnModificarUsuario_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtNumero.Text))
+            {
+                if (rbModificar.Enabled == true)
+                {
+                    MessageBox.Show("Para modificar un usuario debe ingresar el numero de ID a modificar");
+                }
+            }
+            else
+            {
+                ModificarUsuario modificarUsuario = new ModificarUsuario();
+                modificarUsuario.Id = Convert.ToInt32(txtNumero.Text);
+                modificarUsuario.Show();
+                this.Hide();
+            }
+        }
+
+        private void btnEliminarUsuario_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtNumero.Text))
+            {
+                if (rbEliminar.Enabled == true)
+                {
+                    MessageBox.Show("Para eliminar un usuario debe ingresar el numero de ID a eliminar");
+                }
+            }
+            else
+            {
+                DeleteUsuario(Convert.ToInt32(txtNumero.Text));
+                txtNumero.Text = string.Empty;
+            }
+        }
+
+        private async void DeleteUsuario(int id)
+        {
+            int UsuarioID = id;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(URI);
+                HttpResponseMessage responseMessage = await client.DeleteAsync(String.Format("{0}/{1}", URI, UsuarioID));
+                if (responseMessage.IsSuccessStatusCode)
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Error: No se puedo eliminar el usuario " + responseMessage.StatusCode);
+                }
+            }
+            GetAllUsuarios();
         }
     }
 }
