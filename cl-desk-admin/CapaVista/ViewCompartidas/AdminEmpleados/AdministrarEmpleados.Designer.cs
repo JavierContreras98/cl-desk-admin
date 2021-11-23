@@ -139,6 +139,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.btnModificarEmpleado.Text = "MODIFICAR";
             this.btnModificarEmpleado.UseMnemonic = false;
             this.btnModificarEmpleado.UseVisualStyleBackColor = false;
+            this.btnModificarEmpleado.Click += new System.EventHandler(this.btnModificarEmpleado_Click);
             // 
             // btnEliminarEmpleado
             // 
