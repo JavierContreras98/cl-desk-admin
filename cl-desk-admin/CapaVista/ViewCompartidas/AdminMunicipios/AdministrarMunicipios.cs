@@ -16,7 +16,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
     {
         string URI_MUNICIPIO = "https://localhost:44310/api/municipio";
 
-        //string URI_PAIS = "https://localhost:44310/api/departamento";
+        string URI_DEPARTAMENTO = "https://localhost:44310/api/departamento";
         public frmAdministrarMunicipios()
         {
             InitializeComponent();
@@ -90,7 +90,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             else
             {
                 frmModificarMunicipio modificarDepartamento = new frmModificarMunicipio();
-                //modificarDepartamento.Id = Convert.ToInt32(txtNumero.Text);
+                modificarDepartamento.Id = Convert.ToInt32(txtNumero.Text);
                 modificarDepartamento.Show();
                 this.Hide();
             }
