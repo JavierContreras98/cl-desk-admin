@@ -31,19 +31,19 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
         {
             this.lblClinicaCarmeloCrearInfoMedico = new System.Windows.Forms.Label();
             this.pnlCrearInfoMedicos = new System.Windows.Forms.Panel();
+            this.cbxEmpleado = new System.Windows.Forms.ComboBox();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.txtHoraSalida = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtHoraEntrada = new System.Windows.Forms.TextBox();
             this.lblEspecialidad = new System.Windows.Forms.Label();
             this.lblEmpleado = new System.Windows.Forms.Label();
             this.lblDiasdeLlegada = new System.Windows.Forms.Label();
-            this.txtEspecialidad = new System.Windows.Forms.TextBox();
             this.txtDiasdeLlegada = new System.Windows.Forms.TextBox();
             this.btnCancelarInfoMedico = new System.Windows.Forms.Button();
             this.btnCrearnfoMedico = new System.Windows.Forms.Button();
             this.lblCrearInfoMedico = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblDescripcion = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.cbxEmpleado = new System.Windows.Forms.ComboBox();
+            this.cbxEspecialidad = new System.Windows.Forms.ComboBox();
             this.pnlCrearInfoMedicos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,15 +63,15 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             // 
             this.pnlCrearInfoMedicos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlCrearInfoMedicos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlCrearInfoMedicos.Controls.Add(this.cbxEspecialidad);
             this.pnlCrearInfoMedicos.Controls.Add(this.cbxEmpleado);
             this.pnlCrearInfoMedicos.Controls.Add(this.lblDescripcion);
-            this.pnlCrearInfoMedicos.Controls.Add(this.txtDescripcion);
+            this.pnlCrearInfoMedicos.Controls.Add(this.txtHoraSalida);
             this.pnlCrearInfoMedicos.Controls.Add(this.label1);
-            this.pnlCrearInfoMedicos.Controls.Add(this.textBox1);
+            this.pnlCrearInfoMedicos.Controls.Add(this.txtHoraEntrada);
             this.pnlCrearInfoMedicos.Controls.Add(this.lblEspecialidad);
             this.pnlCrearInfoMedicos.Controls.Add(this.lblEmpleado);
             this.pnlCrearInfoMedicos.Controls.Add(this.lblDiasdeLlegada);
-            this.pnlCrearInfoMedicos.Controls.Add(this.txtEspecialidad);
             this.pnlCrearInfoMedicos.Controls.Add(this.txtDiasdeLlegada);
             this.pnlCrearInfoMedicos.Controls.Add(this.btnCancelarInfoMedico);
             this.pnlCrearInfoMedicos.Controls.Add(this.btnCrearnfoMedico);
@@ -80,6 +80,53 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.pnlCrearInfoMedicos.Name = "pnlCrearInfoMedicos";
             this.pnlCrearInfoMedicos.Size = new System.Drawing.Size(730, 443);
             this.pnlCrearInfoMedicos.TabIndex = 1;
+            // 
+            // cbxEmpleado
+            // 
+            this.cbxEmpleado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxEmpleado.FormattingEnabled = true;
+            this.cbxEmpleado.Location = new System.Drawing.Point(300, 265);
+            this.cbxEmpleado.Name = "cbxEmpleado";
+            this.cbxEmpleado.Size = new System.Drawing.Size(275, 21);
+            this.cbxEmpleado.TabIndex = 15;
+            // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Font = new System.Drawing.Font("Cambria", 10F);
+            this.lblDescripcion.Location = new System.Drawing.Point(155, 204);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(115, 16);
+            this.lblDescripcion.TabIndex = 14;
+            this.lblDescripcion.Text = "HORA DE SALIDA";
+            // 
+            // txtHoraSalida
+            // 
+            this.txtHoraSalida.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtHoraSalida.Location = new System.Drawing.Point(300, 202);
+            this.txtHoraSalida.Name = "txtHoraSalida";
+            this.txtHoraSalida.Size = new System.Drawing.Size(275, 20);
+            this.txtHoraSalida.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cambria", 10F);
+            this.label1.Location = new System.Drawing.Point(155, 145);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 16);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "HORA DE ENTREDA";
+            // 
+            // txtHoraEntrada
+            // 
+            this.txtHoraEntrada.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtHoraEntrada.Location = new System.Drawing.Point(300, 141);
+            this.txtHoraEntrada.Name = "txtHoraEntrada";
+            this.txtHoraEntrada.Size = new System.Drawing.Size(275, 20);
+            this.txtHoraEntrada.TabIndex = 11;
             // 
             // lblEspecialidad
             // 
@@ -114,14 +161,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.lblDiasdeLlegada.TabIndex = 7;
             this.lblDiasdeLlegada.Text = "DIAS DE LLEGADA :";
             // 
-            // txtEspecialidad
-            // 
-            this.txtEspecialidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEspecialidad.Location = new System.Drawing.Point(300, 328);
-            this.txtEspecialidad.Name = "txtEspecialidad";
-            this.txtEspecialidad.Size = new System.Drawing.Size(275, 20);
-            this.txtEspecialidad.TabIndex = 5;
-            // 
             // txtDiasdeLlegada
             // 
             this.txtDiasdeLlegada.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -142,6 +181,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.btnCancelarInfoMedico.TabIndex = 2;
             this.btnCancelarInfoMedico.Text = "CANCELAR";
             this.btnCancelarInfoMedico.UseVisualStyleBackColor = false;
+            this.btnCancelarInfoMedico.Click += new System.EventHandler(this.btnCancelarInfoMedico_Click);
             // 
             // btnCrearnfoMedico
             // 
@@ -155,6 +195,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.btnCrearnfoMedico.TabIndex = 1;
             this.btnCrearnfoMedico.Text = "CREAR";
             this.btnCrearnfoMedico.UseVisualStyleBackColor = false;
+            this.btnCrearnfoMedico.Click += new System.EventHandler(this.btnCrearnfoMedico_Click);
             // 
             // lblCrearInfoMedico
             // 
@@ -168,51 +209,14 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.lblCrearInfoMedico.Text = "CREAR INFORMACION DE MEDICO";
             this.lblCrearInfoMedico.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label1
+            // cbxEspecialidad
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 10F);
-            this.label1.Location = new System.Drawing.Point(155, 145);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 16);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "HORA DE ENTREDA";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(300, 141);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(275, 20);
-            this.textBox1.TabIndex = 11;
-            // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Font = new System.Drawing.Font("Cambria", 10F);
-            this.lblDescripcion.Location = new System.Drawing.Point(155, 204);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(115, 16);
-            this.lblDescripcion.TabIndex = 14;
-            this.lblDescripcion.Text = "HORA DE SALIDA";
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescripcion.Location = new System.Drawing.Point(300, 202);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(275, 20);
-            this.txtDescripcion.TabIndex = 13;
-            // 
-            // cbxEmpleado
-            // 
-            this.cbxEmpleado.FormattingEnabled = true;
-            this.cbxEmpleado.Location = new System.Drawing.Point(300, 265);
-            this.cbxEmpleado.Name = "cbxEmpleado";
-            this.cbxEmpleado.Size = new System.Drawing.Size(275, 21);
-            this.cbxEmpleado.TabIndex = 15;
+            this.cbxEspecialidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxEspecialidad.FormattingEnabled = true;
+            this.cbxEspecialidad.Location = new System.Drawing.Point(300, 325);
+            this.cbxEspecialidad.Name = "cbxEspecialidad";
+            this.cbxEspecialidad.Size = new System.Drawing.Size(275, 21);
+            this.cbxEspecialidad.TabIndex = 16;
             // 
             // AgregarInforMedicos
             // 
@@ -225,6 +229,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.Name = "AgregarInforMedicos";
             this.Text = "Crear Nueva Infomacion de Medico";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.AgregarInforMedicos_Load);
             this.pnlCrearInfoMedicos.ResumeLayout(false);
             this.pnlCrearInfoMedicos.PerformLayout();
             this.ResumeLayout(false);
@@ -241,12 +246,12 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
         private System.Windows.Forms.Label lblEspecialidad;
         private System.Windows.Forms.Label lblEmpleado;
         private System.Windows.Forms.Label lblDiasdeLlegada;
-        private System.Windows.Forms.TextBox txtEspecialidad;
         private System.Windows.Forms.TextBox txtDiasdeLlegada;
         private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtHoraSalida;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtHoraEntrada;
         private System.Windows.Forms.ComboBox cbxEmpleado;
+        private System.Windows.Forms.ComboBox cbxEspecialidad;
     }
 }
