@@ -41,8 +41,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        var DepartamentoJsonString = await response.Content.ReadAsStringAsync();
-                        DataTable listado = JsonConvert.DeserializeObject<DataTable>(DepartamentoJsonString);
+                        var PacienteJsonString = await response.Content.ReadAsStringAsync();
+                        DataTable listado = JsonConvert.DeserializeObject<DataTable>(PacienteJsonString);
                         dvgAdminPaciente.DataSource = listado;
                     }
                     else
@@ -90,7 +90,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             {
                 if (rbModificar.Enabled == true)
                 {
-                    MessageBox.Show("Para modificar un pais debe ingresar el numero de ID a modificar");
+                    MessageBox.Show("Para modificar un paciente debe ingresar el numero de ID a modificar");
                 }
             }
             else

@@ -60,7 +60,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapaModels\CitaModels.cs" />
     <Compile Include="CapaModels\DepartamentoModels.cs" />
+    <Compile Include="CapaModels\MedicoModels.cs" />
     <Compile Include="CapaModels\PacienteModels.cs" />
     <Compile Include="CapaModels\PaisModels.cs" />
     <Compile Include="CapaModels\ProfesionModels.cs" />
