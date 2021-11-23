@@ -27,8 +27,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         string URI_USUARIO = "https://localhost:44310/api/Usuario";
 
         int id;
-
         string data;
+
         public frmAdministrarEmpleados()
         {
             InitializeComponent();
@@ -37,86 +37,114 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         public int Id { get => id; set => id = value; }
         public string Data { get => data; set => data = value; }
 
-        private async void frmAdministrarEmpleados_Load(object sender, EventArgs e)
+        private void frmAdministrarEmpleados_Load(object sender, EventArgs e)
         {
-            lblId.Text = Id.ToString();
-            this.CargarDatos();
-
-            string respuesta = await GetHttp();
-            List<PaisModels> lst = JsonConvert.DeserializeObject<List<PaisModels>>(respuesta);
-            cbxPais.DataSource = lst;
-            cbxPais.ValueMember = "ID";
-            cbxPais.DisplayMember = "NOMBRE";
-            cbxPais.Refresh();
+            dgvEmpleado.Refresh();
+            this.Refresh();
+            GetAllEmpleado();
+            radioButtonValidation();
         }
 
-        private void btnModificarEmpleado_Click(object sender, EventArgs e)
+        private async void GetAllEmpleado()
         {
-            actualizarEmpleado(Id);
-            frmAdministrarEmpleados empleado = new frmAdministrarEmpleados();
-            this.Hide();
-            empleado.Show();
-            empleado.Refresh();
-        }
-
-        private async void actualizarEmpleado(int id)
-        {
-            DepartamentoModels departamento = new DepartamentoModels();
-            departamento.Id = id;
-            departamento.Nombre = txtNombre.Text;
-            departamento.Id_pais = Convert.ToInt32(cbxPais.SelectedValue);
-
             using (var client = new HttpClient())
             {
-                HttpResponseMessage responseMessage = await client.PutAsJsonAsync(URI_EMPLEADO + "/" + departamento.Id, departamento);
+                using (var response = await client.GetAsync(URI_EMPLEADO))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var EmpleadoJsonString = await response.Content.ReadAsStringAsync();
+                        DataTable listado = JsonConvert.DeserializeObject<DataTable>(EmpleadoJsonString);
+                        dgvEmpleado.DataSource = listado;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No fue posible obtener los departamentos " + response.StatusCode);
+                    }
+                }
+            }
+        }
+
+        private void radioButtonValidation()
+        {
+            txtNumero.Enabled = false;
+            btnEliminarEmpleado.Enabled = false;
+            btnModificarEmpleado.Enabled = false;
+
+            if (rbModificar.Checked == true)
+            {
+                lblInformacion.Text = "Ingrese el ID del dato a modificar";
+                txtNumero.Enabled = true;
+                btnModificarEmpleado.Enabled = true;
+                btnEliminarEmpleado.Enabled = false;
+            }
+            if (rbEliminar.Checked == true)
+            {
+                lblInformacion.Text = "Ingrese el ID del dato a eliminar";
+                txtNumero.Enabled = true;
+                btnEliminarEmpleado.Enabled = true;
+                btnModificarEmpleado.Enabled = false;
+            }
+        }
+
+        private void btnCrearEmpleado_Click(object sender, EventArgs e)
+        {
+            frmAgregarEmpleado agregarempleado = new frmAgregarEmpleado();
+            this.Hide();
+            agregarempleado.Show();
+        }
+
+        private void btnEliminarEmpleado_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtNumero.Text))
+            {
+                if (rbEliminar.Enabled == true)
+                {
+                    MessageBox.Show("Para eliminar un departamento debe ingresar el numero de ID a eliminar");
+                }
+            }
+            else
+            {
+                DeleteEmpleado(Convert.ToInt32(txtNumero.Text));
+                txtNumero.Text = string.Empty;
+            }
+        }
+
+        private async void DeleteEmpleado(int id)
+        {
+            int EmpleadoID = id;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(URI_EMPLEADO);
+                HttpResponseMessage responseMessage = await client.DeleteAsync(String.Format("{0}/{1}", URI_EMPLEADO, EmpleadoID));
                 if (responseMessage.IsSuccessStatusCode)
                 {
 
                 }
                 else
                 {
-                    MessageBox.Show("Error:Al intentar actualizar el departamento " + responseMessage.StatusCode);
+                    MessageBox.Show("Error: No se puedo eliminar el departamento " + responseMessage.StatusCode);
                 }
             }
+            GetAllEmpleado();
         }
 
-        private async Task<string> Get(int id)
+        private void btnModificarEmpleado_Click(object sender, EventArgs e)
         {
-            using (HttpClient client = new HttpClient())
+            if (string.IsNullOrEmpty(txtNumero.Text))
             {
-                using (HttpResponseMessage res = await client.GetAsync(URI_EMPLEADO + "/" + id))
+                if (rbModificar.Enabled == true)
                 {
-                    using (HttpContent content = res.Content)
-                    {
-                        Data = await content.ReadAsStringAsync();
-                        if (Data != null)
-                        {
-                            return Data;
-
-                        }
-                    }
+                    MessageBox.Show("Para modificar un pais debe ingresar el numero de ID a modificar");
                 }
             }
-            return string.Empty;
+            else
+            {
+                frmModificarEmpleado modificarDepartamento = new frmModificarEmpleado();
+                modificarDepartamento.Id = Convert.ToInt32(txtNumero.Text);
+                modificarDepartamento.Show();
+                this.Hide();
+            }
         }
-
-        private async void CargarDatos()
-        {
-            var response = await Get(Id);
-            var res = JsonConvert.DeserializeObject<dynamic>(response);
-           // txtNombre.Text = res[0].DEPARTAMENTO;
-           // cbxPais.Text = res[0].PAIS;
-        }
-
-        private async Task<string> GetHttp()
-        {
-            WebRequest oRequest = WebRequest.Create(URI_TIPO_DOCUMENTO);
-            //WebRequest oRequest = WebRequest.Create(URI_PROFESION);
-           // WebRequest oRequest = WebRequest.Create(URI_TIPO_DOCUMENTO);
-            WebResponse oResponse = oRequest.GetResponse();
-            StreamReader sr = new StreamReader(oResponse.GetResponseStream());
-            return await sr.ReadToEndAsync();
-        }
-
     }
 }

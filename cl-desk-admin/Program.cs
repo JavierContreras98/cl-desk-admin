@@ -16,7 +16,7 @@ namespace cl_desk_admin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run();
+            Application.Run(new CapaVista.ViewCompartidas.AdminEmpleados.frmAdministrarEmpleados());
         }
     }
 }
