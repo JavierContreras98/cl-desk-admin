@@ -60,9 +60,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapaModels\DepartamentoModels.cs" />
+    <Compile Include="CapaModels\PaisModels.cs" />
+    <Compile Include="CapaModels\ProfesionModels.cs" />
     <Compile Include="CapaModels\EspecialidadModels.cs" />
     <Compile Include="CapaModels\MunicipioModels.cs" />
-    <Compile Include="CapaModels\ProfesionModels.cs" />
     <Compile Include="CapaModels\HorarioCitaModels.cs" />
     <Compile Include="CapaModels\Tipo_DocumentoModels.cs" />
     <Compile Include="CapaModels\Tipo_UsuarioModels.cs" />
