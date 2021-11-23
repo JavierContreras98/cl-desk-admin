@@ -134,14 +134,14 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             txtPrimerNombre.Text = res[0].EMPLEADO;
             txtSegundoNombre.Text = res[0].EMPLEADO;
             txtPrimerApellido.Text = res[0].EMPLEADO;
-            SegundoApellido.Text = res[0].EMPLEADO;
-            dtpFechaNacimiento.Value = res[0].EMPLEADO;
+          //  SegundoApellido.Text = res[0].EMPLEADO;
+          //  dtpFechaNacimiento.Value = res[0].EMPLEADO;
             txtCorreo.Text = res[0].EMPLEADO;
             txtNombredocumento.Text = res[0].EMPLEADO;
 
-            cbxTipodocumentos.Text = res[0].TIPO_DOCMENTOS;
-            cbxProfesion.Text = res[0].PROFESION;
-            cbxUsuario.Text = res[0].USUARIO;
+          //  cbxTipodocumentos.Text = res[0].TIPO_DOCMENTOS;
+          //  cbxProfesion.Text = res[0].PROFESION;
+          //  cbxUsuario.Text = res[0].USUARIO;
 
         }
 
@@ -169,5 +169,12 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             return await sr3.ReadToEndAsync();
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            frmAdministrarEmpleados regresar = new frmAdministrarEmpleados();
+            this.Hide();
+            regresar.ShowDialog();
+            this.Close();
+        }
     }
 }

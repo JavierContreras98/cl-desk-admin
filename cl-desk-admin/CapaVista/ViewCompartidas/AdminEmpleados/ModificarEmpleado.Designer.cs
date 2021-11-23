@@ -31,6 +31,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbxUsuario = new System.Windows.Forms.ComboBox();
             this.lbID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTipodocumento = new System.Windows.Forms.Label();
@@ -58,8 +60,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.txtPrimerNombre = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbxUsuario = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,6 +114,28 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 443);
             this.panel1.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(147, 841);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 15);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "USUARIO";
+            // 
+            // cbxUsuario
+            // 
+            this.cbxUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxUsuario.FormattingEnabled = true;
+            this.cbxUsuario.Location = new System.Drawing.Point(292, 835);
+            this.cbxUsuario.Name = "cbxUsuario";
+            this.cbxUsuario.Size = new System.Drawing.Size(275, 21);
+            this.cbxUsuario.TabIndex = 43;
             // 
             // lbID
             // 
@@ -371,6 +393,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.btnCancelar.TabIndex = 13;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtExpediente
             // 
@@ -411,28 +434,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.label2.TabIndex = 0;
             this.label2.Text = "MODIFICAR EMPLEADO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(147, 841);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 15);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "USUARIO";
-            // 
-            // cbxUsuario
-            // 
-            this.cbxUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxUsuario.FormattingEnabled = true;
-            this.cbxUsuario.Location = new System.Drawing.Point(292, 835);
-            this.cbxUsuario.Name = "cbxUsuario";
-            this.cbxUsuario.Size = new System.Drawing.Size(275, 21);
-            this.cbxUsuario.TabIndex = 43;
             // 
             // frmModificarEmpleado
             // 

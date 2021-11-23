@@ -93,22 +93,22 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         {
             try
             {
-                this.AddDepartamento();
+                this.AddEmpleado();
             }
             catch (Exception)
             {
                 Console.WriteLine("Algo salio mal");
             }
-            frmAdministrarEmpleados departamentos = new frmAdministrarEmpleados();
+            frmAdministrarEmpleados empleado = new frmAdministrarEmpleados();
             this.Close();
-            departamentos.Refresh();
-            departamentos.Show();
+            empleado.Refresh();
+            empleado.Show();
         }
 
-        private async void AddDepartamento()
+        private async void AddEmpleado()
         {
             EmpleadoModels empleado = new EmpleadoModels();
-            empleado.Expediente = txtExpediente.Text;
+           
             empleado.Primer_nom = txtPrimerNombre.Text;
             empleado.Segundo_nom = txtSegundoNombre.Text;
             empleado.Primer_ape = txtPrimerApellido.Text;
@@ -124,8 +124,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
 
             using (var client = new HttpClient())
             {
-                var serializedPais = JsonConvert.SerializeObject(empleado);
-                var content = new StringContent(serializedPais, Encoding.UTF8, "application/json");
+                var serializedempleado = JsonConvert.SerializeObject(empleado);
+                var content = new StringContent(serializedempleado, Encoding.UTF8, "application/json");
                 var result = await client.PostAsync(URI_EMPLEADO, content);
             }
         }

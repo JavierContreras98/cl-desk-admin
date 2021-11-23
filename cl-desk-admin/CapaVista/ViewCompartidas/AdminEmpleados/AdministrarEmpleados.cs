@@ -17,7 +17,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
 {
     public partial class frmAdministrarEmpleados : Form
     {
-
         string URI_EMPLEADO = "https://localhost:44310/api/Empleado";
 
         string URI_TIPO_DOCUMENTO = "https://localhost:44310/api/tipo_documento";
@@ -29,13 +28,13 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         int id;
         string data;
 
+        public int Id { get => id; set => id = value; }
+        public string Data { get => data; set => data = value; }
+
         public frmAdministrarEmpleados()
         {
             InitializeComponent();
         }
-
-        public int Id { get => id; set => id = value; }
-        public string Data { get => data; set => data = value; }
 
         private void frmAdministrarEmpleados_Load(object sender, EventArgs e)
         {
@@ -87,7 +86,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             }
         }
 
-        private void btnCrearEmpleado_Click(object sender, EventArgs e)
+        private void btnCrearTipoUsuario_Click(object sender, EventArgs e)
         {
             frmAgregarEmpleado agregarempleado = new frmAgregarEmpleado();
             this.Hide();
@@ -100,7 +99,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             {
                 if (rbEliminar.Enabled == true)
                 {
-                    MessageBox.Show("Para eliminar un departamento debe ingresar el numero de ID a eliminar");
+                    MessageBox.Show("Para eliminar un Empleado debe ingresar el numero de ID a eliminar");
                 }
             }
             else
@@ -109,7 +108,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
                 txtNumero.Text = string.Empty;
             }
         }
-
         private async void DeleteEmpleado(int id)
         {
             int EmpleadoID = id;
@@ -123,7 +121,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
                 }
                 else
                 {
-                    MessageBox.Show("Error: No se puedo eliminar el departamento " + responseMessage.StatusCode);
+                    MessageBox.Show("Error: No se puedo eliminar el Empleado " + responseMessage.StatusCode);
                 }
             }
             GetAllEmpleado();
@@ -140,9 +138,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             }
             else
             {
-                frmModificarEmpleado modificarDepartamento = new frmModificarEmpleado();
-               // modificarDepartamento.Id = Convert.ToInt32(txtNumero.Text);
-                modificarDepartamento.Show();
+                frmModificarEmpleado modificar = new frmModificarEmpleado();
+                modificar.Id = Convert.ToInt32(txtNumero.Text);
+                modificar.Show();
                 this.Hide();
             }
         }

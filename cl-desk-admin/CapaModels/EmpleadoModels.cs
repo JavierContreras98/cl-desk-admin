@@ -9,12 +9,12 @@ namespace cl_desk_admin.CapaModels
     class EmpleadoModels
     {
         int id, id_tipo_doc, id_profesion, id_usuario;
-        string primer_nom, segundo_nom, primer_ape, segundo_ape, correo, telefono, num_documento,expediente;
+        string primer_nom, segundo_nom, primer_ape, segundo_ape, correo, telefono, num_documento ;
         DateTime fecha_nacimiento;
 
         public int Id { get => id; set => id = value; }
 
-        public string Expediente { get => expediente; set => expediente = value; }
+         
 
         public string Primer_nom { get => primer_nom; set => primer_nom = value; }
         public string Segundo_nom { get => segundo_nom; set => segundo_nom = value; }

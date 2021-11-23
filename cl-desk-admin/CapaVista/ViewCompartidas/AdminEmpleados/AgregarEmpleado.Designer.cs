@@ -31,6 +31,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbxUsuario = new System.Windows.Forms.ComboBox();
             this.txtTipodocumento = new System.Windows.Forms.Label();
             this.cbxTipodocumentos = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -45,19 +47,15 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.txtSegundoNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cbxProfesion = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnCrear = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.txtExpediente = new System.Windows.Forms.TextBox();
             this.txtPrimerNombre = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbxUsuario = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,14 +93,12 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.panel1.Controls.Add(this.txtSegundoNombre);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.cbxProfesion);
-            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.btnCrear);
             this.panel1.Controls.Add(this.btnCancelar);
-            this.panel1.Controls.Add(this.txtExpediente);
             this.panel1.Controls.Add(this.txtPrimerNombre);
             this.panel1.Controls.Add(this.txtCorreo);
             this.panel1.Controls.Add(this.label2);
@@ -110,6 +106,28 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 443);
             this.panel1.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(145, 798);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 15);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "USUARIO";
+            // 
+            // cbxUsuario
+            // 
+            this.cbxUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxUsuario.FormattingEnabled = true;
+            this.cbxUsuario.Location = new System.Drawing.Point(290, 792);
+            this.cbxUsuario.Name = "cbxUsuario";
+            this.cbxUsuario.Size = new System.Drawing.Size(275, 21);
+            this.cbxUsuario.TabIndex = 41;
             // 
             // txtTipodocumento
             // 
@@ -257,18 +275,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.cbxProfesion.Size = new System.Drawing.Size(275, 21);
             this.cbxProfesion.TabIndex = 25;
             // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(145, 78);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 15);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "EXPEDIENTE :";
-            // 
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -345,15 +351,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // txtExpediente
-            // 
-            this.txtExpediente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtExpediente.Location = new System.Drawing.Point(292, 73);
-            this.txtExpediente.Name = "txtExpediente";
-            this.txtExpediente.Size = new System.Drawing.Size(275, 20);
-            this.txtExpediente.TabIndex = 11;
-            // 
             // txtPrimerNombre
             // 
             this.txtPrimerNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -385,28 +382,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.label2.Text = "CREAR NUEVO EMPLEADO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // cbxUsuario
-            // 
-            this.cbxUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxUsuario.FormattingEnabled = true;
-            this.cbxUsuario.Location = new System.Drawing.Point(290, 792);
-            this.cbxUsuario.Name = "cbxUsuario";
-            this.cbxUsuario.Size = new System.Drawing.Size(275, 21);
-            this.cbxUsuario.TabIndex = 41;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(145, 798);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 15);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "USUARIO";
-            // 
             // frmAgregarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -430,12 +405,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtExpediente;
         private System.Windows.Forms.TextBox txtPrimerNombre;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
