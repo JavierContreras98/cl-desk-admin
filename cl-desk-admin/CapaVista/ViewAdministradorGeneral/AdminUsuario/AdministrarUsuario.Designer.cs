@@ -38,6 +38,10 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.lblBusquedaAvanzada = new System.Windows.Forms.Label();
             this.btnMenuPrincipal = new System.Windows.Forms.Button();
             this.lblBanner = new System.Windows.Forms.Label();
+            this.rbModificar = new System.Windows.Forms.RadioButton();
+            this.rbEliminar = new System.Windows.Forms.RadioButton();
+            this.lblInformacion = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +58,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.btnEliminarUsuario.Text = "ELIMINAR";
             this.btnEliminarUsuario.UseMnemonic = false;
             this.btnEliminarUsuario.UseVisualStyleBackColor = false;
+            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
             // btnModificarUsuario
             // 
@@ -68,6 +73,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.btnModificarUsuario.Text = "MODIFICAR";
             this.btnModificarUsuario.UseMnemonic = false;
             this.btnModificarUsuario.UseVisualStyleBackColor = false;
+            this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click);
             // 
             // btnCrearUsuario
             // 
@@ -81,6 +87,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.btnCrearUsuario.TabIndex = 18;
             this.btnCrearUsuario.Text = "CREAR NUEVO";
             this.btnCrearUsuario.UseVisualStyleBackColor = false;
+            this.btnCrearUsuario.Click += new System.EventHandler(this.btnCrearUsuario_Click);
             // 
             // dgvUsuario
             // 
@@ -156,12 +163,61 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.lblBanner.Text = "CLINICA EL CARMELO";
             this.lblBanner.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // rbModificar
+            // 
+            this.rbModificar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rbModificar.AutoSize = true;
+            this.rbModificar.Location = new System.Drawing.Point(129, 515);
+            this.rbModificar.Name = "rbModificar";
+            this.rbModificar.Size = new System.Drawing.Size(127, 17);
+            this.rbModificar.TabIndex = 22;
+            this.rbModificar.TabStop = true;
+            this.rbModificar.Text = "Activar para modificar";
+            this.rbModificar.UseVisualStyleBackColor = true;
+            this.rbModificar.CheckedChanged += new System.EventHandler(this.frmAdministrarUsuario_Load);
+            // 
+            // rbEliminar
+            // 
+            this.rbEliminar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rbEliminar.AutoSize = true;
+            this.rbEliminar.Location = new System.Drawing.Point(795, 515);
+            this.rbEliminar.Name = "rbEliminar";
+            this.rbEliminar.Size = new System.Drawing.Size(120, 17);
+            this.rbEliminar.TabIndex = 23;
+            this.rbEliminar.TabStop = true;
+            this.rbEliminar.Text = "Activar para eliminar";
+            this.rbEliminar.UseVisualStyleBackColor = true;
+            this.rbEliminar.CheckedChanged += new System.EventHandler(this.frmAdministrarUsuario_Load);
+            // 
+            // lblInformacion
+            // 
+            this.lblInformacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblInformacion.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblInformacion.Location = new System.Drawing.Point(391, 525);
+            this.lblInformacion.Name = "lblInformacion";
+            this.lblInformacion.Size = new System.Drawing.Size(278, 15);
+            this.lblInformacion.TabIndex = 24;
+            this.lblInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNumero.Location = new System.Drawing.Point(394, 542);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(275, 20);
+            this.txtNumero.TabIndex = 25;
+            this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
+            // 
             // frmAdministrarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.Controls.Add(this.txtNumero);
+            this.Controls.Add(this.lblInformacion);
+            this.Controls.Add(this.rbEliminar);
+            this.Controls.Add(this.rbModificar);
             this.Controls.Add(this.btnEliminarUsuario);
             this.Controls.Add(this.btnModificarUsuario);
             this.Controls.Add(this.btnCrearUsuario);
@@ -174,6 +230,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.Name = "frmAdministrarUsuario";
             this.Text = "Administrar Usuario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmAdministrarUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -191,5 +248,9 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
         private System.Windows.Forms.Label lblBusquedaAvanzada;
         private System.Windows.Forms.Button btnMenuPrincipal;
         private System.Windows.Forms.Label lblBanner;
+        private System.Windows.Forms.RadioButton rbModificar;
+        private System.Windows.Forms.RadioButton rbEliminar;
+        private System.Windows.Forms.Label lblInformacion;
+        private System.Windows.Forms.TextBox txtNumero;
     }
 }

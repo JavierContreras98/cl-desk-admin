@@ -57,6 +57,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.btnModificar.TabIndex = 8;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // panel1
             // 
@@ -142,6 +143,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtNombre
             // 
@@ -211,6 +213,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.Name = "ModificarUsuario";
             this.Text = "Modificar Usuario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.ModificarUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

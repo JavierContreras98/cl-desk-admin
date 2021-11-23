@@ -90,6 +90,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.btnCrear.TabIndex = 8;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnCancelar
             // 

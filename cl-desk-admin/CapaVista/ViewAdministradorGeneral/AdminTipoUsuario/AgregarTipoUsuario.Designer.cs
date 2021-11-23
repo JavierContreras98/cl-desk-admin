@@ -106,6 +106,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminTipoUsuario
             this.btnCrear.TabIndex = 8;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnCancelar
             // 
@@ -119,6 +120,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminTipoUsuario
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtNombre
             // 
