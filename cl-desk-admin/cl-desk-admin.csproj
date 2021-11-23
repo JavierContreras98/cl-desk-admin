@@ -67,6 +67,7 @@
     <Compile Include="CapaModels\Tipo_DocumentoModels.cs" />
     <Compile Include="CapaModels\Tipo_UsuarioModels.cs" />
     <Compile Include="CapaModels\UsuarioModels.cs" />
+    <Compile Include="CapaModels\Tipo_SangreModels.cs" />
     <Compile Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.cs">
       <SubType>Form</SubType>
     </Compile>
