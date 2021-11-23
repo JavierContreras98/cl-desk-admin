@@ -16,5 +16,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         {
             InitializeComponent();
         }
+
+        private void frmAdministrarEmpleados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
