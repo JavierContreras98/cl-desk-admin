@@ -155,6 +155,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.lblBanner.TabIndex = 6;
             this.lblBanner.Text = "CLINICA EL CARMELO";
             this.lblBanner.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblBanner.Click += new System.EventHandler(this.lblBanner_Click);
             // 
             // frmAgregarDepartamento
             // 

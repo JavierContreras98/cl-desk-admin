@@ -77,5 +77,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             }
         }
 
+        private void lblBanner_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

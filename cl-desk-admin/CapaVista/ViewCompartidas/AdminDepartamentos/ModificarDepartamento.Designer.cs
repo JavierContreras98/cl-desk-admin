@@ -196,6 +196,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.Name = "frmModificarDepartamento";
             this.Text = "Modificar Departamento";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmModificarDepartamento_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
