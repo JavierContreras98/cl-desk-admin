@@ -141,7 +141,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             else
             {
                 frmModificarEmpleado modificarDepartamento = new frmModificarEmpleado();
-                modificarDepartamento.Id = Convert.ToInt32(txtNumero.Text);
+               // modificarDepartamento.Id = Convert.ToInt32(txtNumero.Text);
                 modificarDepartamento.Show();
                 this.Hide();
             }

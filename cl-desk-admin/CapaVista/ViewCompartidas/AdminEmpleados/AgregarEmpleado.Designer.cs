@@ -56,6 +56,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.txtPrimerNombre = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.cbxUsuario = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,6 +79,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.panel1.AutoScroll = true;
             this.panel1.AutoScrollMargin = new System.Drawing.Size(0, 100);
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.cbxUsuario);
             this.panel1.Controls.Add(this.txtTipodocumento);
             this.panel1.Controls.Add(this.cbxTipodocumentos);
             this.panel1.Controls.Add(this.label14);
@@ -326,6 +330,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.btnCrear.TabIndex = 14;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnCancelar
             // 
@@ -338,6 +343,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.btnCancelar.TabIndex = 13;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtExpediente
             // 
@@ -379,6 +385,28 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.label2.Text = "CREAR NUEVO EMPLEADO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // cbxUsuario
+            // 
+            this.cbxUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxUsuario.FormattingEnabled = true;
+            this.cbxUsuario.Location = new System.Drawing.Point(290, 792);
+            this.cbxUsuario.Name = "cbxUsuario";
+            this.cbxUsuario.Size = new System.Drawing.Size(275, 21);
+            this.cbxUsuario.TabIndex = 41;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(145, 798);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 15);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "USUARIO";
+            // 
             // frmAgregarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -390,6 +418,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.Name = "frmAgregarEmpleado";
             this.Text = "Crear Empleado";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmAgregarEmpleado_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -425,5 +454,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label txtTipodocumento;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbxUsuario;
     }
 }
