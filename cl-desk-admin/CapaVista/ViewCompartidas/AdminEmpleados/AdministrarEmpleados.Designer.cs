@@ -31,9 +31,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         {
             this.lblBanner = new System.Windows.Forms.Label();
             this.btnMenuPrincipal = new System.Windows.Forms.Button();
-            this.lblBusquedaAvanzada = new System.Windows.Forms.Label();
-            this.txtBuscarTipoUsuario = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvEmpleado = new System.Windows.Forms.DataGridView();
             this.btnCrearTipoUsuario = new System.Windows.Forms.Button();
             this.btnModificarEmpleado = new System.Windows.Forms.Button();
@@ -72,40 +69,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.btnMenuPrincipal.TabIndex = 1;
             this.btnMenuPrincipal.Text = "MENU PRINCIPAL";
             this.btnMenuPrincipal.UseVisualStyleBackColor = false;
-            // 
-            // lblBusquedaAvanzada
-            // 
-            this.lblBusquedaAvanzada.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblBusquedaAvanzada.AutoSize = true;
-            this.lblBusquedaAvanzada.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBusquedaAvanzada.Location = new System.Drawing.Point(242, 110);
-            this.lblBusquedaAvanzada.Name = "lblBusquedaAvanzada";
-            this.lblBusquedaAvanzada.Size = new System.Drawing.Size(153, 16);
-            this.lblBusquedaAvanzada.TabIndex = 4;
-            this.lblBusquedaAvanzada.Text = "BUSQUEDA AVANZADA:";
-            // 
-            // txtBuscarTipoUsuario
-            // 
-            this.txtBuscarTipoUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscarTipoUsuario.Location = new System.Drawing.Point(398, 108);
-            this.txtBuscarTipoUsuario.Name = "txtBuscarTipoUsuario";
-            this.txtBuscarTipoUsuario.Size = new System.Drawing.Size(275, 20);
-            this.txtBuscarTipoUsuario.TabIndex = 5;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(202)))), ((int)(((byte)(240)))));
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscar.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscar.Location = new System.Drawing.Point(679, 105);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(119, 26);
-            this.btnBuscar.TabIndex = 6;
-            this.btnBuscar.Text = "BUSCAR";
-            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // dgvEmpleado
             // 
@@ -221,9 +184,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.Controls.Add(this.btnModificarEmpleado);
             this.Controls.Add(this.btnCrearTipoUsuario);
             this.Controls.Add(this.dgvEmpleado);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.txtBuscarTipoUsuario);
-            this.Controls.Add(this.lblBusquedaAvanzada);
             this.Controls.Add(this.btnMenuPrincipal);
             this.Controls.Add(this.lblBanner);
             this.DoubleBuffered = true;
@@ -242,9 +202,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
 
         private System.Windows.Forms.Label lblBanner;
         private System.Windows.Forms.Button btnMenuPrincipal;
-        private System.Windows.Forms.Label lblBusquedaAvanzada;
-        private System.Windows.Forms.TextBox txtBuscarTipoUsuario;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dgvEmpleado;
         private System.Windows.Forms.Button btnCrearTipoUsuario;
         private System.Windows.Forms.Button btnModificarEmpleado;

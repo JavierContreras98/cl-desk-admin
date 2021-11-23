@@ -58,7 +58,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
                     }
                     else
                     {
-                        MessageBox.Show("No fue posible obtener los departamentos " + response.StatusCode);
+                        MessageBox.Show("No fue posible obtener los Empleados " + response.StatusCode);
                     }
                 }
             }

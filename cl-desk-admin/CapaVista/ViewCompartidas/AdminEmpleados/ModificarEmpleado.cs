@@ -76,7 +76,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         private async void actualizarEmpleado(int id)
         {
             EmpleadoModels empleado = new EmpleadoModels();
-            empleado.Expediente = txtExpediente.Text;
+            empleado.Id = id;
             empleado.Primer_nom = txtPrimerNombre.Text;
             empleado.Segundo_nom = txtSegundoNombre.Text;
             empleado.Primer_ape = txtPrimerApellido.Text;
@@ -124,24 +124,24 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             return string.Empty;
         }
 
-        //me falta llenar
+       
         private async void CargarDatos()
         {
             var response = await Get(Id);
             var res = JsonConvert.DeserializeObject<dynamic>(response);
 
-            txtExpediente.Text = res[0].EMPLEADO;
-            txtPrimerNombre.Text = res[0].EMPLEADO;
-            txtSegundoNombre.Text = res[0].EMPLEADO;
-            txtPrimerApellido.Text = res[0].EMPLEADO;
-          //  SegundoApellido.Text = res[0].EMPLEADO;
-          //  dtpFechaNacimiento.Value = res[0].EMPLEADO;
-            txtCorreo.Text = res[0].EMPLEADO;
-            txtNombredocumento.Text = res[0].EMPLEADO;
+            txtPrimerNombre.Text = res[0].PRIMER_NOM;
+            txtSegundoNombre.Text = res[0].SEGUNDO_NOM;
+            txtPrimerApellido.Text = res[0].PRIMER_APE;
+            SegundoApellido.Text = res[0].SEGUNDO_APE;
+            dtpFechaNacimiento.Value = res[0].FECHA_NACIMIENTO;
+            txtCorreo.Text = res[0].CORREO;
+            txtTelefono.Text = res[0].TELEFONO;
+            txtNombredocumento.Text = res[0].NUM_DOCUMENTO;
 
-          //  cbxTipodocumentos.Text = res[0].TIPO_DOCMENTOS;
-          //  cbxProfesion.Text = res[0].PROFESION;
-          //  cbxUsuario.Text = res[0].USUARIO;
+           cbxTipodocumentos.Text = res[0].TIPO_DOCUMENTO;
+            cbxProfesion.Text = res[0].PROFESION;
+            cbxUsuario.Text = res[0].NOM_USUARIO;
 
         }
 

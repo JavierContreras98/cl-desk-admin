@@ -14,8 +14,6 @@ namespace cl_desk_admin.CapaModels
 
         public int Id { get => id; set => id = value; }
 
-         
-
         public string Primer_nom { get => primer_nom; set => primer_nom = value; }
         public string Segundo_nom { get => segundo_nom; set => segundo_nom = value; }
         public string Primer_ape { get => primer_ape; set => primer_ape = value; }
