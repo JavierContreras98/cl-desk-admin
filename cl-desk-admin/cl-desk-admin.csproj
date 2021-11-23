@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapaModels\DepartamentoModels.cs" />
     <Compile Include="CapaModels\PaisModels.cs" />
     <Compile Include="CapaModels\Tipo_DocumentoModels.cs" />
     <Compile Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.cs">

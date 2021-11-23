@@ -46,10 +46,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SlateGray;
-            this.label1.Location = new System.Drawing.Point(2, 13);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(724, 37);
+            this.label1.Size = new System.Drawing.Size(1086, 57);
             this.label1.TabIndex = 2;
             this.label1.Text = "CREAR DEPARTAMENTO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -66,9 +65,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.panel1.Controls.Add(this.txtNombre);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(152, 132);
+            this.panel1.Location = new System.Drawing.Point(228, 203);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(730, 443);
+            this.panel1.Size = new System.Drawing.Size(1094, 680);
             this.panel1.TabIndex = 7;
             // 
             // label4
@@ -76,9 +76,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 10F);
-            this.label4.Location = new System.Drawing.Point(173, 222);
+            this.label4.Location = new System.Drawing.Point(260, 342);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 16);
+            this.label4.Size = new System.Drawing.Size(76, 23);
             this.label4.TabIndex = 11;
             this.label4.Text = "ID PAIS:";
             // 
@@ -86,9 +87,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             // 
             this.cbxPais.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxPais.FormattingEnabled = true;
-            this.cbxPais.Location = new System.Drawing.Point(277, 217);
+            this.cbxPais.Location = new System.Drawing.Point(416, 334);
+            this.cbxPais.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxPais.Name = "cbxPais";
-            this.cbxPais.Size = new System.Drawing.Size(275, 21);
+            this.cbxPais.Size = new System.Drawing.Size(410, 28);
             this.cbxPais.TabIndex = 10;
             // 
             // btnCrear
@@ -97,12 +99,14 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.btnCrear.BackColor = System.Drawing.Color.LightBlue;
             this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCrear.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrear.Location = new System.Drawing.Point(433, 344);
+            this.btnCrear.Location = new System.Drawing.Point(650, 529);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(119, 50);
+            this.btnCrear.Size = new System.Drawing.Size(178, 77);
             this.btnCrear.TabIndex = 8;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnCancelar
             // 
@@ -110,9 +114,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.btnCancelar.BackColor = System.Drawing.Color.Gray;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(176, 344);
+            this.btnCancelar.Location = new System.Drawing.Point(264, 529);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(119, 50);
+            this.btnCancelar.Size = new System.Drawing.Size(178, 77);
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -120,9 +125,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             // txtNombre
             // 
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(277, 114);
+            this.txtNombre.Location = new System.Drawing.Point(416, 175);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(275, 20);
+            this.txtNombre.Size = new System.Drawing.Size(410, 26);
             this.txtNombre.TabIndex = 5;
             // 
             // label2
@@ -130,9 +136,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 10F);
-            this.label2.Location = new System.Drawing.Point(173, 118);
+            this.label2.Location = new System.Drawing.Point(260, 182);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
+            this.label2.Size = new System.Drawing.Size(94, 23);
             this.label2.TabIndex = 3;
             this.label2.Text = "NOMBRE:";
             // 
@@ -142,25 +149,26 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBanner.Font = new System.Drawing.Font("Arial Rounded MT Bold", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBanner.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblBanner.Location = new System.Drawing.Point(11, 38);
-            this.lblBanner.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBanner.Location = new System.Drawing.Point(16, 58);
             this.lblBanner.Name = "lblBanner";
-            this.lblBanner.Size = new System.Drawing.Size(1003, 44);
+            this.lblBanner.Size = new System.Drawing.Size(1504, 68);
             this.lblBanner.TabIndex = 6;
             this.lblBanner.Text = "CLINICA EL CARMELO";
             this.lblBanner.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // frmAgregarDepartamento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.ClientSize = new System.Drawing.Size(1538, 942);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblBanner);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAgregarDepartamento";
             this.Text = "Agregar Departamento";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmAgregarDepartamento_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
