@@ -139,7 +139,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.btnModificarEmpleado.Text = "MODIFICAR";
             this.btnModificarEmpleado.UseMnemonic = false;
             this.btnModificarEmpleado.UseVisualStyleBackColor = false;
-            this.btnModificarEmpleado.Click += new System.EventHandler(this.btnModificarEmpleado_Click);
             // 
             // btnEliminarEmpleado
             // 
@@ -176,7 +175,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.Name = "frmAdministrarEmpleados";
             this.Text = "Administrar Empleado";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmAdministrarEmpleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
