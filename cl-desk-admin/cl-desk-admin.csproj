@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CapaModels\EspecialidadModels.cs" />
+    <Compile Include="CapaModels\MunicipioModels.cs" />
     <Compile Include="CapaModels\ProfesionModels.cs" />
     <Compile Include="CapaModels\Tipo_DocumentoModels.cs" />
     <Compile Include="CapaModels\Tipo_UsuarioModels.cs" />
