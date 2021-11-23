@@ -73,7 +73,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             {
                     ModificarTipoDocumento modificarTipoDocumento = new ModificarTipoDocumento();
                     modificarTipoDocumento.Id = Convert.ToInt32(txtNumero.Text);
-                    modificarTipoDocumento.Show();
+                    modificarTipoDocumento.Show();   
                     this.Hide();
             }
         }
@@ -143,5 +143,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             }
             GetAllProdutos();
         }
+
+       
     }
 }

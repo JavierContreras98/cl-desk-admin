@@ -30,13 +30,13 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txHora = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.txHora = new System.Windows.Forms.TextBox();
             this.lblInicio = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -45,17 +45,26 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txHora);
             this.panel1.Controls.Add(this.lblID);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnModificar);
             this.panel1.Controls.Add(this.btnCancelar);
-            this.panel1.Controls.Add(this.txHora);
             this.panel1.Location = new System.Drawing.Point(152, 103);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 443);
             this.panel1.TabIndex = 17;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txHora
+            // 
+            this.txHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txHora.Location = new System.Drawing.Point(299, 178);
+            this.txHora.Name = "txHora";
+            this.txHora.Size = new System.Drawing.Size(275, 20);
+            this.txHora.TabIndex = 30;
             // 
             // lblID
             // 
@@ -115,6 +124,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             this.btnModificar.TabIndex = 23;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnCancelar
             // 
@@ -130,14 +140,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             this.btnCancelar.TabIndex = 22;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
-            // 
-            // txHora
-            // 
-            this.txHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txHora.Location = new System.Drawing.Point(299, 178);
-            this.txHora.Name = "txHora";
-            this.txHora.Size = new System.Drawing.Size(275, 20);
-            this.txHora.TabIndex = 18;
             // 
             // lblInicio
             // 
@@ -164,6 +166,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             this.Name = "ModificarHorarioCita";
             this.Text = "Modificar Horario Cita";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.ModificarHorarioCita_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -178,8 +181,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.TextBox txHora;
         private System.Windows.Forms.Label lblInicio;
         private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.TextBox txHora;
     }
 }
