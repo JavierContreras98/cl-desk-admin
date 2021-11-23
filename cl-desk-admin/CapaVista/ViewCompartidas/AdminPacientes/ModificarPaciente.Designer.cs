@@ -31,6 +31,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbxtiposangre = new System.Windows.Forms.ComboBox();
             this.lblId = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -83,6 +84,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.panel1.AutoScroll = true;
             this.panel1.AutoScrollMargin = new System.Drawing.Size(0, 100);
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.cbxtiposangre);
             this.panel1.Controls.Add(this.lblId);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label16);
@@ -119,6 +121,16 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.panel1.Size = new System.Drawing.Size(730, 443);
             this.panel1.TabIndex = 5;
             // 
+            // cbxtiposangre
+            // 
+            this.cbxtiposangre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxtiposangre.FormattingEnabled = true;
+            this.cbxtiposangre.Location = new System.Drawing.Point(292, 708);
+            this.cbxtiposangre.Name = "cbxtiposangre";
+            this.cbxtiposangre.Size = new System.Drawing.Size(275, 21);
+            this.cbxtiposangre.TabIndex = 43;
+            // 
             // lblId
             // 
             this.lblId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -128,9 +140,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.lblId.Location = new System.Drawing.Point(409, 90);
             this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(26, 16);
+            this.lblId.Size = new System.Drawing.Size(22, 16);
             this.lblId.TabIndex = 42;
-            this.lblId.Text = "ID:";
+            this.lblId.Text = "ID";
             // 
             // label4
             // 
@@ -409,6 +421,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.btnModificar.TabIndex = 14;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnCancelar
             // 
@@ -421,6 +434,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.btnCancelar.TabIndex = 13;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtExpediente
             // 
@@ -473,6 +487,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.Name = "frmModificarPaciente";
             this.Text = "Modificar Paciente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmModificarPaciente_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -514,5 +529,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbxtiposangre;
     }
 }
