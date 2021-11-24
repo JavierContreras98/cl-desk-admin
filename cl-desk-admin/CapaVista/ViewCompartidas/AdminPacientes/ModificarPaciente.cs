@@ -21,6 +21,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
         string URI_TIPO_SANGRE = "https://localhost:44310/api/tipo_sangre";
         string URI_PAIS = "https://localhost:44310/api/pais";
         string URI_TIPO_DOC = "https://localhost:44310/api/tipo_documento";
+        string URI_DEPARTAMENTO = "https://localhost:44310/api/departamento";
+        string URI_MUNICIPIO = "https://localhost:44310/api/municipio";
 
         int id;
 
@@ -68,6 +70,20 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             cbxTipoDocumento.DisplayMember = "NOMBRE";
             cbxTipoDocumento.Refresh();
 
+            string respuesta4 = await GetHttpDepartamento();
+            List<DepartamentoModels> lst4 = JsonConvert.DeserializeObject<List<DepartamentoModels>>(respuesta4);
+            cbxDepartamento.DataSource = lst4;
+            cbxDepartamento.ValueMember = "ID";
+            cbxDepartamento.DisplayMember = "NOMBRE";
+            cbxDepartamento.Refresh();
+
+            string respuesta5 = await GetHttpMunicipio();
+            List<MunicipioModels> lst5 = JsonConvert.DeserializeObject<List<MunicipioModels>>(respuesta5);
+            cbxMunicipio.DataSource = lst5;
+            cbxMunicipio.ValueMember = "ID";
+            cbxMunicipio.DisplayMember = "NOMBRE";
+            cbxMunicipio.Refresh();
+
         }
 
         private async void actualizarPaciente(int id)
@@ -83,8 +99,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             paciente.Telefono = txtTelefono.Text;
             paciente.Num_documento = txtNumeroDocumento.Text;
             paciente.Id_tipo_sangre = Convert.ToInt32(cbxtiposangre.SelectedValue);
-            paciente.Id_tipo_doc = Convert.ToInt32(cbxTipoDocumento.SelectedValue);
             paciente.Id_pais = Convert.ToInt32(cbxPais.SelectedValue);
+            paciente.Id_departamento = Convert.ToInt32(cbxDepartamento.SelectedValue);
+            paciente.Id_municipio = Convert.ToInt32(cbxMunicipio.SelectedValue);
+            paciente.Id_tipo_doc = Convert.ToInt32(cbxTipoDocumento.SelectedValue);
 
             using (var client = new HttpClient())
             {
@@ -131,9 +149,12 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             dtpFechaNacimiento.Value = res[0].FECHA_NACIMIENTO;
             txtTelefono.Text = res[0].TELEFONO;
             txtNumeroDocumento.Text = res[0].NUM_DOCUMENTO;
-            cbxPais.Text = res[0].PAIS;
             cbxtiposangre.Text = res[0].TIPO_SANGRE;
+            cbxPais.Text = res[0].PAIS;
+            cbxDepartamento.Text = res[0].DEPARTAMENTO;
+            cbxMunicipio.Text = res[0].MUNICIPIO;
             cbxTipoDocumento.Text = res[0].TIPO_DOC;
+            
         }
 
         private async Task<string> GetHttpPais()
@@ -155,6 +176,22 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
         private async Task<string> GetHttpDocumento()
         {
             WebRequest oRequest = WebRequest.Create(URI_TIPO_DOC);
+            WebResponse oResponse = oRequest.GetResponse();
+            StreamReader sr = new StreamReader(oResponse.GetResponseStream());
+            return await sr.ReadToEndAsync();
+        }
+
+        private async Task<string> GetHttpDepartamento()
+        {
+            WebRequest oRequest = WebRequest.Create(URI_DEPARTAMENTO);
+            WebResponse oResponse = oRequest.GetResponse();
+            StreamReader sr = new StreamReader(oResponse.GetResponseStream());
+            return await sr.ReadToEndAsync();
+        }
+
+        private async Task<string> GetHttpMunicipio()
+        {
+            WebRequest oRequest = WebRequest.Create(URI_MUNICIPIO);
             WebResponse oResponse = oRequest.GetResponse();
             StreamReader sr = new StreamReader(oResponse.GetResponseStream());
             return await sr.ReadToEndAsync();

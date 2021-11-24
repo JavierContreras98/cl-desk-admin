@@ -19,6 +19,8 @@ namespace cl_desk_admin.CapaModels
         string num_documento;
         int id_tipo_sangre;
         int id_pais;
+        int id_departamento;
+        int id_municipio;
         int id_tipo_doc;
 
         public int Id { get => id; set => id = value; }
@@ -32,6 +34,9 @@ namespace cl_desk_admin.CapaModels
         public string Num_documento { get => num_documento; set => num_documento = value; }
         public int Id_tipo_sangre { get => id_tipo_sangre; set => id_tipo_sangre = value; }
         public int Id_pais { get => id_pais; set => id_pais = value; }
+        public int Id_departamento { get => id_departamento; set => id_departamento = value; }
+        public int Id_municipio { get => id_municipio; set => id_municipio = value; }
         public int Id_tipo_doc { get => id_tipo_doc; set => id_tipo_doc = value; }
+        
     }
 }
