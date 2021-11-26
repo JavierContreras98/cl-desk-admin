@@ -210,7 +210,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminCitas
             this.btnCancelar.TabIndex = 33;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnModificar
             // 
@@ -224,7 +223,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminCitas
             this.btnModificar.TabIndex = 32;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // lbl
             // 
@@ -261,7 +259,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminCitas
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Cita";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmModificarCita_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
