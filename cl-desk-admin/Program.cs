@@ -16,7 +16,7 @@ namespace cl_desk_admin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new cl_desk_admin.CapaVista.ReportesGenerados.frmReporteEmpleado());
+            Application.Run(new cl_desk_admin.CapaVista.ReportesGenerados.frmReporteFechasPacientes());
         }
     }
 }

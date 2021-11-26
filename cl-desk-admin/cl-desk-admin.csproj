@@ -388,6 +388,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CLCARMELODBDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLCARMELODBDataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="IniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -405,6 +410,7 @@
     <EmbeddedResource Include="CapaVista\ReportesGenerados\ReportePacienteDepartamento.resx">
       <DependentUpon>ReportePacienteDepartamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\Reportes\ReporteCitaPaciente.rdlc" />
     <EmbeddedResource Include="CapaVista\Reportes\ReporteEmpleado.rdlc" />
     <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.resx">
       <DependentUpon>AdministarHistorialCitas.cs</DependentUpon>
@@ -567,6 +573,17 @@
     </None>
     <None Include="CLCARMELODBDataSet1.xss">
       <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CLCARMELODBDataSet11.xsc">
+      <DependentUpon>CLCARMELODBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="CLCARMELODBDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CLCARMELODBDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CLCARMELODBDataSet11.xss">
+      <DependentUpon>CLCARMELODBDataSet11.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
