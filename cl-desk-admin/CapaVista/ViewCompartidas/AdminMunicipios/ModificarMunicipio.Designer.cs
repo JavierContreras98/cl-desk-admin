@@ -29,9 +29,11 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCrear = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblId = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbxDepartamento = new System.Windows.Forms.ComboBox();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -41,18 +43,19 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnCrear
+            // btnModificar
             // 
-            this.btnCrear.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnCrear.BackColor = System.Drawing.Color.LightBlue;
-            this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCrear.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrear.Location = new System.Drawing.Point(433, 344);
-            this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(119, 50);
-            this.btnCrear.TabIndex = 8;
-            this.btnCrear.Text = "CREAR";
-            this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnModificar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnModificar.BackColor = System.Drawing.Color.LightBlue;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnModificar.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(433, 344);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(119, 50);
+            this.btnModificar.TabIndex = 8;
+            this.btnModificar.Text = "MODIFICAR";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // label1
             // 
@@ -72,9 +75,11 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.Info;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblId);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.cbxDepartamento);
-            this.panel1.Controls.Add(this.btnCrear);
+            this.panel1.Controls.Add(this.btnModificar);
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.txtNombre);
             this.panel1.Controls.Add(this.label2);
@@ -83,6 +88,28 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 443);
             this.panel1.TabIndex = 11;
+            // 
+            // lblId
+            // 
+            this.lblId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Cambria", 10F);
+            this.lblId.Location = new System.Drawing.Point(430, 79);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(22, 16);
+            this.lblId.TabIndex = 13;
+            this.lblId.Text = "ID";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cambria", 10F);
+            this.label3.Location = new System.Drawing.Point(137, 79);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(26, 16);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "ID:";
             // 
             // label4
             // 
@@ -116,11 +143,12 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtNombre
             // 
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(312, 114);
+            this.txtNombre.Location = new System.Drawing.Point(312, 143);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(275, 20);
             this.txtNombre.TabIndex = 5;
@@ -130,7 +158,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 10F);
-            this.label2.Location = new System.Drawing.Point(137, 118);
+            this.label2.Location = new System.Drawing.Point(137, 147);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 16);
             this.label2.TabIndex = 3;
@@ -161,6 +189,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.Name = "frmModificarMunicipio";
             this.Text = "Modificar Municipio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmModificarMunicipio_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -169,7 +198,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
 
         #endregion
 
-        private System.Windows.Forms.Button btnCrear;
+        private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
@@ -178,5 +207,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblBanner;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.Label label3;
     }
 }

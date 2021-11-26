@@ -18,9 +18,9 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
     //static HttpClient Client = new HttpClient();
     public partial class frmAgregarUsuario : Form
     {
-        string URI = "https://localhost:44310/api/tipo_usuario";
+        string URI_USUARIO = "https://localhost:44310/api/usuario";
 
-        string URI2 = "https://localhost:44310/api/usuario";
+        string URI_TIPO_USUARIO = "https://localhost:44310/api/tipo_usuario";
 
         public frmAgregarUsuario()
         {
@@ -30,7 +30,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
         private async void frmAgregarUsuario_Load(object sender, EventArgs e)
         {
             string respuesta = await GetHttp();
-            List<Root> lst = JsonConvert.DeserializeObject<List<Root>>(respuesta);
+            List<Tipo_UsuarioModels> lst = JsonConvert.DeserializeObject<List<Tipo_UsuarioModels>>(respuesta);
             cbxUsuario.DataSource = lst;
             cbxUsuario.ValueMember = "ID";
             cbxUsuario.DisplayMember = "NOMBRE";
@@ -65,24 +65,16 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             {
                 var serializedUsuario = JsonConvert.SerializeObject(usuario);
                 var content = new StringContent(serializedUsuario, Encoding.UTF8, "application/json");
-                var result = await client.PostAsync(URI2, content);
+                var result = await client.PostAsync(URI_USUARIO, content);
             }
         }
 
         private async Task<string> GetHttp()
         {
-            WebRequest oRequest = WebRequest.Create(URI);
+            WebRequest oRequest = WebRequest.Create(URI_TIPO_USUARIO);
             WebResponse oResponse = oRequest.GetResponse();
             StreamReader sr = new StreamReader(oResponse.GetResponseStream());
             return await sr.ReadToEndAsync();
-        }
-
-        //Root DeserializedTipoUsuario = JsonConvert.DeserializeObject<Root>(myJsonResponse);
-        public class Root
-        {
-            public int ID { get; set; }
-            public string NOMBRE { get; set; }
-            public string DESCRIPCION { get; set; }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

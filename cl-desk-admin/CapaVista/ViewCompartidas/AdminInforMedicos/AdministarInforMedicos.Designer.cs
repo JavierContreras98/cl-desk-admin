@@ -32,12 +32,13 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.btnMenuPrInfoMedico = new System.Windows.Forms.Button();
             this.btnCrearInfoMedico = new System.Windows.Forms.Button();
             this.lblClinicaBanner = new System.Windows.Forms.Label();
-            this.lblBusquedaInfoMedico = new System.Windows.Forms.Label();
-            this.txtBuscarInfoMedico = new System.Windows.Forms.TextBox();
-            this.btnBuscarInfoMedico = new System.Windows.Forms.Button();
             this.dgvInfoMedicos = new System.Windows.Forms.DataGridView();
             this.btnModificarInfoMedico = new System.Windows.Forms.Button();
             this.btnEliminarInfoMedico = new System.Windows.Forms.Button();
+            this.rbModificar = new System.Windows.Forms.RadioButton();
+            this.rbEliminar = new System.Windows.Forms.RadioButton();
+            this.lblInformacion = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoMedicos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +67,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.btnCrearInfoMedico.TabIndex = 1;
             this.btnCrearInfoMedico.Text = "CREAR NUEVO";
             this.btnCrearInfoMedico.UseVisualStyleBackColor = false;
+            this.btnCrearInfoMedico.Click += new System.EventHandler(this.btnCrearInfoMedico_Click);
             // 
             // lblClinicaBanner
             // 
@@ -79,38 +81,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.lblClinicaBanner.TabIndex = 2;
             this.lblClinicaBanner.Text = "CLINICA EL CARMELO";
             this.lblClinicaBanner.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lblBusquedaInfoMedico
-            // 
-            this.lblBusquedaInfoMedico.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblBusquedaInfoMedico.AutoSize = true;
-            this.lblBusquedaInfoMedico.Font = new System.Drawing.Font("Cambria", 10F);
-            this.lblBusquedaInfoMedico.Location = new System.Drawing.Point(242, 110);
-            this.lblBusquedaInfoMedico.Name = "lblBusquedaInfoMedico";
-            this.lblBusquedaInfoMedico.Size = new System.Drawing.Size(153, 16);
-            this.lblBusquedaInfoMedico.TabIndex = 3;
-            this.lblBusquedaInfoMedico.Text = "BUSQUEDA AVANZADA:";
-            // 
-            // txtBuscarInfoMedico
-            // 
-            this.txtBuscarInfoMedico.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscarInfoMedico.Location = new System.Drawing.Point(398, 108);
-            this.txtBuscarInfoMedico.Name = "txtBuscarInfoMedico";
-            this.txtBuscarInfoMedico.Size = new System.Drawing.Size(275, 20);
-            this.txtBuscarInfoMedico.TabIndex = 4;
-            // 
-            // btnBuscarInfoMedico
-            // 
-            this.btnBuscarInfoMedico.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBuscarInfoMedico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(202)))), ((int)(((byte)(240)))));
-            this.btnBuscarInfoMedico.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscarInfoMedico.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnBuscarInfoMedico.Location = new System.Drawing.Point(679, 105);
-            this.btnBuscarInfoMedico.Name = "btnBuscarInfoMedico";
-            this.btnBuscarInfoMedico.Size = new System.Drawing.Size(119, 26);
-            this.btnBuscarInfoMedico.TabIndex = 5;
-            this.btnBuscarInfoMedico.Text = "BUSCAR";
-            this.btnBuscarInfoMedico.UseVisualStyleBackColor = false;
             // 
             // dgvInfoMedicos
             // 
@@ -133,6 +103,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.btnModificarInfoMedico.TabIndex = 7;
             this.btnModificarInfoMedico.Text = "MODIFICAR";
             this.btnModificarInfoMedico.UseVisualStyleBackColor = false;
+            this.btnModificarInfoMedico.Click += new System.EventHandler(this.btnModificarInfoMedico_Click);
             // 
             // btnEliminarInfoMedico
             // 
@@ -146,6 +117,52 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.btnEliminarInfoMedico.TabIndex = 9;
             this.btnEliminarInfoMedico.Text = "ELIMINAR";
             this.btnEliminarInfoMedico.UseVisualStyleBackColor = false;
+            this.btnEliminarInfoMedico.Click += new System.EventHandler(this.btnEliminarInfoMedico_Click);
+            // 
+            // rbModificar
+            // 
+            this.rbModificar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rbModificar.AutoSize = true;
+            this.rbModificar.Location = new System.Drawing.Point(130, 500);
+            this.rbModificar.Name = "rbModificar";
+            this.rbModificar.Size = new System.Drawing.Size(127, 17);
+            this.rbModificar.TabIndex = 10;
+            this.rbModificar.TabStop = true;
+            this.rbModificar.Text = "Activar para modificar";
+            this.rbModificar.UseVisualStyleBackColor = true;
+            this.rbModificar.CheckedChanged += new System.EventHandler(this.frmAdminInforMedicos_Load);
+            // 
+            // rbEliminar
+            // 
+            this.rbEliminar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rbEliminar.AutoSize = true;
+            this.rbEliminar.Location = new System.Drawing.Point(796, 500);
+            this.rbEliminar.Name = "rbEliminar";
+            this.rbEliminar.Size = new System.Drawing.Size(120, 17);
+            this.rbEliminar.TabIndex = 11;
+            this.rbEliminar.TabStop = true;
+            this.rbEliminar.Text = "Activar para eliminar";
+            this.rbEliminar.UseVisualStyleBackColor = true;
+            this.rbEliminar.CheckedChanged += new System.EventHandler(this.frmAdminInforMedicos_Load);
+            // 
+            // lblInformacion
+            // 
+            this.lblInformacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblInformacion.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblInformacion.Location = new System.Drawing.Point(391, 525);
+            this.lblInformacion.Name = "lblInformacion";
+            this.lblInformacion.Size = new System.Drawing.Size(278, 15);
+            this.lblInformacion.TabIndex = 12;
+            this.lblInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNumero.Location = new System.Drawing.Point(394, 542);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(275, 20);
+            this.txtNumero.TabIndex = 13;
+            this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
             // 
             // frmAdminInforMedicos
             // 
@@ -153,18 +170,20 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.Controls.Add(this.txtNumero);
+            this.Controls.Add(this.lblInformacion);
+            this.Controls.Add(this.rbEliminar);
+            this.Controls.Add(this.rbModificar);
             this.Controls.Add(this.btnEliminarInfoMedico);
             this.Controls.Add(this.btnModificarInfoMedico);
             this.Controls.Add(this.dgvInfoMedicos);
-            this.Controls.Add(this.btnBuscarInfoMedico);
-            this.Controls.Add(this.txtBuscarInfoMedico);
-            this.Controls.Add(this.lblBusquedaInfoMedico);
             this.Controls.Add(this.lblClinicaBanner);
             this.Controls.Add(this.btnCrearInfoMedico);
             this.Controls.Add(this.btnMenuPrInfoMedico);
             this.Name = "frmAdminInforMedicos";
             this.Text = "Administrar Informacion de los Medicos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmAdminInforMedicos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoMedicos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -176,11 +195,12 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
         private System.Windows.Forms.Button btnMenuPrInfoMedico;
         private System.Windows.Forms.Button btnCrearInfoMedico;
         private System.Windows.Forms.Label lblClinicaBanner;
-        private System.Windows.Forms.Label lblBusquedaInfoMedico;
-        private System.Windows.Forms.TextBox txtBuscarInfoMedico;
-        private System.Windows.Forms.Button btnBuscarInfoMedico;
         private System.Windows.Forms.DataGridView dgvInfoMedicos;
         private System.Windows.Forms.Button btnModificarInfoMedico;
         private System.Windows.Forms.Button btnEliminarInfoMedico;
+        private System.Windows.Forms.RadioButton rbModificar;
+        private System.Windows.Forms.RadioButton rbEliminar;
+        private System.Windows.Forms.Label lblInformacion;
+        private System.Windows.Forms.TextBox txtNumero;
     }
 }
