@@ -22,5 +22,16 @@ namespace cl_desk_admin.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-4EK7VVO\\SQLEXPRESS02;Initial Catalog=CLCARMELODB;Integrated S" +
+            "ecurity=True")]
+        public string CLCARMELODBConnectionString {
+            get {
+                return ((string)(this["CLCARMELODBConnectionString"]));
+            }
+        }
     }
 }
