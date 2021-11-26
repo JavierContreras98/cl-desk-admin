@@ -184,7 +184,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminCitas
             this.btnCancelar.TabIndex = 33;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnCrear
             // 
@@ -199,7 +198,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminCitas
             this.btnCrear.TabIndex = 32;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
-            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // lblHora
             // 
@@ -238,7 +236,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminCitas
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear Citas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmAgregarCita_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

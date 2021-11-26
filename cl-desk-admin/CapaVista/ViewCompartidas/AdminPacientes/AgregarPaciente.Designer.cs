@@ -31,7 +31,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbxtiposangre = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.cbxMunicipio = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -82,7 +81,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.panel1.AutoScroll = true;
             this.panel1.AutoScrollMargin = new System.Drawing.Size(0, 100);
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.cbxtiposangre);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.cbxMunicipio);
             this.panel1.Controls.Add(this.label15);
@@ -116,16 +114,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 443);
             this.panel1.TabIndex = 5;
-            // 
-            // cbxtiposangre
-            // 
-            this.cbxtiposangre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxtiposangre.FormattingEnabled = true;
-            this.cbxtiposangre.Location = new System.Drawing.Point(292, 636);
-            this.cbxtiposangre.Name = "cbxtiposangre";
-            this.cbxtiposangre.Size = new System.Drawing.Size(275, 21);
-            this.cbxtiposangre.TabIndex = 41;
             // 
             // label16
             // 
@@ -304,6 +292,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.cbxTipoDocumento.Name = "cbxTipoDocumento";
             this.cbxTipoDocumento.Size = new System.Drawing.Size(275, 21);
             this.cbxTipoDocumento.TabIndex = 24;
+            this.cbxTipoDocumento.Text = "TIPO DOCUMENTO";
             // 
             // label10
             // 
@@ -390,7 +379,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.btnCrear.TabIndex = 14;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
-            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnCancelar
             // 
@@ -403,7 +391,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.btnCancelar.TabIndex = 13;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtExpediente
             // 
@@ -456,7 +443,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.Name = "AgregarPaciente";
             this.Text = "Crear Pacientes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.AgregarPaciente_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -496,6 +482,5 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
         private System.Windows.Forms.TextBox txtNumeroDocumento;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox cbxtiposangre;
     }
 }
