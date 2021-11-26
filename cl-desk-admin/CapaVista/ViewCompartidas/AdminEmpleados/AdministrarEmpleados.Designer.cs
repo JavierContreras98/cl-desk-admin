@@ -38,6 +38,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.btnCrearEmpleado = new System.Windows.Forms.Button();
             this.btnModificarEmpleado = new System.Windows.Forms.Button();
             this.btnEliminarEmpleado = new System.Windows.Forms.Button();
+            this.rbEliminar = new System.Windows.Forms.RadioButton();
+            this.rbModificar = new System.Windows.Forms.RadioButton();
+            this.lblInformacion = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,6 +158,52 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.btnEliminarEmpleado.UseMnemonic = false;
             this.btnEliminarEmpleado.UseVisualStyleBackColor = false;
             // 
+            // rbEliminar
+            // 
+            this.rbEliminar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.rbEliminar.AutoSize = true;
+            this.rbEliminar.Location = new System.Drawing.Point(794, 501);
+            this.rbEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.rbEliminar.Name = "rbEliminar";
+            this.rbEliminar.Size = new System.Drawing.Size(120, 17);
+            this.rbEliminar.TabIndex = 25;
+            this.rbEliminar.TabStop = true;
+            this.rbEliminar.Text = "Activar para eliminar";
+            this.rbEliminar.UseVisualStyleBackColor = true;
+            // 
+            // rbModificar
+            // 
+            this.rbModificar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rbModificar.AutoSize = true;
+            this.rbModificar.Location = new System.Drawing.Point(130, 501);
+            this.rbModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.rbModificar.Name = "rbModificar";
+            this.rbModificar.Size = new System.Drawing.Size(127, 17);
+            this.rbModificar.TabIndex = 24;
+            this.rbModificar.TabStop = true;
+            this.rbModificar.Text = "Activar para modificar";
+            this.rbModificar.UseVisualStyleBackColor = true;
+            // 
+            // lblInformacion
+            // 
+            this.lblInformacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblInformacion.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblInformacion.Location = new System.Drawing.Point(395, 521);
+            this.lblInformacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInformacion.Name = "lblInformacion";
+            this.lblInformacion.Size = new System.Drawing.Size(278, 15);
+            this.lblInformacion.TabIndex = 23;
+            this.lblInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNumero.Location = new System.Drawing.Point(398, 538);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(275, 20);
+            this.txtNumero.TabIndex = 22;
+            // 
             // frmAdministrarEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,6 +211,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.BackColor = System.Drawing.SystemColors.Info;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.Controls.Add(this.rbEliminar);
+            this.Controls.Add(this.rbModificar);
+            this.Controls.Add(this.lblInformacion);
+            this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.btnEliminarEmpleado);
             this.Controls.Add(this.btnModificarEmpleado);
             this.Controls.Add(this.btnCrearEmpleado);
@@ -201,5 +255,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
 
 
         #endregion
+
+        private System.Windows.Forms.RadioButton rbEliminar;
+        private System.Windows.Forms.RadioButton rbModificar;
+        private System.Windows.Forms.Label lblInformacion;
+        private System.Windows.Forms.TextBox txtNumero;
     }
 }
