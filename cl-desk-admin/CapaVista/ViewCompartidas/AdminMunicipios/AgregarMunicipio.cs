@@ -26,6 +26,16 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             InitializeComponent();
         }
 
+        private async void frmAgregarMunicipio_Load(object sender, EventArgs e)
+        {
+            string respuesta = await GetHttp();
+            List<DepartamentoModels> lst = JsonConvert.DeserializeObject<List<DepartamentoModels>>(respuesta);
+            cbxDepartamento.DataSource = lst;
+            cbxDepartamento.ValueMember = "ID";
+            cbxDepartamento.DisplayMember = "NOMBRE";
+            cbxDepartamento.Refresh();
+        }
+
         private async Task<string> GetHttp()
         {
             WebRequest oRequest = WebRequest.Create(URI_DEPARTAMENTO);
@@ -39,15 +49,16 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             try
             {
                 this.AddMunicipio();
+
+                frmAdministrarMunicipios municipios = new frmAdministrarMunicipios();
+                this.Close();
+                municipios.Refresh();
+                municipios.Show();
             }
             catch (Exception)
             {
                 Console.WriteLine("Algo salio mal");
-            }
-            frmAdministrarMunicipios municipios = new frmAdministrarMunicipios();
-            this.Close();
-            municipios.Refresh();
-            municipios.Show();
+            } 
         }
 
         private async void AddMunicipio()
@@ -60,8 +71,17 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             {
                 var serializedMunicipio = JsonConvert.SerializeObject(municipio);
                 var content = new StringContent(serializedMunicipio, Encoding.UTF8, "application/json");
-                var result = await client.PostAsync(URI_DEPARTAMENTO, content);
+                var result = await client.PostAsync(URI_MUNICIPIO, content);
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            frmAdministrarMunicipios regresar = new frmAdministrarMunicipios();
+
+            this.Hide();
+            regresar.ShowDialog();
+            this.Close();
         }
     }
 }

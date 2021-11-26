@@ -17,9 +17,9 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
 {
     public partial class ModificarUsuario : Form
     {
-        string URI = "https://localhost:44310/api/usuario";
+        string URI_USUARIO = "https://localhost:44310/api/usuario";
 
-        string URI2 = "https://localhost:44310/api/tipo_usuario";
+        string URI_TIPO_USUARIO = "https://localhost:44310/api/tipo_usuario";
 
         int id;
 
@@ -35,14 +35,31 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
         private async void ModificarUsuario_Load(object sender, EventArgs e)
         {
             string respuesta = await GetHttp();
-            List<Root> lst = JsonConvert.DeserializeObject<List<Root>>(respuesta);
-            //cbxUsuario.DataSource = lst;
-            //cbxUsuario.ValueMember = "ID";
-            //cbxUsuario.DisplayMember = "NOMBRE";
-            //cbxUsuario.Refresh();
+            List<Tipo_UsuarioModels> lst = JsonConvert.DeserializeObject<List<Tipo_UsuarioModels>>(respuesta);
+            cbxUsuario.DataSource = lst;
+            cbxUsuario.ValueMember = "ID";
+            cbxUsuario.DisplayMember = "NOMBRE";
+            cbxUsuario.Refresh();
 
             lblId.Text = Id.ToString();
             this.CargarDatos();
+        }
+
+        private async void CargarDatos()
+        {
+            var response = await Get(Id);
+            var res = JsonConvert.DeserializeObject<dynamic>(response);
+            txtNombre.Text = res[0].NOM_USUARIO;
+            txtDescripcion.Text = res[0].PASS;
+            cbxUsuario.Text = res[0].TIPO_USUARIO;
+        }
+
+        private async Task<string> GetHttp()
+        {
+            WebRequest oRequest = WebRequest.Create(URI_TIPO_USUARIO);
+            WebResponse oResponse = oRequest.GetResponse();
+            StreamReader sr = new StreamReader(oResponse.GetResponseStream());
+            return await sr.ReadToEndAsync();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -60,11 +77,11 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             usuario.Id = id;
             usuario.Nom_Usuario = txtNombre.Text;
             usuario.Pass = txtDescripcion.Text;
-            usuario.Id_Tipo = 1;
+            usuario.Id_Tipo = Convert.ToInt32(cbxUsuario.SelectedValue);
 
             using (var client = new HttpClient())
             {
-                HttpResponseMessage responseMessage = await client.PutAsJsonAsync(URI + "/" + usuario.Id, usuario);
+                HttpResponseMessage responseMessage = await client.PutAsJsonAsync(URI_USUARIO + "/" + usuario.Id, usuario);
                 if (responseMessage.IsSuccessStatusCode)
                 {
 
@@ -79,7 +96,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
         {
             using (HttpClient client = new HttpClient())
             {
-                using (HttpResponseMessage res = await client.GetAsync(URI + "/" + id))
+                using (HttpResponseMessage res = await client.GetAsync(URI_USUARIO + "/" + id))
                 {
                     using (HttpContent content = res.Content)
                     {
@@ -94,30 +111,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             }
             return string.Empty;
         }
-        private async void CargarDatos()
-        {
-            var response = await Get(Id);
-            var res = JsonConvert.DeserializeObject<dynamic>(response);
-            txtNombre.Text = res[0].NOM_USUARIO;
-            txtDescripcion.Text = res[0].PASS;
-            cbxUsuario = res[0].ID_TIPO;
-        }
-
-        private async Task<string> GetHttp()
-        {
-            WebRequest oRequest = WebRequest.Create(URI2);
-            WebResponse oResponse = oRequest.GetResponse();
-            StreamReader sr = new StreamReader(oResponse.GetResponseStream());
-            return await sr.ReadToEndAsync();
-        }
-
-        //Root DeserializedTipoUsuario = JsonConvert.DeserializeObject<Root>(myJsonResponse);
-        public class Root
-        {
-            public int ID { get; set; }
-            public string NOMBRE { get; set; }
-            public string DESCRIPCION { get; set; }
-        }
+        
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {

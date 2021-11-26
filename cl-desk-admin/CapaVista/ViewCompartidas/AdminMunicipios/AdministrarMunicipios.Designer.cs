@@ -29,13 +29,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnCrear = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnMenuP = new System.Windows.Forms.Button();
             this.dgvMunicipios = new System.Windows.Forms.DataGridView();
             this.rbModificar = new System.Windows.Forms.RadioButton();
@@ -44,19 +41,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.lblInformacion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMunicipios)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(202)))), ((int)(((byte)(240)))));
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscar.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnBuscar.Location = new System.Drawing.Point(679, 105);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(119, 26);
-            this.btnBuscar.TabIndex = 23;
-            this.btnBuscar.Text = "BUSCAR";
-            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // btnEliminar
             // 
@@ -100,17 +84,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.btnCrear.UseVisualStyleBackColor = false;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(242, 110);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 15);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "BUSQUEDA AVANZADA";
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -122,14 +95,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.label1.TabIndex = 18;
             this.label1.Text = "CLINICA EL CARMELO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscar.Location = new System.Drawing.Point(398, 108);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(275, 20);
-            this.txtBuscar.TabIndex = 17;
             // 
             // btnMenuP
             // 
@@ -164,6 +129,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.rbModificar.TabStop = true;
             this.rbModificar.Text = "Activar para modificar";
             this.rbModificar.UseVisualStyleBackColor = true;
+            this.rbModificar.CheckedChanged += new System.EventHandler(this.frmAdministrarMunicipios_Load);
             // 
             // rbEliminar
             // 
@@ -176,6 +142,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.rbEliminar.TabStop = true;
             this.rbEliminar.Text = "Activar para eliminar";
             this.rbEliminar.UseVisualStyleBackColor = true;
+            this.rbEliminar.CheckedChanged += new System.EventHandler(this.frmAdministrarMunicipios_Load);
             // 
             // txtNumero
             // 
@@ -206,13 +173,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.rbEliminar);
             this.Controls.Add(this.rbModificar);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnCrear);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.btnMenuP);
             this.Controls.Add(this.dgvMunicipios);
             this.Name = "frmAdministrarMunicipios";
@@ -226,14 +190,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnCrear;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnMenuP;
         private System.Windows.Forms.DataGridView dgvMunicipios;
         private System.Windows.Forms.RadioButton rbModificar;

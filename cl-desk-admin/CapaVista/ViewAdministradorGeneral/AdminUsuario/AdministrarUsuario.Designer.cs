@@ -33,9 +33,6 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.btnModificarUsuario = new System.Windows.Forms.Button();
             this.btnCrearUsuario = new System.Windows.Forms.Button();
             this.dgvUsuario = new System.Windows.Forms.DataGridView();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtBuscarUsuario = new System.Windows.Forms.TextBox();
-            this.lblBusquedaAvanzada = new System.Windows.Forms.Label();
             this.btnMenuPrincipal = new System.Windows.Forms.Button();
             this.lblBanner = new System.Windows.Forms.Label();
             this.rbModificar = new System.Windows.Forms.RadioButton();
@@ -100,40 +97,6 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.dgvUsuario.Name = "dgvUsuario";
             this.dgvUsuario.Size = new System.Drawing.Size(785, 291);
             this.dgvUsuario.TabIndex = 17;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(202)))), ((int)(((byte)(240)))));
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscar.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscar.Location = new System.Drawing.Point(678, 120);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(119, 26);
-            this.btnBuscar.TabIndex = 16;
-            this.btnBuscar.Text = "BUSCAR";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // txtBuscarUsuario
-            // 
-            this.txtBuscarUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscarUsuario.Location = new System.Drawing.Point(397, 123);
-            this.txtBuscarUsuario.Name = "txtBuscarUsuario";
-            this.txtBuscarUsuario.Size = new System.Drawing.Size(275, 20);
-            this.txtBuscarUsuario.TabIndex = 15;
-            // 
-            // lblBusquedaAvanzada
-            // 
-            this.lblBusquedaAvanzada.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblBusquedaAvanzada.AutoSize = true;
-            this.lblBusquedaAvanzada.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBusquedaAvanzada.Location = new System.Drawing.Point(241, 125);
-            this.lblBusquedaAvanzada.Name = "lblBusquedaAvanzada";
-            this.lblBusquedaAvanzada.Size = new System.Drawing.Size(153, 16);
-            this.lblBusquedaAvanzada.TabIndex = 14;
-            this.lblBusquedaAvanzada.Text = "BUSQUEDA AVANZADA:";
             // 
             // btnMenuPrincipal
             // 
@@ -222,9 +185,6 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.Controls.Add(this.btnModificarUsuario);
             this.Controls.Add(this.btnCrearUsuario);
             this.Controls.Add(this.dgvUsuario);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.txtBuscarUsuario);
-            this.Controls.Add(this.lblBusquedaAvanzada);
             this.Controls.Add(this.btnMenuPrincipal);
             this.Controls.Add(this.lblBanner);
             this.Name = "frmAdministrarUsuario";
@@ -243,9 +203,6 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
         private System.Windows.Forms.Button btnModificarUsuario;
         private System.Windows.Forms.Button btnCrearUsuario;
         private System.Windows.Forms.DataGridView dgvUsuario;
-        private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox txtBuscarUsuario;
-        private System.Windows.Forms.Label lblBusquedaAvanzada;
         private System.Windows.Forms.Button btnMenuPrincipal;
         private System.Windows.Forms.Label lblBanner;
         private System.Windows.Forms.RadioButton rbModificar;
