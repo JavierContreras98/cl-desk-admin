@@ -1,7 +1,7 @@
 ﻿
 namespace cl_desk_admin.CapaVista.ReportesGenerados
 {
-    partial class frmReporteFechasPacientes
+    partial class frmReporte1FechasPacientes
     {
         /// <summary>
         /// Required designer variable.
@@ -104,6 +104,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.dtpFechaInicial.Name = "dtpFechaInicial";
             this.dtpFechaInicial.Size = new System.Drawing.Size(189, 20);
             this.dtpFechaInicial.TabIndex = 8;
+         
             // 
             // dtFechaFinal
             // 
@@ -112,6 +113,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.dtFechaFinal.Name = "dtFechaFinal";
             this.dtFechaFinal.Size = new System.Drawing.Size(218, 20);
             this.dtFechaFinal.TabIndex = 9;
+         
             // 
             // label1
             // 
@@ -122,6 +124,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.label1.Size = new System.Drawing.Size(86, 12);
             this.label1.TabIndex = 11;
             this.label1.Text = "FECHA INICIAL";
+        
             // 
             // label3
             // 
@@ -132,12 +135,13 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.label3.Size = new System.Drawing.Size(79, 12);
             this.label3.TabIndex = 12;
             this.label3.Text = "FECHA FINAL";
+         
             // 
             // sP_CREATE_REPORT1TableAdapter
             // 
             this.sP_CREATE_REPORT1TableAdapter.ClearBeforeFill = true;
             // 
-            // frmReporteFechasPacientes
+            // frmReporte1FechasPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -150,7 +154,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.rvPacienteFechas);
             this.Controls.Add(this.label2);
-            this.Name = "frmReporteFechasPacientes";
+            this.Name = "frmReporte1FechasPacientes";
             this.Text = "Reporte(1) Fecha Paciente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ReporteFechasPacientes_Load);

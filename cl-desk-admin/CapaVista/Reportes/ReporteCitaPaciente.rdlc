@@ -538,12 +538,13 @@
         <Top>8.19891cm</Top>
         <Left>0.94932cm</Left>
         <Height>1.2cm</Height>
-        <Width>33.9325cm</Width>
+        <Width>33.93251cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
+          <BackgroundColor>Tan</BackgroundColor>
         </Style>
       </Tablix>
     </ReportItems>
