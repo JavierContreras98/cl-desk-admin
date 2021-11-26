@@ -371,10 +371,10 @@
     <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ModificarTipoSangre.Designer.cs">
       <DependentUpon>ModificarTipoSangre.cs</DependentUpon>
     </Compile>
-    <Compile Include="CLCARMELODBDataSet1.Designer.cs">
+    <Compile Include="CLCARMELODBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
+      <DependentUpon>CLCARMELODBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="IniciarSesion.cs">
       <SubType>Form</SubType>
@@ -539,16 +539,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="CLCARMELODBDataSet1.xsc">
-      <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
+    <None Include="CLCARMELODBDataSet.xsc">
+      <DependentUpon>CLCARMELODBDataSet.xsd</DependentUpon>
     </None>
-    <None Include="CLCARMELODBDataSet1.xsd">
+    <None Include="CLCARMELODBDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CLCARMELODBDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>CLCARMELODBDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="CLCARMELODBDataSet1.xss">
-      <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
+    <None Include="CLCARMELODBDataSet.xss">
+      <DependentUpon>CLCARMELODBDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
