@@ -63,7 +63,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rvReporteEmpleado.BackColor = System.Drawing.SystemColors.Info;
-            reportDataSource1.Name = "DataReporteEmpleado";
+            reportDataSource1.Name = "Reporte4";
             reportDataSource1.Value = this.sPCREATEREPORT4BindingSource;
             this.rvReporteEmpleado.LocalReport.DataSources.Add(reportDataSource1);
             this.rvReporteEmpleado.LocalReport.ReportEmbeddedResource = "cl_desk_admin.CapaVista.Reportes.ReporteEmpleado.rdlc";
@@ -98,7 +98,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rvReporteEmpleado);
             this.Name = "frmReporteEmpleado";
-            this.Text = "Reporte Empleado";
+            this.Text = "Reporte(4) Datos Empleado";
             this.Load += new System.EventHandler(this.ReporteEmpleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sPCREATEREPORT4BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSetBindingSource)).EndInit();

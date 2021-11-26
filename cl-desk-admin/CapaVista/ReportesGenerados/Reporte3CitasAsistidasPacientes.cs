@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace cl_desk_admin.CapaVista.ReportesGenerados
 {
-    public partial class ReportePacienteDepartamento : Form
+    public partial class Reporte3CitasAsistidasPacientes : Form
     {
-        public ReportePacienteDepartamento()
+        public Reporte3CitasAsistidasPacientes()
         {
             InitializeComponent();
         }

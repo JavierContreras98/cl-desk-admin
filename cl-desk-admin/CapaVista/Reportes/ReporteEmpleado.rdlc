@@ -603,7 +603,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataReporteEmpleado</DataSetName>
+        <DataSetName>Reporte4</DataSetName>
         <Top>6.37328cm</Top>
         <Left>1.13926cm</Left>
         <Height>1.6498cm</Height>
@@ -642,7 +642,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataReporteEmpleado">
+    <DataSet Name="Reporte4">
       <Query>
         <DataSourceName>CLCARMELODBDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>

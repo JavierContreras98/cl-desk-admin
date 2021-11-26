@@ -31,20 +31,29 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.sPCREATEREPORT1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cLCARMELODBDataSet1 = new cl_desk_admin.CLCARMELODBDataSet1();
             this.label2 = new System.Windows.Forms.Label();
             this.rvPacienteFechas = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btnReporte = new System.Windows.Forms.Button();
             this.dtpFechaInicial = new System.Windows.Forms.DateTimePicker();
             this.dtFechaFinal = new System.Windows.Forms.DateTimePicker();
-            this.cbxPaciente = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cLCARMELODBDataSet1 = new cl_desk_admin.CLCARMELODBDataSet1();
-            this.sPCREATEREPORT1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sP_CREATE_REPORT1TableAdapter = new cl_desk_admin.CLCARMELODBDataSet1TableAdapters.SP_CREATE_REPORT1TableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPCREATEREPORT1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // sPCREATEREPORT1BindingSource
+            // 
+            this.sPCREATEREPORT1BindingSource.DataMember = "SP_CREATE_REPORT1";
+            this.sPCREATEREPORT1BindingSource.DataSource = this.cLCARMELODBDataSet1;
+            // 
+            // cLCARMELODBDataSet1
+            // 
+            this.cLCARMELODBDataSet1.DataSetName = "CLCARMELODBDataSet1";
+            this.cLCARMELODBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label2
             // 
@@ -65,7 +74,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rvPacienteFechas.BackColor = System.Drawing.SystemColors.Info;
-            reportDataSource1.Name = "DatacCitaPaciente";
+            reportDataSource1.Name = "Reporte1";
             reportDataSource1.Value = this.sPCREATEREPORT1BindingSource;
             this.rvPacienteFechas.LocalReport.DataSources.Add(reportDataSource1);
             this.rvPacienteFechas.LocalReport.ReportEmbeddedResource = "cl_desk_admin.CapaVista.Reportes.ReporteCitaPaciente.rdlc";
@@ -104,14 +113,6 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.dtFechaFinal.Size = new System.Drawing.Size(218, 20);
             this.dtFechaFinal.TabIndex = 9;
             // 
-            // cbxPaciente
-            // 
-            this.cbxPaciente.FormattingEnabled = true;
-            this.cbxPaciente.Location = new System.Drawing.Point(551, 96);
-            this.cbxPaciente.Name = "cbxPaciente";
-            this.cbxPaciente.Size = new System.Drawing.Size(281, 21);
-            this.cbxPaciente.TabIndex = 10;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -132,16 +133,6 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.label3.TabIndex = 12;
             this.label3.Text = "FECHA FINAL";
             // 
-            // cLCARMELODBDataSet1
-            // 
-            this.cLCARMELODBDataSet1.DataSetName = "CLCARMELODBDataSet1";
-            this.cLCARMELODBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sPCREATEREPORT1BindingSource
-            // 
-            this.sPCREATEREPORT1BindingSource.DataMember = "SP_CREATE_REPORT1";
-            this.sPCREATEREPORT1BindingSource.DataSource = this.cLCARMELODBDataSet1;
-            // 
             // sP_CREATE_REPORT1TableAdapter
             // 
             this.sP_CREATE_REPORT1TableAdapter.ClearBeforeFill = true;
@@ -154,18 +145,17 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.ClientSize = new System.Drawing.Size(1025, 612);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbxPaciente);
             this.Controls.Add(this.dtFechaFinal);
             this.Controls.Add(this.dtpFechaInicial);
             this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.rvPacienteFechas);
             this.Controls.Add(this.label2);
             this.Name = "frmReporteFechasPacientes";
-            this.Text = "Administrar Citas";
+            this.Text = "Reporte(1) Fecha Paciente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ReporteFechasPacientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPCREATEREPORT1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,7 +167,6 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
         private System.Windows.Forms.Button btnReporte;
         private System.Windows.Forms.DateTimePicker dtpFechaInicial;
         private System.Windows.Forms.DateTimePicker dtFechaFinal;
-        private System.Windows.Forms.ComboBox cbxPaciente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.BindingSource sPCREATEREPORT1BindingSource;

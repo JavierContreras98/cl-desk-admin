@@ -1,7 +1,7 @@
 ﻿
 namespace cl_desk_admin.CapaVista.ReportesGenerados
 {
-    partial class ReportePacienteDepartamento
+    partial class Reporte3CitasAsistidasPacientes
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,8 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             // 
             // rvPacienteDepartamento
             // 
-            this.rvPacienteDepartamento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.rvPacienteDepartamento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rvPacienteDepartamento.BackColor = System.Drawing.SystemColors.Info;
             this.rvPacienteDepartamento.Location = new System.Drawing.Point(12, 128);
@@ -69,7 +70,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.button1.Text = "GENERAR REPORTE";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // ReportePacienteDepartamento
+            // Reporte3CitasAsistidasPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -78,7 +79,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.Controls.Add(this.button1);
             this.Controls.Add(this.rvPacienteDepartamento);
             this.Controls.Add(this.label2);
-            this.Name = "ReportePacienteDepartamento";
+            this.Name = "Reporte3CitasAsistidasPacientes";
             this.Text = "Reporte de Pacientes en Departamentos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
