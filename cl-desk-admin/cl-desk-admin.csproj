@@ -36,6 +36,24 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -73,6 +91,12 @@
     <Compile Include="CapaModels\Tipo_UsuarioModels.cs" />
     <Compile Include="CapaModels\UsuarioModels.cs" />
     <Compile Include="CapaModels\Tipo_SangreModels.cs" />
+    <Compile Include="CapaVista\ReportesGenerados\ReporteEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaVista\ReportesGenerados\ReporteEmpleado.Designer.cs">
+      <DependentUpon>ReporteEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -349,6 +373,11 @@
     <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ModificarTipoSangre.Designer.cs">
       <DependentUpon>ModificarTipoSangre.cs</DependentUpon>
     </Compile>
+    <Compile Include="CLCARMELODBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="IniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -357,6 +386,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CapaVista\ReportesGenerados\ReporteEmpleado.resx">
+      <DependentUpon>ReporteEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\Reportes\ReporteEmpleado.rdlc" />
     <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.resx">
       <DependentUpon>AdministarHistorialCitas.cs</DependentUpon>
     </EmbeddedResource>
@@ -508,6 +541,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="CLCARMELODBDataSet1.xsc">
+      <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CLCARMELODBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CLCARMELODBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CLCARMELODBDataSet1.xss">
+      <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -525,5 +569,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
