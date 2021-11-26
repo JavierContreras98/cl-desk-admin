@@ -29,10 +29,13 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblBusquedaAvanzada = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnCrear = new System.Windows.Forms.Button();
             this.dgvTipoSangre = new System.Windows.Forms.DataGridView();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtBuscarDepartamento = new System.Windows.Forms.TextBox();
             this.btnMenuP = new System.Windows.Forms.Button();
             this.lblBanner = new System.Windows.Forms.Label();
             this.rbModificar = new System.Windows.Forms.RadioButton();
@@ -41,6 +44,17 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
             this.txtNumero = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTipoSangre)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblBusquedaAvanzada
+            // 
+            this.lblBusquedaAvanzada.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblBusquedaAvanzada.AutoSize = true;
+            this.lblBusquedaAvanzada.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBusquedaAvanzada.Location = new System.Drawing.Point(242, 110);
+            this.lblBusquedaAvanzada.Name = "lblBusquedaAvanzada";
+            this.lblBusquedaAvanzada.Size = new System.Drawing.Size(153, 16);
+            this.lblBusquedaAvanzada.TabIndex = 23;
+            this.lblBusquedaAvanzada.Text = "BUSQUEDA AVANZADA:";
             // 
             // btnEliminar
             // 
@@ -95,6 +109,29 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
             this.dgvTipoSangre.Name = "dgvTipoSangre";
             this.dgvTipoSangre.Size = new System.Drawing.Size(785, 291);
             this.dgvTipoSangre.TabIndex = 26;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(202)))), ((int)(((byte)(240)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
+            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.Location = new System.Drawing.Point(679, 105);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(119, 26);
+            this.btnBuscar.TabIndex = 25;
+            this.btnBuscar.Text = "BUSCAR";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // txtBuscarDepartamento
+            // 
+            this.txtBuscarDepartamento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBuscarDepartamento.Location = new System.Drawing.Point(398, 108);
+            this.txtBuscarDepartamento.Name = "txtBuscarDepartamento";
+            this.txtBuscarDepartamento.Size = new System.Drawing.Size(275, 20);
+            this.txtBuscarDepartamento.TabIndex = 24;
             // 
             // btnMenuP
             // 
@@ -187,6 +224,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.dgvTipoSangre);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtBuscarDepartamento);
+            this.Controls.Add(this.lblBusquedaAvanzada);
             this.Controls.Add(this.btnMenuP);
             this.Controls.Add(this.lblBanner);
             this.Name = "frmAdministrarTipoSangre";
@@ -205,8 +245,11 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.DataGridView dgvTipoSangre;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtBuscarDepartamento;
         private System.Windows.Forms.Button btnMenuP;
         private System.Windows.Forms.Label lblBanner;
+        private System.Windows.Forms.Label lblBusquedaAvanzada;
         private System.Windows.Forms.RadioButton rbModificar;
         private System.Windows.Forms.RadioButton rbEliminar;
         private System.Windows.Forms.Label lblInformacion;
