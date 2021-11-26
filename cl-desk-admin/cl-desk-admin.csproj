@@ -98,6 +98,12 @@
     <Compile Include="CapaVista\ReportesGenerados\ReporteEmpleado.Designer.cs">
       <DependentUpon>ReporteEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaVista\ReportesGenerados\ReporteFechasPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaVista\ReportesGenerados\ReporteFechasPacientes.Designer.cs">
+      <DependentUpon>ReporteFechasPacientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -374,10 +380,10 @@
     <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ModificarTipoSangre.Designer.cs">
       <DependentUpon>ModificarTipoSangre.cs</DependentUpon>
     </Compile>
-    <Compile Include="CLCARMELODBDataSet1.Designer.cs">
+    <Compile Include="CLCARMELODBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
+      <DependentUpon>CLCARMELODBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="IniciarSesion.cs">
       <SubType>Form</SubType>
@@ -389,6 +395,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CapaVista\ReportesGenerados\ReporteEmpleado.resx">
       <DependentUpon>ReporteEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\ReportesGenerados\ReporteFechasPacientes.resx">
+      <DependentUpon>ReporteFechasPacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\Reportes\ReporteEmpleado.rdlc" />
     <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.resx">
@@ -542,16 +551,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="CLCARMELODBDataSet1.xsc">
-      <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
+    <None Include="CLCARMELODBDataSet.xsc">
+      <DependentUpon>CLCARMELODBDataSet.xsd</DependentUpon>
     </None>
-    <None Include="CLCARMELODBDataSet1.xsd">
+    <None Include="CLCARMELODBDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CLCARMELODBDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>CLCARMELODBDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="CLCARMELODBDataSet1.xss">
-      <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
+    <None Include="CLCARMELODBDataSet.xss">
+      <DependentUpon>CLCARMELODBDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
