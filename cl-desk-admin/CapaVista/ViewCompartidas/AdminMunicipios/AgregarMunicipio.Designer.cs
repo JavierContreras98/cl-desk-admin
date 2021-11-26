@@ -104,6 +104,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtNombre
             // 
@@ -162,6 +163,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.Name = "frmAgregarMunicipio";
             this.Text = "Agregar Municipio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmAgregarMunicipio_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

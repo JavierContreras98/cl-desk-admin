@@ -15,7 +15,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
 {
     public partial class frmAdministrarUsuario : Form
     {
-        string URI = "https://localhost:44310/api/usuario";
+        string URI_USUARIO = "https://localhost:44310/api/Usuario";
         public frmAdministrarUsuario()
         {
             InitializeComponent();
@@ -33,7 +33,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
         {
             using (var client = new HttpClient())
             {
-                using (var response = await client.GetAsync(URI))
+                using (var response = await client.GetAsync(URI_USUARIO))
                 {
                     if (response.IsSuccessStatusCode)
                     {
@@ -127,15 +127,15 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             int UsuarioID = id;
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(URI);
-                HttpResponseMessage responseMessage = await client.DeleteAsync(String.Format("{0}/{1}", URI, UsuarioID));
+                client.BaseAddress = new Uri(URI_USUARIO);
+                HttpResponseMessage responseMessage = await client.DeleteAsync(String.Format("{0}/{1}", URI_USUARIO, UsuarioID));
                 if (responseMessage.IsSuccessStatusCode)
                 {
 
                 }
                 else
                 {
-                    MessageBox.Show("Error: No se puedo eliminar el usuario " + responseMessage.StatusCode);
+                    MessageBox.Show("Error: No se puedo eliminar el usuario.\nPara Eliminar un usuario debe eliminar el empleado que tiene ese usuario ");
                 }
             }
             GetAllUsuarios();
