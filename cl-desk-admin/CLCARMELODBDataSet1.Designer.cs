@@ -20,17 +20,17 @@ namespace cl_desk_admin {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("CLCARMELODBDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("CLCARMELODBDataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class CLCARMELODBDataSet : global::System.Data.DataSet {
+    public partial class CLCARMELODBDataSet1 : global::System.Data.DataSet {
         
-        private SP_VIEW_REPORTE_EMPLEADODataTable tableSP_VIEW_REPORTE_EMPLEADO;
+        private SP_CREATE_REPORT4DataTable tableSP_CREATE_REPORT4;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public CLCARMELODBDataSet() {
+        public CLCARMELODBDataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace cl_desk_admin {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected CLCARMELODBDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected CLCARMELODBDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace cl_desk_admin {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["SP_VIEW_REPORTE_EMPLEADO"] != null)) {
-                    base.Tables.Add(new SP_VIEW_REPORTE_EMPLEADODataTable(ds.Tables["SP_VIEW_REPORTE_EMPLEADO"]));
+                if ((ds.Tables["SP_CREATE_REPORT4"] != null)) {
+                    base.Tables.Add(new SP_CREATE_REPORT4DataTable(ds.Tables["SP_CREATE_REPORT4"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace cl_desk_admin {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public SP_VIEW_REPORTE_EMPLEADODataTable SP_VIEW_REPORTE_EMPLEADO {
+        public SP_CREATE_REPORT4DataTable SP_CREATE_REPORT4 {
             get {
-                return this.tableSP_VIEW_REPORTE_EMPLEADO;
+                return this.tableSP_CREATE_REPORT4;
             }
         }
         
@@ -127,7 +127,7 @@ namespace cl_desk_admin {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            CLCARMELODBDataSet cln = ((CLCARMELODBDataSet)(base.Clone()));
+            CLCARMELODBDataSet1 cln = ((CLCARMELODBDataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace cl_desk_admin {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["SP_VIEW_REPORTE_EMPLEADO"] != null)) {
-                    base.Tables.Add(new SP_VIEW_REPORTE_EMPLEADODataTable(ds.Tables["SP_VIEW_REPORTE_EMPLEADO"]));
+                if ((ds.Tables["SP_CREATE_REPORT4"] != null)) {
+                    base.Tables.Add(new SP_CREATE_REPORT4DataTable(ds.Tables["SP_CREATE_REPORT4"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace cl_desk_admin {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableSP_VIEW_REPORTE_EMPLEADO = ((SP_VIEW_REPORTE_EMPLEADODataTable)(base.Tables["SP_VIEW_REPORTE_EMPLEADO"]));
+            this.tableSP_CREATE_REPORT4 = ((SP_CREATE_REPORT4DataTable)(base.Tables["SP_CREATE_REPORT4"]));
             if ((initTable == true)) {
-                if ((this.tableSP_VIEW_REPORTE_EMPLEADO != null)) {
-                    this.tableSP_VIEW_REPORTE_EMPLEADO.InitVars();
+                if ((this.tableSP_CREATE_REPORT4 != null)) {
+                    this.tableSP_CREATE_REPORT4.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace cl_desk_admin {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "CLCARMELODBDataSet";
+            this.DataSetName = "CLCARMELODBDataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/CLCARMELODBDataSet.xsd";
+            this.Namespace = "http://tempuri.org/CLCARMELODBDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableSP_VIEW_REPORTE_EMPLEADO = new SP_VIEW_REPORTE_EMPLEADODataTable();
-            base.Tables.Add(this.tableSP_VIEW_REPORTE_EMPLEADO);
+            this.tableSP_CREATE_REPORT4 = new SP_CREATE_REPORT4DataTable();
+            base.Tables.Add(this.tableSP_CREATE_REPORT4);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeSP_VIEW_REPORTE_EMPLEADO() {
+        private bool ShouldSerializeSP_CREATE_REPORT4() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace cl_desk_admin {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            CLCARMELODBDataSet ds = new CLCARMELODBDataSet();
+            CLCARMELODBDataSet1 ds = new CLCARMELODBDataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,16 +270,16 @@ namespace cl_desk_admin {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void SP_VIEW_REPORTE_EMPLEADORowChangeEventHandler(object sender, SP_VIEW_REPORTE_EMPLEADORowChangeEvent e);
+        public delegate void SP_CREATE_REPORT4RowChangeEventHandler(object sender, SP_CREATE_REPORT4RowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class SP_VIEW_REPORTE_EMPLEADODataTable : global::System.Data.TypedTableBase<SP_VIEW_REPORTE_EMPLEADORow> {
+        public partial class SP_CREATE_REPORT4DataTable : global::System.Data.TypedTableBase<SP_CREATE_REPORT4Row> {
             
-            private global::System.Data.DataColumn columnNº;
+            private global::System.Data.DataColumn columnNยบ;
             
             private global::System.Data.DataColumn columnNOMBRE_EMPLEADO;
             
@@ -295,8 +295,8 @@ namespace cl_desk_admin {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SP_VIEW_REPORTE_EMPLEADODataTable() {
-                this.TableName = "SP_VIEW_REPORTE_EMPLEADO";
+            public SP_CREATE_REPORT4DataTable() {
+                this.TableName = "SP_CREATE_REPORT4";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -304,7 +304,7 @@ namespace cl_desk_admin {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal SP_VIEW_REPORTE_EMPLEADODataTable(global::System.Data.DataTable table) {
+            internal SP_CREATE_REPORT4DataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -321,16 +321,16 @@ namespace cl_desk_admin {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected SP_VIEW_REPORTE_EMPLEADODataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected SP_CREATE_REPORT4DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn NºColumn {
+            public global::System.Data.DataColumn NยบColumn {
                 get {
-                    return this.columnNº;
+                    return this.columnNยบ;
                 }
             }
             
@@ -393,34 +393,34 @@ namespace cl_desk_admin {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SP_VIEW_REPORTE_EMPLEADORow this[int index] {
+            public SP_CREATE_REPORT4Row this[int index] {
                 get {
-                    return ((SP_VIEW_REPORTE_EMPLEADORow)(this.Rows[index]));
+                    return ((SP_CREATE_REPORT4Row)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event SP_VIEW_REPORTE_EMPLEADORowChangeEventHandler SP_VIEW_REPORTE_EMPLEADORowChanging;
+            public event SP_CREATE_REPORT4RowChangeEventHandler SP_CREATE_REPORT4RowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event SP_VIEW_REPORTE_EMPLEADORowChangeEventHandler SP_VIEW_REPORTE_EMPLEADORowChanged;
+            public event SP_CREATE_REPORT4RowChangeEventHandler SP_CREATE_REPORT4RowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event SP_VIEW_REPORTE_EMPLEADORowChangeEventHandler SP_VIEW_REPORTE_EMPLEADORowDeleting;
+            public event SP_CREATE_REPORT4RowChangeEventHandler SP_CREATE_REPORT4RowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event SP_VIEW_REPORTE_EMPLEADORowChangeEventHandler SP_VIEW_REPORTE_EMPLEADORowDeleted;
+            public event SP_CREATE_REPORT4RowChangeEventHandler SP_CREATE_REPORT4RowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddSP_VIEW_REPORTE_EMPLEADORow(SP_VIEW_REPORTE_EMPLEADORow row) {
+            public void AddSP_CREATE_REPORT4Row(SP_CREATE_REPORT4Row row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SP_VIEW_REPORTE_EMPLEADORow AddSP_VIEW_REPORTE_EMPLEADORow(string NOMBRE_EMPLEADO, System.DateTime FECHA_DE_NACIMIENTO, string CORREO_ELECTRONICO, string NUMERO, string NOMBRE, string PROFESION) {
-                SP_VIEW_REPORTE_EMPLEADORow rowSP_VIEW_REPORTE_EMPLEADORow = ((SP_VIEW_REPORTE_EMPLEADORow)(this.NewRow()));
+            public SP_CREATE_REPORT4Row AddSP_CREATE_REPORT4Row(string NOMBRE_EMPLEADO, System.DateTime FECHA_DE_NACIMIENTO, string CORREO_ELECTRONICO, string NUMERO, string NOMBRE, string PROFESION) {
+                SP_CREATE_REPORT4Row rowSP_CREATE_REPORT4Row = ((SP_CREATE_REPORT4Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         NOMBRE_EMPLEADO,
@@ -429,22 +429,22 @@ namespace cl_desk_admin {
                         NUMERO,
                         NOMBRE,
                         PROFESION};
-                rowSP_VIEW_REPORTE_EMPLEADORow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowSP_VIEW_REPORTE_EMPLEADORow);
-                return rowSP_VIEW_REPORTE_EMPLEADORow;
+                rowSP_CREATE_REPORT4Row.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSP_CREATE_REPORT4Row);
+                return rowSP_CREATE_REPORT4Row;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SP_VIEW_REPORTE_EMPLEADORow FindByNº(int Nº) {
-                return ((SP_VIEW_REPORTE_EMPLEADORow)(this.Rows.Find(new object[] {
-                            Nº})));
+            public SP_CREATE_REPORT4Row FindByNยบ(int Nยบ) {
+                return ((SP_CREATE_REPORT4Row)(this.Rows.Find(new object[] {
+                            Nยบ})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                SP_VIEW_REPORTE_EMPLEADODataTable cln = ((SP_VIEW_REPORTE_EMPLEADODataTable)(base.Clone()));
+                SP_CREATE_REPORT4DataTable cln = ((SP_CREATE_REPORT4DataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -452,13 +452,13 @@ namespace cl_desk_admin {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new SP_VIEW_REPORTE_EMPLEADODataTable();
+                return new SP_CREATE_REPORT4DataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnNº = base.Columns["Nº"];
+                this.columnNยบ = base.Columns["Nยบ"];
                 this.columnNOMBRE_EMPLEADO = base.Columns["NOMBRE_EMPLEADO"];
                 this.columnFECHA_DE_NACIMIENTO = base.Columns["FECHA_DE_NACIMIENTO"];
                 this.columnCORREO_ELECTRONICO = base.Columns["CORREO_ELECTRONICO"];
@@ -470,8 +470,8 @@ namespace cl_desk_admin {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnNº = new global::System.Data.DataColumn("Nº", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNº);
+                this.columnNยบ = new global::System.Data.DataColumn("Nยบ", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNยบ);
                 this.columnNOMBRE_EMPLEADO = new global::System.Data.DataColumn("NOMBRE_EMPLEADO", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNOMBRE_EMPLEADO);
                 this.columnFECHA_DE_NACIMIENTO = new global::System.Data.DataColumn("FECHA_DE_NACIMIENTO", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
@@ -485,11 +485,11 @@ namespace cl_desk_admin {
                 this.columnPROFESION = new global::System.Data.DataColumn("PROFESION", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPROFESION);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnNº}, true));
-                this.columnNº.AutoIncrement = true;
-                this.columnNº.AllowDBNull = false;
-                this.columnNº.ReadOnly = true;
-                this.columnNº.Unique = true;
+                                this.columnNยบ}, true));
+                this.columnNยบ.AutoIncrement = true;
+                this.columnNยบ.AllowDBNull = false;
+                this.columnNยบ.ReadOnly = true;
+                this.columnNยบ.Unique = true;
                 this.columnNOMBRE_EMPLEADO.ReadOnly = true;
                 this.columnNOMBRE_EMPLEADO.MaxLength = 203;
                 this.columnFECHA_DE_NACIMIENTO.AllowDBNull = false;
@@ -504,28 +504,28 @@ namespace cl_desk_admin {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SP_VIEW_REPORTE_EMPLEADORow NewSP_VIEW_REPORTE_EMPLEADORow() {
-                return ((SP_VIEW_REPORTE_EMPLEADORow)(this.NewRow()));
+            public SP_CREATE_REPORT4Row NewSP_CREATE_REPORT4Row() {
+                return ((SP_CREATE_REPORT4Row)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new SP_VIEW_REPORTE_EMPLEADORow(builder);
+                return new SP_CREATE_REPORT4Row(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(SP_VIEW_REPORTE_EMPLEADORow);
+                return typeof(SP_CREATE_REPORT4Row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.SP_VIEW_REPORTE_EMPLEADORowChanged != null)) {
-                    this.SP_VIEW_REPORTE_EMPLEADORowChanged(this, new SP_VIEW_REPORTE_EMPLEADORowChangeEvent(((SP_VIEW_REPORTE_EMPLEADORow)(e.Row)), e.Action));
+                if ((this.SP_CREATE_REPORT4RowChanged != null)) {
+                    this.SP_CREATE_REPORT4RowChanged(this, new SP_CREATE_REPORT4RowChangeEvent(((SP_CREATE_REPORT4Row)(e.Row)), e.Action));
                 }
             }
             
@@ -533,8 +533,8 @@ namespace cl_desk_admin {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.SP_VIEW_REPORTE_EMPLEADORowChanging != null)) {
-                    this.SP_VIEW_REPORTE_EMPLEADORowChanging(this, new SP_VIEW_REPORTE_EMPLEADORowChangeEvent(((SP_VIEW_REPORTE_EMPLEADORow)(e.Row)), e.Action));
+                if ((this.SP_CREATE_REPORT4RowChanging != null)) {
+                    this.SP_CREATE_REPORT4RowChanging(this, new SP_CREATE_REPORT4RowChangeEvent(((SP_CREATE_REPORT4Row)(e.Row)), e.Action));
                 }
             }
             
@@ -542,8 +542,8 @@ namespace cl_desk_admin {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.SP_VIEW_REPORTE_EMPLEADORowDeleted != null)) {
-                    this.SP_VIEW_REPORTE_EMPLEADORowDeleted(this, new SP_VIEW_REPORTE_EMPLEADORowChangeEvent(((SP_VIEW_REPORTE_EMPLEADORow)(e.Row)), e.Action));
+                if ((this.SP_CREATE_REPORT4RowDeleted != null)) {
+                    this.SP_CREATE_REPORT4RowDeleted(this, new SP_CREATE_REPORT4RowChangeEvent(((SP_CREATE_REPORT4Row)(e.Row)), e.Action));
                 }
             }
             
@@ -551,14 +551,14 @@ namespace cl_desk_admin {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.SP_VIEW_REPORTE_EMPLEADORowDeleting != null)) {
-                    this.SP_VIEW_REPORTE_EMPLEADORowDeleting(this, new SP_VIEW_REPORTE_EMPLEADORowChangeEvent(((SP_VIEW_REPORTE_EMPLEADORow)(e.Row)), e.Action));
+                if ((this.SP_CREATE_REPORT4RowDeleting != null)) {
+                    this.SP_CREATE_REPORT4RowDeleting(this, new SP_CREATE_REPORT4RowChangeEvent(((SP_CREATE_REPORT4Row)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveSP_VIEW_REPORTE_EMPLEADORow(SP_VIEW_REPORTE_EMPLEADORow row) {
+            public void RemoveSP_CREATE_REPORT4Row(SP_CREATE_REPORT4Row row) {
                 this.Rows.Remove(row);
             }
             
@@ -567,7 +567,7 @@ namespace cl_desk_admin {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                CLCARMELODBDataSet ds = new CLCARMELODBDataSet();
+                CLCARMELODBDataSet1 ds = new CLCARMELODBDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -585,7 +585,7 @@ namespace cl_desk_admin {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "SP_VIEW_REPORTE_EMPLEADODataTable";
+                attribute2.FixedValue = "SP_CREATE_REPORT4DataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -629,25 +629,25 @@ namespace cl_desk_admin {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class SP_VIEW_REPORTE_EMPLEADORow : global::System.Data.DataRow {
+        public partial class SP_CREATE_REPORT4Row : global::System.Data.DataRow {
             
-            private SP_VIEW_REPORTE_EMPLEADODataTable tableSP_VIEW_REPORTE_EMPLEADO;
+            private SP_CREATE_REPORT4DataTable tableSP_CREATE_REPORT4;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal SP_VIEW_REPORTE_EMPLEADORow(global::System.Data.DataRowBuilder rb) : 
+            internal SP_CREATE_REPORT4Row(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableSP_VIEW_REPORTE_EMPLEADO = ((SP_VIEW_REPORTE_EMPLEADODataTable)(this.Table));
+                this.tableSP_CREATE_REPORT4 = ((SP_CREATE_REPORT4DataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Nº {
+            public int Nยบ {
                 get {
-                    return ((int)(this[this.tableSP_VIEW_REPORTE_EMPLEADO.NºColumn]));
+                    return ((int)(this[this.tableSP_CREATE_REPORT4.NยบColumn]));
                 }
                 set {
-                    this[this.tableSP_VIEW_REPORTE_EMPLEADO.NºColumn] = value;
+                    this[this.tableSP_CREATE_REPORT4.NยบColumn] = value;
                 }
             }
             
@@ -656,15 +656,15 @@ namespace cl_desk_admin {
             public string NOMBRE_EMPLEADO {
                 get {
                     try {
-                        return ((string)(this[this.tableSP_VIEW_REPORTE_EMPLEADO.NOMBRE_EMPLEADOColumn]));
+                        return ((string)(this[this.tableSP_CREATE_REPORT4.NOMBRE_EMPLEADOColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NOMBRE_EMPLEADO\' de la tabla \'SP_VIEW_REPORTE_EMPLEADO\' e" +
-                                "s DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NOMBRE_EMPLEADO\' de la tabla \'SP_CREATE_REPORT4\' es DBNul" +
+                                "l.", e);
                     }
                 }
                 set {
-                    this[this.tableSP_VIEW_REPORTE_EMPLEADO.NOMBRE_EMPLEADOColumn] = value;
+                    this[this.tableSP_CREATE_REPORT4.NOMBRE_EMPLEADOColumn] = value;
                 }
             }
             
@@ -672,10 +672,10 @@ namespace cl_desk_admin {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public System.DateTime FECHA_DE_NACIMIENTO {
                 get {
-                    return ((global::System.DateTime)(this[this.tableSP_VIEW_REPORTE_EMPLEADO.FECHA_DE_NACIMIENTOColumn]));
+                    return ((global::System.DateTime)(this[this.tableSP_CREATE_REPORT4.FECHA_DE_NACIMIENTOColumn]));
                 }
                 set {
-                    this[this.tableSP_VIEW_REPORTE_EMPLEADO.FECHA_DE_NACIMIENTOColumn] = value;
+                    this[this.tableSP_CREATE_REPORT4.FECHA_DE_NACIMIENTOColumn] = value;
                 }
             }
             
@@ -684,15 +684,15 @@ namespace cl_desk_admin {
             public string CORREO_ELECTRONICO {
                 get {
                     try {
-                        return ((string)(this[this.tableSP_VIEW_REPORTE_EMPLEADO.CORREO_ELECTRONICOColumn]));
+                        return ((string)(this[this.tableSP_CREATE_REPORT4.CORREO_ELECTRONICOColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CORREO_ELECTRONICO\' de la tabla \'SP_VIEW_REPORTE_EMPLEADO" +
-                                "\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CORREO_ELECTRONICO\' de la tabla \'SP_CREATE_REPORT4\' es DB" +
+                                "Null.", e);
                     }
                 }
                 set {
-                    this[this.tableSP_VIEW_REPORTE_EMPLEADO.CORREO_ELECTRONICOColumn] = value;
+                    this[this.tableSP_CREATE_REPORT4.CORREO_ELECTRONICOColumn] = value;
                 }
             }
             
@@ -700,10 +700,10 @@ namespace cl_desk_admin {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string NUMERO {
                 get {
-                    return ((string)(this[this.tableSP_VIEW_REPORTE_EMPLEADO.NUMEROColumn]));
+                    return ((string)(this[this.tableSP_CREATE_REPORT4.NUMEROColumn]));
                 }
                 set {
-                    this[this.tableSP_VIEW_REPORTE_EMPLEADO.NUMEROColumn] = value;
+                    this[this.tableSP_CREATE_REPORT4.NUMEROColumn] = value;
                 }
             }
             
@@ -711,10 +711,10 @@ namespace cl_desk_admin {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string NOMBRE {
                 get {
-                    return ((string)(this[this.tableSP_VIEW_REPORTE_EMPLEADO.NOMBREColumn]));
+                    return ((string)(this[this.tableSP_CREATE_REPORT4.NOMBREColumn]));
                 }
                 set {
-                    this[this.tableSP_VIEW_REPORTE_EMPLEADO.NOMBREColumn] = value;
+                    this[this.tableSP_CREATE_REPORT4.NOMBREColumn] = value;
                 }
             }
             
@@ -722,35 +722,35 @@ namespace cl_desk_admin {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string PROFESION {
                 get {
-                    return ((string)(this[this.tableSP_VIEW_REPORTE_EMPLEADO.PROFESIONColumn]));
+                    return ((string)(this[this.tableSP_CREATE_REPORT4.PROFESIONColumn]));
                 }
                 set {
-                    this[this.tableSP_VIEW_REPORTE_EMPLEADO.PROFESIONColumn] = value;
+                    this[this.tableSP_CREATE_REPORT4.PROFESIONColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsNOMBRE_EMPLEADONull() {
-                return this.IsNull(this.tableSP_VIEW_REPORTE_EMPLEADO.NOMBRE_EMPLEADOColumn);
+                return this.IsNull(this.tableSP_CREATE_REPORT4.NOMBRE_EMPLEADOColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetNOMBRE_EMPLEADONull() {
-                this[this.tableSP_VIEW_REPORTE_EMPLEADO.NOMBRE_EMPLEADOColumn] = global::System.Convert.DBNull;
+                this[this.tableSP_CREATE_REPORT4.NOMBRE_EMPLEADOColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsCORREO_ELECTRONICONull() {
-                return this.IsNull(this.tableSP_VIEW_REPORTE_EMPLEADO.CORREO_ELECTRONICOColumn);
+                return this.IsNull(this.tableSP_CREATE_REPORT4.CORREO_ELECTRONICOColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetCORREO_ELECTRONICONull() {
-                this[this.tableSP_VIEW_REPORTE_EMPLEADO.CORREO_ELECTRONICOColumn] = global::System.Convert.DBNull;
+                this[this.tableSP_CREATE_REPORT4.CORREO_ELECTRONICOColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -758,22 +758,22 @@ namespace cl_desk_admin {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class SP_VIEW_REPORTE_EMPLEADORowChangeEvent : global::System.EventArgs {
+        public class SP_CREATE_REPORT4RowChangeEvent : global::System.EventArgs {
             
-            private SP_VIEW_REPORTE_EMPLEADORow eventRow;
+            private SP_CREATE_REPORT4Row eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SP_VIEW_REPORTE_EMPLEADORowChangeEvent(SP_VIEW_REPORTE_EMPLEADORow row, global::System.Data.DataRowAction action) {
+            public SP_CREATE_REPORT4RowChangeEvent(SP_CREATE_REPORT4Row row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SP_VIEW_REPORTE_EMPLEADORow Row {
+            public SP_CREATE_REPORT4Row Row {
                 get {
                     return this.eventRow;
                 }
@@ -789,7 +789,7 @@ namespace cl_desk_admin {
         }
     }
 }
-namespace cl_desk_admin.CLCARMELODBDataSetTableAdapters {
+namespace cl_desk_admin.CLCARMELODBDataSet1TableAdapters {
     
     
     /// <summary>
@@ -801,7 +801,7 @@ namespace cl_desk_admin.CLCARMELODBDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class SP_VIEW_REPORTE_EMPLEADOTableAdapter : global::System.ComponentModel.Component {
+    public partial class SP_CREATE_REPORT4TableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -815,7 +815,7 @@ namespace cl_desk_admin.CLCARMELODBDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public SP_VIEW_REPORTE_EMPLEADOTableAdapter() {
+        public SP_CREATE_REPORT4TableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -912,8 +912,8 @@ namespace cl_desk_admin.CLCARMELODBDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "SP_VIEW_REPORTE_EMPLEADO";
-            tableMapping.ColumnMappings.Add("Nº", "Nº");
+            tableMapping.DataSetTable = "SP_CREATE_REPORT4";
+            tableMapping.ColumnMappings.Add("Nยบ", "Nยบ");
             tableMapping.ColumnMappings.Add("NOMBRE_EMPLEADO", "NOMBRE_EMPLEADO");
             tableMapping.ColumnMappings.Add("FECHA_DE_NACIMIENTO", "FECHA_DE_NACIMIENTO");
             tableMapping.ColumnMappings.Add("CORREO_ELECTRONICO", "CORREO_ELECTRONICO");
@@ -936,7 +936,7 @@ namespace cl_desk_admin.CLCARMELODBDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.SP_VIEW_REPORTE_EMPLEADO";
+            this._commandCollection[0].CommandText = "dbo.SP_CREATE_REPORT4";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -945,7 +945,7 @@ namespace cl_desk_admin.CLCARMELODBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(CLCARMELODBDataSet.SP_VIEW_REPORTE_EMPLEADODataTable dataTable) {
+        public virtual int Fill(CLCARMELODBDataSet1.SP_CREATE_REPORT4DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -958,9 +958,9 @@ namespace cl_desk_admin.CLCARMELODBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual CLCARMELODBDataSet.SP_VIEW_REPORTE_EMPLEADODataTable GetData() {
+        public virtual CLCARMELODBDataSet1.SP_CREATE_REPORT4DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            CLCARMELODBDataSet.SP_VIEW_REPORTE_EMPLEADODataTable dataTable = new CLCARMELODBDataSet.SP_VIEW_REPORTE_EMPLEADODataTable();
+            CLCARMELODBDataSet1.SP_CREATE_REPORT4DataTable dataTable = new CLCARMELODBDataSet1.SP_CREATE_REPORT4DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1034,7 +1034,7 @@ namespace cl_desk_admin.CLCARMELODBDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(CLCARMELODBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(CLCARMELODBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1044,7 +1044,7 @@ namespace cl_desk_admin.CLCARMELODBDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(CLCARMELODBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(CLCARMELODBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1054,7 +1054,7 @@ namespace cl_desk_admin.CLCARMELODBDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(CLCARMELODBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(CLCARMELODBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1088,7 +1088,7 @@ namespace cl_desk_admin.CLCARMELODBDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(CLCARMELODBDataSet dataSet) {
+        public virtual int UpdateAll(CLCARMELODBDataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

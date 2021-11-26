@@ -1,7 +1,7 @@
 ﻿
 namespace cl_desk_admin.CapaVista.ReportesGenerados
 {
-    partial class ReporteFechasPacientes
+    partial class ReportePacienteDepartamento
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.rvPacienteFechas = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.rvPacienteDepartamento = new Microsoft.Reporting.WinForms.ReportViewer();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -46,16 +46,16 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.label2.Text = "CLINICA EL CARMELO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // rvPacienteFechas
+            // rvPacienteDepartamento
             // 
-            this.rvPacienteFechas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.rvPacienteDepartamento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rvPacienteFechas.BackColor = System.Drawing.SystemColors.Info;
-            this.rvPacienteFechas.Location = new System.Drawing.Point(3, 128);
-            this.rvPacienteFechas.Name = "rvPacienteFechas";
-            this.rvPacienteFechas.ServerReport.BearerToken = null;
-            this.rvPacienteFechas.Size = new System.Drawing.Size(1010, 246);
-            this.rvPacienteFechas.TabIndex = 4;
+            this.rvPacienteDepartamento.BackColor = System.Drawing.SystemColors.Info;
+            this.rvPacienteDepartamento.Location = new System.Drawing.Point(12, 128);
+            this.rvPacienteDepartamento.Name = "rvPacienteDepartamento";
+            this.rvPacienteDepartamento.ServerReport.BearerToken = null;
+            this.rvPacienteDepartamento.Size = new System.Drawing.Size(1001, 472);
+            this.rvPacienteDepartamento.TabIndex = 4;
             // 
             // button1
             // 
@@ -69,26 +69,25 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.button1.Text = "GENERAR REPORTE";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // ReporteFechasPacientes
+            // ReportePacienteDepartamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1025, 612);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.rvPacienteFechas);
+            this.Controls.Add(this.rvPacienteDepartamento);
             this.Controls.Add(this.label2);
-            this.Name = "ReporteFechasPacientes";
-            this.Text = "Administrar Citas";
+            this.Name = "ReportePacienteDepartamento";
+            this.Text = "Reporte de Pacientes en Departamentos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.ReporteFechasPacientes_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Label label2;
-        private Microsoft.Reporting.WinForms.ReportViewer rvPacienteFechas;
+        private Microsoft.Reporting.WinForms.ReportViewer rvPacienteDepartamento;
         private System.Windows.Forms.Button button1;
     }
 }

@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace cl_desk_admin.CapaVista.ReportesGenerados
 {
-    public partial class ReporteFechasPacientes : Form
+    public partial class ReportePacienteDepartamento : Form
     {
-        public ReporteFechasPacientes()
+        public ReportePacienteDepartamento()
         {
             InitializeComponent();
-        }
-
-        private void ReporteFechasPacientes_Load(object sender, EventArgs e)
-        {
-
-            this.rvPacienteFechas.RefreshReport();
         }
     }
 }
