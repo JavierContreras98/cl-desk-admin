@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="CLCARMELODBDataSet1" targetNamespace="http://tempuri.org/CLCARMELODBDataSet1.xsd" xmlns:mstns="http://tempuri.org/CLCARMELODBDataSet1.xsd" xmlns="http://tempuri.org/CLCARMELODBDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="CLCARMELODBDataSet" targetNamespace="http://tempuri.org/CLCARMELODBDataSet1.xsd" xmlns:mstns="http://tempuri.org/CLCARMELODBDataSet1.xsd" xmlns="http://tempuri.org/CLCARMELODBDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -36,7 +36,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="CLCARMELODBDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CLCARMELODBDataSet1" msprop:Generator_UserDSName="CLCARMELODBDataSet1">
+  <xs:element name="CLCARMELODBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CLCARMELODBDataSet" msprop:Generator_UserDSName="CLCARMELODBDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="SP_CREATE_REPORT4" msprop:Generator_TableClassName="SP_CREATE_REPORT4DataTable" msprop:Generator_TableVarName="tableSP_CREATE_REPORT4" msprop:Generator_TablePropName="SP_CREATE_REPORT4" msprop:Generator_RowDeletingName="SP_CREATE_REPORT4RowDeleting" msprop:Generator_RowChangingName="SP_CREATE_REPORT4RowChanging" msprop:Generator_RowEvHandlerName="SP_CREATE_REPORT4RowChangeEventHandler" msprop:Generator_RowDeletedName="SP_CREATE_REPORT4RowDeleted" msprop:Generator_UserTableName="SP_CREATE_REPORT4" msprop:Generator_RowChangedName="SP_CREATE_REPORT4RowChanged" msprop:Generator_RowEvArgName="SP_CREATE_REPORT4RowChangeEvent" msprop:Generator_RowClassName="SP_CREATE_REPORT4Row">

@@ -7,33 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
- 
 
 namespace cl_desk_admin.CapaVista.ReportesGenerados
 {
-    public partial class ReporteEmpleado : Form
+    public partial class frmReporteEmpleado : Form
     {
-        public ReporteEmpleado()
+        public frmReporteEmpleado()
         {
             InitializeComponent();
         }
 
         private void ReporteEmpleado_Load(object sender, EventArgs e)
         {
-      
+            // TODO: esta línea de código carga datos en la tabla 'cLCARMELODBDataSet.SP_CREATE_REPORT4' Puede moverla o quitarla según sea necesario.
+            this.sP_CREATE_REPORT4TableAdapter.Fill(this.cLCARMELODBDataSet.SP_CREATE_REPORT4);
 
-
-         
-        }
-
-        private void lblClinicaCarmelo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void reportViewer1_Load(object sender, EventArgs e)
-        {
-             
+            this.rvReporteEmpleado.RefreshReport();
         }
     }
 }

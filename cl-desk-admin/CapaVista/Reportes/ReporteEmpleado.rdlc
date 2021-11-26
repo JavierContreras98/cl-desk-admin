@@ -576,7 +576,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -604,7 +603,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet1</DataSetName>
+        <DataSetName>DataReporteEmpleado</DataSetName>
         <Top>6.37328cm</Top>
         <Left>1.13926cm</Left>
         <Height>1.6498cm</Height>
@@ -643,7 +642,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="DataReporteEmpleado">
       <Query>
         <DataSourceName>CLCARMELODBDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
