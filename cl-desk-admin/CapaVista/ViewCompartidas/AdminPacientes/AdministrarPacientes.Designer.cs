@@ -29,29 +29,16 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnMenuP = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.dvgAdminPaciente = new System.Windows.Forms.DataGridView();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnCrear = new System.Windows.Forms.Button();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.lblInformacion = new System.Windows.Forms.Label();
+            this.rbModificar = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dvgAdminPaciente)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(202)))), ((int)(((byte)(240)))));
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(679, 105);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(119, 26);
-            this.btnBuscar.TabIndex = 0;
-            this.btnBuscar.Text = "BUSCAR";
-            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // btnMenuP
             // 
@@ -78,25 +65,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.label1.Text = "CLINICA EL CARMELO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscar.Location = new System.Drawing.Point(393, 108);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(275, 20);
-            this.txtBuscar.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(242, 110);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 15);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "BUSQUEDA AVANZADA";
-            // 
             // dvgAdminPaciente
             // 
             this.dvgAdminPaciente.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -118,6 +86,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.btnModificar.TabIndex = 7;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnCrear
             // 
@@ -131,6 +100,42 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.btnCrear.TabIndex = 8;
             this.btnCrear.Text = "CREAR NUEVO";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNumero.Location = new System.Drawing.Point(393, 540);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(275, 20);
+            this.txtNumero.TabIndex = 36;
+            this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
+            // 
+            // lblInformacion
+            // 
+            this.lblInformacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblInformacion.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblInformacion.Location = new System.Drawing.Point(390, 523);
+            this.lblInformacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInformacion.Name = "lblInformacion";
+            this.lblInformacion.Size = new System.Drawing.Size(278, 15);
+            this.lblInformacion.TabIndex = 35;
+            this.lblInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // rbModificar
+            // 
+            this.rbModificar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.rbModificar.AutoSize = true;
+            this.rbModificar.Location = new System.Drawing.Point(125, 503);
+            this.rbModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.rbModificar.Name = "rbModificar";
+            this.rbModificar.Size = new System.Drawing.Size(127, 17);
+            this.rbModificar.TabIndex = 34;
+            this.rbModificar.TabStop = true;
+            this.rbModificar.Text = "Activar para modificar";
+            this.rbModificar.UseVisualStyleBackColor = true;
+            this.rbModificar.CheckedChanged += new System.EventHandler(this.frmAdministrarPacientes_Load);
             // 
             // frmAdministrarPacientes
             // 
@@ -138,17 +143,18 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.Controls.Add(this.txtNumero);
+            this.Controls.Add(this.lblInformacion);
+            this.Controls.Add(this.rbModificar);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.dvgAdminPaciente);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMenuP);
-            this.Controls.Add(this.btnBuscar);
             this.Name = "frmAdministrarPacientes";
             this.Text = "Administrar Pacientes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmAdministrarPacientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvgAdminPaciente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,14 +162,13 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnMenuP;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dvgAdminPaciente;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnCrear;
+        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.Label lblInformacion;
+        private System.Windows.Forms.RadioButton rbModificar;
     }
 }
