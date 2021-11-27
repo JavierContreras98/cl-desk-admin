@@ -54,6 +54,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             this.btnMenuPrInfoMedico.TabIndex = 0;
             this.btnMenuPrInfoMedico.Text = "MENU PRINCIPAL";
             this.btnMenuPrInfoMedico.UseVisualStyleBackColor = false;
+            this.btnMenuPrInfoMedico.Click += new System.EventHandler(this.btnMenuPrInfoMedico_Click);
             // 
             // btnCrearInfoMedico
             // 

@@ -140,5 +140,14 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             }
             GetAllUsuarios();
         }
+
+        private void btnMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            frmMenuAdminGeneral menuPricipal = new frmMenuAdminGeneral();
+
+            this.Hide();
+            menuPricipal.ShowDialog();
+            this.Close();
+        }
     }
 }

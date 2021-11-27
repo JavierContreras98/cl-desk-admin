@@ -18,6 +18,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using cl_desk_admin.CapaVista.ViewCompartidas;
+using cl_desk_admin.CapaVista.ViewAdministradorGeneral;
 using System.Net;
 using System.IO;
 using System.Net.Http;
@@ -154,6 +155,15 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
                 modificar.Show();
                 this.Hide();
             }
+        }
+
+        private void btnMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            frmMenuAdminGeneral menuPricipal = new frmMenuAdminGeneral();
+
+            this.Hide();
+            menuPricipal.ShowDialog();
+            this.Close();
         }
     }
 }

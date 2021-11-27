@@ -111,6 +111,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             this.btnMenuPrincipal.TabIndex = 13;
             this.btnMenuPrincipal.Text = "MENU PRINCIPAL";
             this.btnMenuPrincipal.UseVisualStyleBackColor = false;
+            this.btnMenuPrincipal.Click += new System.EventHandler(this.btnMenuPrincipal_Click);
             // 
             // lblBanner
             // 

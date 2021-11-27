@@ -72,6 +72,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminTipoUsuario
             this.btnMenuPrincipal.TabIndex = 1;
             this.btnMenuPrincipal.Text = "MENU PRINCIPAL";
             this.btnMenuPrincipal.UseVisualStyleBackColor = false;
+            this.btnMenuPrincipal.Click += new System.EventHandler(this.btnMenuPrincipal_Click);
             // 
             // lblBusquedaAvanzada
             // 

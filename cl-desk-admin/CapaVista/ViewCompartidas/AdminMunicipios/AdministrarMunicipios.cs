@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using cl_desk_admin.CapaVista.ViewAdministradorGeneral;
 
 namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
 {
@@ -139,6 +140,15 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void btnMenuP_Click(object sender, EventArgs e)
+        {
+            frmMenuAdminGeneral menuPricipal = new frmMenuAdminGeneral();
+
+            this.Hide();
+            menuPricipal.ShowDialog();
+            this.Close();
         }
     }
 }

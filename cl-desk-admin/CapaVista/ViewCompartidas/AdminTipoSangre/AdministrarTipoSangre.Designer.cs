@@ -109,6 +109,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
             this.btnMenuP.TabIndex = 22;
             this.btnMenuP.Text = "MENU PRINCIPAL";
             this.btnMenuP.UseVisualStyleBackColor = false;
+            this.btnMenuP.Click += new System.EventHandler(this.btnMenuP_Click);
             // 
             // lblBanner
             // 

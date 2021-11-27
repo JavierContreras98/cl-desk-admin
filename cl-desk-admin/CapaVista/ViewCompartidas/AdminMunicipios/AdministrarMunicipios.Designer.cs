@@ -108,6 +108,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             this.btnMenuP.TabIndex = 16;
             this.btnMenuP.Text = "MENU PRINCIPAL";
             this.btnMenuP.UseVisualStyleBackColor = false;
+            this.btnMenuP.Click += new System.EventHandler(this.btnMenuP_Click);
             // 
             // dgvMunicipios
             // 

@@ -1,4 +1,5 @@
 ﻿using cl_desk_admin.CapaModels;
+using cl_desk_admin.CapaVista.ViewAdministradorGeneral;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -136,5 +137,13 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
             GetAllProdutos();
         }
 
+        private void btnMenuP_Click(object sender, EventArgs e)
+        {
+            frmMenuAdminGeneral menuPricipal = new frmMenuAdminGeneral();
+
+            this.Hide();
+            menuPricipal.ShowDialog();
+            this.Close();
+        }
     }
 }

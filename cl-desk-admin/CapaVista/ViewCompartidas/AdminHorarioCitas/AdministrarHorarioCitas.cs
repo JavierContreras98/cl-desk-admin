@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using cl_desk_admin.CapaModels;
+using cl_desk_admin.CapaVista.ViewAdministradorGeneral;
 using Newtonsoft.Json;
 
 namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
@@ -140,6 +141,14 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             GetAllProdutos();
         }
 
+        private void btnMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            frmMenuAdminGeneral menuPricipal = new frmMenuAdminGeneral();
+
+            this.Hide();
+            menuPricipal.ShowDialog();
+            this.Close();
+        }
     }
 }
 

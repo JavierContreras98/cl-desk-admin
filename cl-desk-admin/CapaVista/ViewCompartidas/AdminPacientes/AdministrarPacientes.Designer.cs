@@ -52,6 +52,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             this.btnMenuP.TabIndex = 2;
             this.btnMenuP.Text = "MENU PRINCIPAL";
             this.btnMenuP.UseVisualStyleBackColor = false;
+            this.btnMenuP.Click += new System.EventHandler(this.btnMenuP_Click);
             // 
             // label1
             // 

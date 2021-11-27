@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using cl_desk_admin.CapaVista.ViewAdministradorGeneral;
 
 namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
 {
@@ -139,5 +140,13 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
             GetAllProfesiones();
         }
 
+        private void btnMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            frmMenuAdminGeneral menuPricipal = new frmMenuAdminGeneral();
+
+            this.Hide();
+            menuPricipal.ShowDialog();
+            this.Close();
+        }
     }
 }
