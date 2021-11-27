@@ -17,8 +17,8 @@ namespace cl_desk_admin
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new cl_desk_admin.CapaVista.ViewReportes.ReporteEmpleados());
-            Application.Run(new Form1());
-
+            //Application.Run(new Form1());
+            Application.Run(new cl_desk_admin.CapaVista.ViewAdministradorGeneral.frmMenuAdminGeneral());
         }
     }
 }

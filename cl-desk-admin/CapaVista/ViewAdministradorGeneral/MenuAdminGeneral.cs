@@ -81,5 +81,77 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             adminEspecialidades.ShowDialog();
             this.Close();
         }
+
+        private void btnAdministrarProfesion_Click(object sender, EventArgs e)
+        {
+            ViewCompartidas.AdminProfesion.AdministrarProfesion adminProfesiones = new ViewCompartidas.AdminProfesion.AdministrarProfesion();
+
+            this.Hide();
+            adminProfesiones.ShowDialog();
+            this.Close();
+        }
+
+        private void btnAdministrarEmpleado_Click(object sender, EventArgs e)
+        {
+            ViewCompartidas.AdminEmpleados.frmAdministrarEmpleados adminEmpleados = new ViewCompartidas.AdminEmpleados.frmAdministrarEmpleados();
+
+            this.Hide();
+            adminEmpleados.ShowDialog();
+            this.Close();
+        }
+
+        private void btnAdministrarPais_Click(object sender, EventArgs e)
+        {
+            ViewCompartidas.AdminPais.frmAdministrarPais adminPais = new ViewCompartidas.AdminPais.frmAdministrarPais();
+
+            this.Hide();
+            adminPais.ShowDialog();
+            this.Close();
+        }
+
+        private void btnAdministrarDepartamentos_Click(object sender, EventArgs e)
+        {
+            ViewCompartidas.AdminDepartamentos.frmAdministrarDepartamentos adminDepartamentos = new ViewCompartidas.AdminDepartamentos.frmAdministrarDepartamentos();
+
+            this.Hide();
+            adminDepartamentos.ShowDialog();
+            this.Close();
+        }
+
+        private void btnAdministrarMunicipio_Click(object sender, EventArgs e)
+        {
+            ViewCompartidas.AdminMunicipios.frmAdministrarMunicipios adminMunicipios = new ViewCompartidas.AdminMunicipios.frmAdministrarMunicipios();
+
+            this.Hide();
+            adminMunicipios.ShowDialog();
+            this.Close();
+        }
+
+        private void btnAdministrarTipoDoc_Click(object sender, EventArgs e)
+        {
+            ViewCompartidas.AdminTipoDocumento.AdministrarTipoDocumento adminTipoDoc = new ViewCompartidas.AdminTipoDocumento.AdministrarTipoDocumento();
+
+            this.Hide();
+            adminTipoDoc.ShowDialog();
+            this.Close();
+        }
+
+        private void btnAdministrarTipoSangre_Click(object sender, EventArgs e)
+        {
+            ViewCompartidas.AdminTipoSangre.frmAdministrarTipoSangre administrarTipoSangre = new ViewCompartidas.AdminTipoSangre.frmAdministrarTipoSangre();
+
+            this.Hide();
+            administrarTipoSangre.ShowDialog();
+            this.Close();
+        }
+
+        private void btnAdministrarHorarioCita_Click(object sender, EventArgs e)
+        {
+            ViewCompartidas.AdminHorarioCitas.AdministrarHorarioCitas adminHorario = new ViewCompartidas.AdminHorarioCitas.AdministrarHorarioCitas();
+
+            this.Hide();
+            adminHorario.ShowDialog();
+            this.Close();
+        }
     }
 }
