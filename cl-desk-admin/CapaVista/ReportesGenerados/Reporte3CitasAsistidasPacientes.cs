@@ -72,9 +72,6 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
 
         }
 
-        private void cbxPaciente_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
