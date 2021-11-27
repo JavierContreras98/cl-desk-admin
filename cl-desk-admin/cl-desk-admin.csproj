@@ -92,17 +92,29 @@
     <Compile Include="CapaModels\Tipo_UsuarioModels.cs" />
     <Compile Include="CapaModels\UsuarioModels.cs" />
     <Compile Include="CapaModels\Tipo_SangreModels.cs" />
-    <Compile Include="CapaVista\ReportesGenerados\ReporteEmpleado.cs">
+    <Compile Include="CapaVista\ReportesGenerados\Reporte3CitasAsistidasPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CapaVista\ReportesGenerados\ReporteEmpleado.Designer.cs">
-      <DependentUpon>ReporteEmpleado.cs</DependentUpon>
+    <Compile Include="CapaVista\ReportesGenerados\Reporte3CitasAsistidasPacientes.Designer.cs">
+      <DependentUpon>Reporte3CitasAsistidasPacientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="CapaVista\ReportesGenerados\ReporteFechasPacientes.cs">
+    <Compile Include="CapaVista\ReportesGenerados\Reporte4Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CapaVista\ReportesGenerados\ReporteFechasPacientes.Designer.cs">
-      <DependentUpon>ReporteFechasPacientes.cs</DependentUpon>
+    <Compile Include="CapaVista\ReportesGenerados\Reporte4Empleado.Designer.cs">
+      <DependentUpon>Reporte4Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\ReportesGenerados\Reporte1FechasPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaVista\ReportesGenerados\Reporte1FechasPacientes.Designer.cs">
+      <DependentUpon>Reporte1FechasPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\ReportesGenerados\Reporte2PacienteDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaVista\ReportesGenerados\Reporte2PacienteDepartamento.Designer.cs">
+      <DependentUpon>Reporte2PacienteDepartamento.cs</DependentUpon>
     </Compile>
     <Compile Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.cs">
       <SubType>Form</SubType>
@@ -380,10 +392,25 @@
     <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ModificarTipoSangre.Designer.cs">
       <DependentUpon>ModificarTipoSangre.cs</DependentUpon>
     </Compile>
-    <Compile Include="CLCARMELODBDataSet.Designer.cs">
+    <Compile Include="CLCARMELODBDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CLCARMELODBDataSet.xsd</DependentUpon>
+      <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CLCARMELODBDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLCARMELODBDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CLCARMELODBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLCARMELODBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CLCARMELODBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLCARMELODBDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="IniciarSesion.cs">
       <SubType>Form</SubType>
@@ -393,12 +420,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CapaVista\ReportesGenerados\ReporteEmpleado.resx">
-      <DependentUpon>ReporteEmpleado.cs</DependentUpon>
+    <EmbeddedResource Include="CapaVista\ReportesGenerados\Reporte3CitasAsistidasPacientes.resx">
+      <DependentUpon>Reporte3CitasAsistidasPacientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CapaVista\ReportesGenerados\ReporteFechasPacientes.resx">
-      <DependentUpon>ReporteFechasPacientes.cs</DependentUpon>
+    <EmbeddedResource Include="CapaVista\ReportesGenerados\Reporte4Empleado.resx">
+      <DependentUpon>Reporte4Empleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\ReportesGenerados\Reporte1FechasPacientes.resx">
+      <DependentUpon>Reporte1FechasPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\ReportesGenerados\Reporte2PacienteDepartamento.resx">
+      <DependentUpon>Reporte2PacienteDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\Reportes\ReporteCitasAsistidasPacientes.rdlc" />
+    <EmbeddedResource Include="CapaVista\Reportes\ReportePacienteDepto.rdlc" />
+    <EmbeddedResource Include="CapaVista\Reportes\ReporteCitaPaciente.rdlc" />
     <EmbeddedResource Include="CapaVista\Reportes\ReporteEmpleado.rdlc" />
     <EmbeddedResource Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.resx">
       <DependentUpon>AdministarHistorialCitas.cs</DependentUpon>
@@ -551,16 +587,49 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="CLCARMELODBDataSet.xsc">
-      <DependentUpon>CLCARMELODBDataSet.xsd</DependentUpon>
+    <None Include="CLCARMELODBDataSet1.xsc">
+      <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="CLCARMELODBDataSet.xsd">
+    <None Include="CLCARMELODBDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CLCARMELODBDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>CLCARMELODBDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="CLCARMELODBDataSet.xss">
-      <DependentUpon>CLCARMELODBDataSet.xsd</DependentUpon>
+    <None Include="CLCARMELODBDataSet1.xss">
+      <DependentUpon>CLCARMELODBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CLCARMELODBDataSet11.xsc">
+      <DependentUpon>CLCARMELODBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="CLCARMELODBDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CLCARMELODBDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CLCARMELODBDataSet11.xss">
+      <DependentUpon>CLCARMELODBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="CLCARMELODBDataSet2.xsc">
+      <DependentUpon>CLCARMELODBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CLCARMELODBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CLCARMELODBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CLCARMELODBDataSet2.xss">
+      <DependentUpon>CLCARMELODBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CLCARMELODBDataSet3.xsc">
+      <DependentUpon>CLCARMELODBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CLCARMELODBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CLCARMELODBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CLCARMELODBDataSet3.xss">
+      <DependentUpon>CLCARMELODBDataSet3.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
