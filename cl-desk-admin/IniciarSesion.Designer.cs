@@ -55,6 +55,7 @@ namespace cl_desk_admin
             this.btnIngresar.TabIndex = 18;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // label1
             // 
