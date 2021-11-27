@@ -34,9 +34,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
                 Console.WriteLine("Algo salio mal");
             }
             AdministrarHorarioCitas horariocita = new AdministrarHorarioCitas();
-            this.Close();
+            this.Hide();
             horariocita.Refresh();
-            horariocita.Show();
+            horariocita.ShowDialog();
+            this.Close();
 
         }
 

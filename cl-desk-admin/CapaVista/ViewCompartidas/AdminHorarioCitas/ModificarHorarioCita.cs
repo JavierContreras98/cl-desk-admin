@@ -42,8 +42,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             actualizarhorariocita(Id);
             AdministrarHorarioCitas horariocita = new AdministrarHorarioCitas();
             this.Hide();
-            horariocita.Show();
             horariocita.Refresh();
+            horariocita.ShowDialog();
+            this.Close();
         }
         private async void actualizarhorariocita(int id)
         {

@@ -68,9 +68,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
                 this.AddDepartamento();
 
                 frmAdminInforMedicos infomedicos = new frmAdminInforMedicos();
+                this.Hide();
+                infomedicos.ShowDialog();
                 this.Close();
-                infomedicos.Refresh();
-                infomedicos.Show();
+
             }
             catch (Exception)
             {

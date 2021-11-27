@@ -57,7 +57,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminCitas
         {
             frmAgregarCita agregarpaciente = new frmAgregarCita();
             this.Hide();
-            agregarpaciente.Show();
+            agregarpaciente.ShowDialog();
+            this.Close();
         }
 
         private void radioButtonValidation()

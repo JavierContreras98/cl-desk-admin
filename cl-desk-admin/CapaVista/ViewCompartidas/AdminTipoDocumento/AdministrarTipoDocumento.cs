@@ -58,7 +58,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
         {
             AgregarTipoDocumento agregartipodocumento = new AgregarTipoDocumento();
             this.Hide();
-            agregartipodocumento.Show();
+            agregartipodocumento.ShowDialog();
+            this.Close();
         }
 
         private void btnModificarTipoDocumento_Click(object sender, EventArgs e)
@@ -74,8 +75,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             {
                     ModificarTipoDocumento modificarTipoDocumento = new ModificarTipoDocumento();
                     modificarTipoDocumento.Id = Convert.ToInt32(txtNumero.Text);
-                    modificarTipoDocumento.Show();   
-                    this.Hide();
+                this.Hide();
+                modificarTipoDocumento.ShowDialog();
+                this.Close();
             }
         }
 

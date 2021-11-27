@@ -41,8 +41,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
             actualizarPais(Id);
             frmAdministrarPais pais = new frmAdministrarPais();
             this.Hide();
-            pais.Show();
             pais.Refresh();
+            pais.ShowDialog();
+            this.Close();
         }
 
         private async void actualizarPais(int id)

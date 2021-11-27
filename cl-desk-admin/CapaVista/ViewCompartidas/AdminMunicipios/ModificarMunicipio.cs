@@ -87,8 +87,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             actualizarMunicipio(Id);
             frmAdministrarMunicipios municipios = new frmAdministrarMunicipios();
             this.Hide();
-            municipios.Show();
             municipios.Refresh();
+            municipios.ShowDialog();
+            this.Close();
+
         }
 
         private async void actualizarMunicipio(int id)

@@ -42,8 +42,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             actualizarEspecialidad(Id);
             AdministrarEspecialidades especialidades = new AdministrarEspecialidades();
             this.Hide();
-            especialidades.Show();
             especialidades.Refresh();
+            especialidades.ShowDialog();
+            this.Close();
         }
 
         private async void actualizarEspecialidad(int id)

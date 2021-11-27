@@ -31,9 +31,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
         {
             this.lblBanner = new System.Windows.Forms.Label();
             this.btnMenuPrincipal = new System.Windows.Forms.Button();
-            this.lblBusquedaAvanzada = new System.Windows.Forms.Label();
-            this.txtBuscarTipoDocumento = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvPais = new System.Windows.Forms.DataGridView();
             this.btnCrearPais = new System.Windows.Forms.Button();
             this.btnModificarPais = new System.Windows.Forms.Button();
@@ -73,40 +70,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
             this.btnMenuPrincipal.Text = "MENU PRINCIPAL";
             this.btnMenuPrincipal.UseVisualStyleBackColor = false;
             this.btnMenuPrincipal.Click += new System.EventHandler(this.btnMenuPrincipal_Click);
-            // 
-            // lblBusquedaAvanzada
-            // 
-            this.lblBusquedaAvanzada.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblBusquedaAvanzada.AutoSize = true;
-            this.lblBusquedaAvanzada.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBusquedaAvanzada.Location = new System.Drawing.Point(242, 110);
-            this.lblBusquedaAvanzada.Name = "lblBusquedaAvanzada";
-            this.lblBusquedaAvanzada.Size = new System.Drawing.Size(153, 16);
-            this.lblBusquedaAvanzada.TabIndex = 4;
-            this.lblBusquedaAvanzada.Text = "BUSQUEDA AVANZADA:";
-            // 
-            // txtBuscarTipoDocumento
-            // 
-            this.txtBuscarTipoDocumento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscarTipoDocumento.Location = new System.Drawing.Point(398, 108);
-            this.txtBuscarTipoDocumento.Name = "txtBuscarTipoDocumento";
-            this.txtBuscarTipoDocumento.Size = new System.Drawing.Size(275, 20);
-            this.txtBuscarTipoDocumento.TabIndex = 5;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(202)))), ((int)(((byte)(240)))));
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscar.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscar.Location = new System.Drawing.Point(679, 105);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(119, 26);
-            this.btnBuscar.TabIndex = 6;
-            this.btnBuscar.Text = "BUSCAR";
-            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // dgvPais
             // 
@@ -228,9 +191,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
             this.Controls.Add(this.btnModificarPais);
             this.Controls.Add(this.btnCrearPais);
             this.Controls.Add(this.dgvPais);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.txtBuscarTipoDocumento);
-            this.Controls.Add(this.lblBusquedaAvanzada);
             this.Controls.Add(this.btnMenuPrincipal);
             this.Controls.Add(this.lblBanner);
             this.DoubleBuffered = true;
@@ -249,9 +209,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
 
         private System.Windows.Forms.Label lblBanner;
         private System.Windows.Forms.Button btnMenuPrincipal;
-        private System.Windows.Forms.Label lblBusquedaAvanzada;
-        private System.Windows.Forms.TextBox txtBuscarTipoDocumento;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dgvPais;
         private System.Windows.Forms.Button btnCrearPais;
         private System.Windows.Forms.Button btnModificarPais;

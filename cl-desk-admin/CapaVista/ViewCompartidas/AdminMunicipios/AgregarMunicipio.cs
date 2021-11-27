@@ -29,11 +29,12 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
         private async void frmAgregarMunicipio_Load(object sender, EventArgs e)
         {
             string respuesta = await GetHttp();
-            List<DepartamentoModels> lst = JsonConvert.DeserializeObject<List<DepartamentoModels>>(respuesta);
+            DataTable lst = JsonConvert.DeserializeObject<DataTable>(respuesta);
             cbxDepartamento.DataSource = lst;
             cbxDepartamento.ValueMember = "ID";
-            cbxDepartamento.DisplayMember = "NOMBRE";
+            cbxDepartamento.DisplayMember = "DEPARTAMENTO";
             cbxDepartamento.Refresh();
+
         }
 
         private async Task<string> GetHttp()
@@ -51,9 +52,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
                 this.AddMunicipio();
 
                 frmAdministrarMunicipios municipios = new frmAdministrarMunicipios();
-                this.Close();
+                this.Hide();
                 municipios.Refresh();
-                municipios.Show();
+                municipios.ShowDialog();
+                this.Close();
             }
             catch (Exception)
             {

@@ -108,8 +108,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
 
             frmAdminInforMedicos medicos = new frmAdminInforMedicos();
             this.Hide();
-            medicos.Show();
             medicos.Refresh();
+            medicos.ShowDialog();
+            this.Close();
         }
 
         private async void actualizarMedico(int id)

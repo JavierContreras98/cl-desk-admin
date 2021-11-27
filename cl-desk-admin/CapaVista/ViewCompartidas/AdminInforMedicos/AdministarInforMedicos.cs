@@ -77,7 +77,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
         {
             AgregarInforMedicos agregarInfoMedico = new AgregarInforMedicos();
             this.Hide();
-            agregarInfoMedico.Show();
+            agregarInfoMedico.ShowDialog();
+            this.Close();
         }
 
         private void btnModificarInfoMedico_Click(object sender, EventArgs e)
@@ -93,8 +94,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminInforMedicos
             {
                 ModificarInforMedicos modificarInfoMedico = new ModificarInforMedicos();
                 modificarInfoMedico.Id = Convert.ToInt32(txtNumero.Text);
-                modificarInfoMedico.Show();
                 this.Hide();
+                modificarInfoMedico.ShowDialog();
+                this.Close();
+
             }
         }
 

@@ -51,8 +51,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             actualizarDepartamento(Id);
             frmAdministrarDepartamentos departamentos = new frmAdministrarDepartamentos();
             this.Hide();
-            departamentos.Show();
             departamentos.Refresh();
+            departamentos.ShowDialog();
+            this.Close();
         }
 
         private async void actualizarDepartamento(int id)

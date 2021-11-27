@@ -81,10 +81,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         private void btnCrearTipoUsuario_Click(object sender, EventArgs e)
         {
             frmAgregarEmpleado agregarempleado = new frmAgregarEmpleado();
+            
             this.Hide();
             agregarempleado.ShowDialog();
             this.Close();
-
         }
 
         private void btnEliminarEmpleado_Click(object sender, EventArgs e)
@@ -123,6 +123,19 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
 
         private void btnModificarEmpleado_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void frmAdministrarEmpleados_Load_1(object sender, EventArgs e)
+        {
+            dgvEmpleado.Refresh();
+            this.Refresh();
+            GetAllEmpleado();
+            radioButtonValidation();
+        }
+
+        private void btnModificarEmpleado_Click_1(object sender, EventArgs e)
+        {
             if (string.IsNullOrEmpty(txtNumero.Text))
             {
                 if (rbModificar.Enabled == true)
@@ -134,33 +147,18 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             {
                 frmModificarEmpleado modificar = new frmModificarEmpleado();
                 modificar.Id = Convert.ToInt32(txtNumero.Text);
-                modificar.Show();
                 this.Hide();
-            }
-        }
+                modificar.ShowDialog();
+                this.Close();
 
-        private void frmAdministrarEmpleados_Load_1(object sender, EventArgs e)
-        {
-            dgvEmpleado.Refresh();
-            this.Refresh();
-            GetAllEmpleado();
-            radioButtonValidation();
+            }
         }
 
         private void btnMenuPrincipal_Click(object sender, EventArgs e)
         {
-            ViewAdministradorGeneral.frmMenuAdminGeneral menuPricipal = new ViewAdministradorGeneral.frmMenuAdminGeneral();
-
+            CapaVista.ViewAdministradorGeneral.frmMenuAdminGeneral profesion = new ViewAdministradorGeneral.frmMenuAdminGeneral();
             this.Hide();
-            menuPricipal.ShowDialog();
-            this.Close();
-        }
-
-        private void btnModificarEmpleado_Click_1(object sender, EventArgs e)
-        {
-            AdminEmpleados.frmModificarEmpleado empleado = new AdminEmpleados.frmModificarEmpleado();
-            this.Hide();
-            empleado.ShowDialog();
+            profesion.ShowDialog();
             this.Close();
         }
     }

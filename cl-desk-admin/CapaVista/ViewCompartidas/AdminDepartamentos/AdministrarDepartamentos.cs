@@ -58,7 +58,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
         {
             frmAgregarDepartamento agregardepartamento = new frmAgregarDepartamento();
             this.Hide();
-            agregardepartamento.Show();
+            agregardepartamento.ShowDialog();
+            this.Close();
+
         }
 
         private void radioButtonValidation()

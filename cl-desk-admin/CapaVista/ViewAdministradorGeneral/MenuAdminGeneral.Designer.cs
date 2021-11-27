@@ -43,7 +43,6 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarProfesion = new System.Windows.Forms.Button();
             this.btnAdministrarPais = new System.Windows.Forms.Button();
             this.btnAdministrarMunicipio = new System.Windows.Forms.Button();
-            this.btnAdministrarHorarioCita = new System.Windows.Forms.Button();
             this.btnAdministrarEmpleado = new System.Windows.Forms.Button();
             this.btnAdministrarDepartamentos = new System.Windows.Forms.Button();
             this.btnAdministrarCitas = new System.Windows.Forms.Button();
@@ -82,7 +81,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarEspecialidades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdministrarEspecialidades.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
             this.btnAdministrarEspecialidades.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarEspecialidades.Location = new System.Drawing.Point(249, 345);
+            this.btnAdministrarEspecialidades.Location = new System.Drawing.Point(324, 344);
             this.btnAdministrarEspecialidades.Name = "btnAdministrarEspecialidades";
             this.btnAdministrarEspecialidades.Size = new System.Drawing.Size(119, 50);
             this.btnAdministrarEspecialidades.TabIndex = 35;
@@ -175,7 +174,6 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.panel1.Controls.Add(this.btnAdministrarProfesion);
             this.panel1.Controls.Add(this.btnAdministrarPais);
             this.panel1.Controls.Add(this.btnAdministrarMunicipio);
-            this.panel1.Controls.Add(this.btnAdministrarHorarioCita);
             this.panel1.Controls.Add(this.btnAdministrarEmpleado);
             this.panel1.Controls.Add(this.btnAdministrarDepartamentos);
             this.panel1.Controls.Add(this.btnAdministrarCitas);
@@ -197,7 +195,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarTipoSangre.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdministrarTipoSangre.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
             this.btnAdministrarTipoSangre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarTipoSangre.Location = new System.Drawing.Point(392, 345);
+            this.btnAdministrarTipoSangre.Location = new System.Drawing.Point(467, 344);
             this.btnAdministrarTipoSangre.Name = "btnAdministrarTipoSangre";
             this.btnAdministrarTipoSangre.Size = new System.Drawing.Size(119, 50);
             this.btnAdministrarTipoSangre.TabIndex = 45;
@@ -212,7 +210,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarTipoDoc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdministrarTipoDoc.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
             this.btnAdministrarTipoDoc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarTipoDoc.Location = new System.Drawing.Point(102, 345);
+            this.btnAdministrarTipoDoc.Location = new System.Drawing.Point(177, 344);
             this.btnAdministrarTipoDoc.Name = "btnAdministrarTipoDoc";
             this.btnAdministrarTipoDoc.Size = new System.Drawing.Size(119, 50);
             this.btnAdministrarTipoDoc.TabIndex = 44;
@@ -264,21 +262,6 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarMunicipio.Text = "ADMINISTRAR MUNICIPIO";
             this.btnAdministrarMunicipio.UseVisualStyleBackColor = false;
             this.btnAdministrarMunicipio.Click += new System.EventHandler(this.btnAdministrarMunicipio_Click);
-            // 
-            // btnAdministrarHorarioCita
-            // 
-            this.btnAdministrarHorarioCita.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdministrarHorarioCita.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAdministrarHorarioCita.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdministrarHorarioCita.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnAdministrarHorarioCita.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarHorarioCita.Location = new System.Drawing.Point(546, 345);
-            this.btnAdministrarHorarioCita.Name = "btnAdministrarHorarioCita";
-            this.btnAdministrarHorarioCita.Size = new System.Drawing.Size(119, 50);
-            this.btnAdministrarHorarioCita.TabIndex = 40;
-            this.btnAdministrarHorarioCita.Text = "ADMINISTRAR HORARIO DE CITAS";
-            this.btnAdministrarHorarioCita.UseVisualStyleBackColor = false;
-            this.btnAdministrarHorarioCita.Click += new System.EventHandler(this.btnAdministrarHorarioCita_Click);
             // 
             // btnAdministrarEmpleado
             // 
@@ -376,7 +359,6 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
         private System.Windows.Forms.Button btnAdministrarProfesion;
         private System.Windows.Forms.Button btnAdministrarPais;
         private System.Windows.Forms.Button btnAdministrarMunicipio;
-        private System.Windows.Forms.Button btnAdministrarHorarioCita;
         private System.Windows.Forms.Button btnAdministrarEmpleado;
         private System.Windows.Forms.Button btnAdministrarDepartamentos;
         private System.Windows.Forms.Button btnMenuReportes;

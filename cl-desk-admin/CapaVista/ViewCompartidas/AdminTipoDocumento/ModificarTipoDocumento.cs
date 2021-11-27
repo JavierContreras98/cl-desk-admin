@@ -44,8 +44,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
             actualizarTipoDocumento(Id);
             AdministrarTipoDocumento tipodocumento = new AdministrarTipoDocumento();
             this.Hide();
-            tipodocumento.Show();
             tipodocumento.Refresh();
+            tipodocumento.ShowDialog();
+            this.Close();
         }
 
         private async void actualizarTipoDocumento(int id)

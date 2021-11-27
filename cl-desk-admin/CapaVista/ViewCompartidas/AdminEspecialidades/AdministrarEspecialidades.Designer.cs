@@ -35,9 +35,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvEspecialidad = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.rbModificar = new System.Windows.Forms.RadioButton();
             this.rbEliminar = new System.Windows.Forms.RadioButton();
             this.lblInformacion = new System.Windows.Forms.Label();
@@ -122,39 +119,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.dgvEspecialidad.Size = new System.Drawing.Size(785, 291);
             this.dgvEspecialidad.TabIndex = 5;
             // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(242, 110);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 15);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "BUSQUEDA AVANZADA";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscar.Location = new System.Drawing.Point(398, 108);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(275, 20);
-            this.txtBuscar.TabIndex = 7;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(202)))), ((int)(((byte)(240)))));
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscar.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnBuscar.Location = new System.Drawing.Point(679, 105);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(119, 26);
-            this.btnBuscar.TabIndex = 8;
-            this.btnBuscar.Text = "BUSCAR";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
             // rbModificar
             // 
             this.rbModificar.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -210,9 +174,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             this.Controls.Add(this.lblInformacion);
             this.Controls.Add(this.rbEliminar);
             this.Controls.Add(this.rbModificar);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.txtBuscar);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvEspecialidad);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminar);
@@ -237,9 +198,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvEspecialidad;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.RadioButton rbModificar;
         private System.Windows.Forms.RadioButton rbEliminar;
         private System.Windows.Forms.Label lblInformacion;

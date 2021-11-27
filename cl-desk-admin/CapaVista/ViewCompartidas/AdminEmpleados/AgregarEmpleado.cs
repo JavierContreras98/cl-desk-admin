@@ -32,7 +32,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
 
         private async void frmAgregarEmpleado_Load(object sender, EventArgs e)
         {
-           string respuesta = await GetHttp();
+            string respuesta = await GetHttp();
             List<Tipo_DocumentoModels> lst = JsonConvert.DeserializeObject<List<Tipo_DocumentoModels>>(respuesta);
             cbxTipodocumentos.DataSource = lst;
             cbxTipodocumentos.ValueMember = "ID";
@@ -61,7 +61,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             StreamReader sr = new StreamReader(oResponse.GetResponseStream());
             return await sr.ReadToEndAsync();
 
-            
+
         }
 
         private async Task<string> GetHttp2()
@@ -82,11 +82,11 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            frmAdministrarEmpleados regresar =new frmAdministrarEmpleados();
+            frmAdministrarEmpleados regresar = new frmAdministrarEmpleados();
             this.Hide();
             regresar.ShowDialog();
             this.Close();
-            
+
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
@@ -104,12 +104,13 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             empleado.Refresh();
             empleado.ShowDialog();
             this.Close();
+
         }
 
         private async void AddEmpleado()
         {
             EmpleadoModels empleado = new EmpleadoModels();
-           
+
             empleado.Primer_nom = txtPrimerNombre.Text;
             empleado.Segundo_nom = txtSegundoNombre.Text;
             empleado.Primer_ape = txtPrimerApellido.Text;

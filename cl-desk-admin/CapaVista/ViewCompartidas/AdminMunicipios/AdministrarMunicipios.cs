@@ -55,7 +55,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
         {
             frmAgregarMunicipio agregarmunicipio = new frmAgregarMunicipio();
             this.Hide();
-            agregarmunicipio.Show();
+            agregarmunicipio.Refresh();
+            agregarmunicipio.ShowDialog();
+            this.Close();
+
         }
         private void radioButtonValidation()
         {
@@ -92,8 +95,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminMunicipios
             {
                 frmModificarMunicipio modificarDepartamento = new frmModificarMunicipio();
                 modificarDepartamento.Id = Convert.ToInt32(txtNumero.Text);
-                modificarDepartamento.Show();
                 this.Hide();
+                modificarDepartamento.ShowDialog();
+                this.Close();
             }
         }
 

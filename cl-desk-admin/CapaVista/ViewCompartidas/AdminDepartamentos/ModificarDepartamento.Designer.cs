@@ -71,7 +71,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.panel1.Controls.Add(this.txtNombre);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(152, 132);
+            this.panel1.Location = new System.Drawing.Point(140, 94);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 443);
             this.panel1.TabIndex = 9;
@@ -169,7 +169,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBanner.Font = new System.Drawing.Font("Arial Rounded MT Bold", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBanner.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblBanner.Location = new System.Drawing.Point(11, 38);
+            this.lblBanner.Location = new System.Drawing.Point(11, 9);
             this.lblBanner.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBanner.Name = "lblBanner";
             this.lblBanner.Size = new System.Drawing.Size(1003, 44);
@@ -183,7 +183,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(1025, 456);
+            this.ClientSize = new System.Drawing.Size(1025, 612);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblBanner);
             this.Name = "frmModificarDepartamento";

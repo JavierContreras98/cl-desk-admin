@@ -39,9 +39,11 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
                 Console.WriteLine("Algo salio mal");
             }
             frmAdministrarPais pais = new frmAdministrarPais();
-            this.Close();
+            this.Hide();
             pais.Refresh();
-            pais.Show();
+            pais.ShowDialog();
+            this.Close();
+
         }
 
         private async void AddPais()

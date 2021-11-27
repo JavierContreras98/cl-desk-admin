@@ -1,5 +1,4 @@
-
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +13,7 @@ namespace cl_desk_admin.CapaModels
         DateTime fecha_nacimiento;
 
         public int Id { get => id; set => id = value; }
+
         public string Primer_nom { get => primer_nom; set => primer_nom = value; }
         public string Segundo_nom { get => segundo_nom; set => segundo_nom = value; }
         public string Primer_ape { get => primer_ape; set => primer_ape = value; }
@@ -25,8 +25,6 @@ namespace cl_desk_admin.CapaModels
         public int Id_tipo_doc { get => id_tipo_doc; set => id_tipo_doc = value; }
         public int Id_profesion { get => id_profesion; set => id_profesion = value; }
         public int Id_usuario { get => id_usuario; set => id_usuario = value; }
-        
-        
-        
+
     }
 }

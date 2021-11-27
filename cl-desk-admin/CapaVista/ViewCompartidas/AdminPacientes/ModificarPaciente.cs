@@ -40,8 +40,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             actualizarPaciente(Id);
             frmAdministrarPacientes paciente = new frmAdministrarPacientes();
             this.Hide();
-            paciente.Show();
             paciente.Refresh();
+            paciente.ShowDialog();
+            this.Close();
         }
 
         private async void frmModificarPaciente_Load(object sender, EventArgs e)
@@ -78,10 +79,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             cbxDepartamento.Refresh();
 
             string respuesta5 = await GetHttpMunicipio();
-            List<MunicipioModels> lst5 = JsonConvert.DeserializeObject<List<MunicipioModels>>(respuesta5);
+            DataTable lst5 = JsonConvert.DeserializeObject<DataTable>(respuesta5);
             cbxMunicipio.DataSource = lst5;
             cbxMunicipio.ValueMember = "ID";
-            cbxMunicipio.DisplayMember = "NOMBRE";
+            cbxMunicipio.DisplayMember = "MUNICIPIO";
             cbxMunicipio.Refresh();
 
         }

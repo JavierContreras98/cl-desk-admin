@@ -34,9 +34,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
                 Console.WriteLine("Algo salio mal");
             }
             frmAdministrarTipoSangre tiposangre = new frmAdministrarTipoSangre();
-            this.Close();
+            this.Hide();
             tiposangre.Refresh();
-            tiposangre.Show();
+            tiposangre.ShowDialog();
+            this.Close();
         }
 
         private async void AddTiposangre()

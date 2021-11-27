@@ -53,7 +53,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
         {
             frmAgregarPais agregarpais = new frmAgregarPais();
             this.Hide();
-            agregarpais.Show();
+            agregarpais.ShowDialog();
+            this.Close();
+
         }
 
         private void btnModificarPais_Click(object sender, EventArgs e)
@@ -69,8 +71,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPais
             {
                 frmModificarPais modificarpais = new frmModificarPais();
                 modificarpais.Id = Convert.ToInt32(txtNumero.Text);
-                modificarpais.Show();
                 this.Hide();
+                modificarpais.ShowDialog();
+                this.Close();
+
             }
         }
         private void radioButtonValidation()

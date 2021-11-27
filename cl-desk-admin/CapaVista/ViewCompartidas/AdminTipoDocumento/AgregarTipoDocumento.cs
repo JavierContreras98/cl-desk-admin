@@ -37,10 +37,11 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoDocumento
                 Console.WriteLine("Algo salio mal");
             }
             AdministrarTipoDocumento tipodocumento = new AdministrarTipoDocumento();
-            this.Close();
+            this.Hide();
             tipodocumento.Refresh();
-            tipodocumento.Show();
-            
+            tipodocumento.ShowDialog();
+            this.Close();
+
         }
 
         private async void AddTipodocumento()

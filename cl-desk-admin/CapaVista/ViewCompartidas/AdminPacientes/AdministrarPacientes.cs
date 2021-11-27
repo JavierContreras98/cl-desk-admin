@@ -58,7 +58,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
         {
             AgregarPaciente agregarpaciente = new AgregarPaciente();
             this.Hide();
-            agregarpaciente.Show();
+            agregarpaciente.ShowDialog();
+            this.Close();
         }
 
         private void radioButtonValidation()
@@ -98,8 +99,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminPacientes
             {
                 frmModificarPaciente modificarPaciente = new frmModificarPaciente();
                 modificarPaciente.Id = Convert.ToInt32(txtNumero.Text);
-                modificarPaciente.Show();
                 this.Hide();
+                modificarPaciente.ShowDialog();
+                this.Close();
+
             }
         }
 

@@ -58,9 +58,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
                 Console.WriteLine("Algo salio mal");
             }
             frmAdministrarDepartamentos departamentos = new frmAdministrarDepartamentos();
-            this.Close();
+            this.Hide();
             departamentos.Refresh();
-            departamentos.Show();
+            departamentos.ShowDialog();
+            this.Close();
         }
 
         private async void AddDepartamento()

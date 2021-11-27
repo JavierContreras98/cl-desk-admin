@@ -54,7 +54,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
         {
             AgregarHorarioCita agregar  = new AgregarHorarioCita();
             this.Hide();
-            agregar.Show();
+            agregar.ShowDialog();
+            this.Close();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -70,8 +71,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminHorarioCitas
             {
                 ModificarHorarioCita modificar = new ModificarHorarioCita();
                 modificar.Id = Convert.ToInt32(txtNumero.Text);
-                modificar.Show();
                 this.Hide();
+                modificar.ShowDialog();
+                this.Close();
             }
         }
 

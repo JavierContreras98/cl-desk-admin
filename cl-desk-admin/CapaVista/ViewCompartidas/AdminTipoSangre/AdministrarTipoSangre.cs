@@ -51,7 +51,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
         {
             frmAgregarTipoSangre agregartiposangre = new frmAgregarTipoSangre();
             this.Hide();
-            agregartiposangre.Show();
+            agregartiposangre.ShowDialog();
+            this.Close();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -67,8 +68,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
             {
                 frmModificarTipoSangre modificarTipoSangre = new frmModificarTipoSangre();
                 modificarTipoSangre.Id = Convert.ToInt32(txtNumero.Text);
-                modificarTipoSangre.Show();
                 this.Hide();
+                modificarTipoSangre.ShowDialog();
+                this.Close();
             }
         }
 

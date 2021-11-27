@@ -84,7 +84,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
         {
             frmAgregarEspecialidad agregarEspecialidad = new frmAgregarEspecialidad();
             this.Hide();
-            agregarEspecialidad.Show();
+            agregarEspecialidad.ShowDialog();
+            this.Close();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -100,8 +101,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
             {
                 frmModificarEspecialidades modificarEspecialidad = new frmModificarEspecialidades();
                 modificarEspecialidad.Id = Convert.ToInt32(txtNumero.Text);
-                modificarEspecialidad.Show();
                 this.Hide();
+                modificarEspecialidad.ShowDialog();
+                this.Close();
             }
         }
 

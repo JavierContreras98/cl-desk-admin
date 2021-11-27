@@ -37,9 +37,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminCitas
                 Console.WriteLine("Algo salio mal");
             }
             frmAdministrarCitas cita = new frmAdministrarCitas();
-            this.Close();
+            this.Hide();
             cita.Refresh();
-            cita.Show();
+            cita.ShowDialog();
+            this.Close();
         }
 
         private async void frmAgregarCita_Load(object sender, EventArgs e)

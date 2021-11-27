@@ -39,8 +39,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminTipoSangre
             actualizarTipoSangre(Id);
             frmAdministrarTipoSangre tiposangre = new frmAdministrarTipoSangre();
             this.Hide();
-            tiposangre.Show();
             tiposangre.Refresh();
+            tiposangre.ShowDialog();
+            this.Close();
         }
 
         private async void actualizarTipoSangre(int id)
