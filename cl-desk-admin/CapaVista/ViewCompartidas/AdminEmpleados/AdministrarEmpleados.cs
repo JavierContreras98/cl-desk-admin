@@ -165,11 +165,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             menuPricipal.ShowDialog();
             this.Close();
         }
-
-        private void frmAdministrarEmpleados_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 
