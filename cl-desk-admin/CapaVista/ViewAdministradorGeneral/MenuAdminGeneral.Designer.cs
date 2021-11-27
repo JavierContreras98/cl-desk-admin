@@ -47,6 +47,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarDepartamentos = new System.Windows.Forms.Button();
             this.btnAdministrarCitas = new System.Windows.Forms.Button();
             this.btnMenuReportes = new System.Windows.Forms.Button();
+            this.btnAcerca = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -323,12 +324,28 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnMenuReportes.UseVisualStyleBackColor = false;
             this.btnMenuReportes.Click += new System.EventHandler(this.btnMenuReportes_Click);
             // 
+            // btnAcerca
+            // 
+            this.btnAcerca.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnAcerca.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAcerca.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAcerca.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
+            this.btnAcerca.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAcerca.Location = new System.Drawing.Point(921, 557);
+            this.btnAcerca.Name = "btnAcerca";
+            this.btnAcerca.Size = new System.Drawing.Size(92, 43);
+            this.btnAcerca.TabIndex = 39;
+            this.btnAcerca.Text = "ACERCA DE:";
+            this.btnAcerca.UseVisualStyleBackColor = false;
+            this.btnAcerca.Click += new System.EventHandler(this.btnAcerca_Click);
+            // 
             // frmMenuAdminGeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.Controls.Add(this.btnAcerca);
             this.Controls.Add(this.btnMenuReportes);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.panel1);
@@ -362,5 +379,6 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
         private System.Windows.Forms.Button btnAdministrarEmpleado;
         private System.Windows.Forms.Button btnAdministrarDepartamentos;
         private System.Windows.Forms.Button btnMenuReportes;
+        private System.Windows.Forms.Button btnAcerca;
     }
 }

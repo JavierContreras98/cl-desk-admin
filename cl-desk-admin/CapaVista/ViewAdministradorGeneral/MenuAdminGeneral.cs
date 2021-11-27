@@ -162,5 +162,13 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             menuReportes.ShowDialog();
             this.Close();
         }
+
+        private void btnAcerca_Click(object sender, EventArgs e)
+        {
+            ViewCompartidas.AcercaDe.frmAcercaDe acerca = new ViewCompartidas.AcercaDe.frmAcercaDe();
+            this.Hide();
+            acerca.ShowDialog();
+            this.Close();
+        }
     }
 }

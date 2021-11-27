@@ -144,6 +144,12 @@
     <Compile Include="CapaVista\ViewAdministradorNivelUno\MenuAdminNivelUno.Designer.cs">
       <DependentUpon>MenuAdminNivelUno.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaVista\ViewCompartidas\AcercaDe\Acerca De.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaVista\ViewCompartidas\AcercaDe\Acerca De.Designer.cs">
+      <DependentUpon>Acerca De.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaVista\ViewCompartidas\AdminCitas\AdministrarCitas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -414,6 +420,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewAdministradorNivelUno\MenuAdminNivelUno.resx">
       <DependentUpon>MenuAdminNivelUno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\ViewCompartidas\AcercaDe\Acerca De.resx">
+      <DependentUpon>Acerca De.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminCitas\AdministrarCitas.resx">
       <DependentUpon>AdministrarCitas.cs</DependentUpon>
