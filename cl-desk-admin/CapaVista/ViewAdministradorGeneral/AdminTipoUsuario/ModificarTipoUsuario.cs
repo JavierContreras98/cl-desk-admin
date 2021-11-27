@@ -42,9 +42,11 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminTipoUsuario
         {
             actualizarTipoUsuario(Id);
             frmAdministrarTipoUsuario tipousuario = new frmAdministrarTipoUsuario();
+
             this.Hide();
-            tipousuario.Show();
+            tipousuario.ShowDialog();
             tipousuario.Refresh();
+            this.Close();
         }
 
         private async void actualizarTipoUsuario(int id)

@@ -100,9 +100,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
                 Console.WriteLine("Algo salio mal");
             }
             frmAdministrarEmpleados empleado = new frmAdministrarEmpleados();
-            this.Close();
+            this.Hide();
             empleado.Refresh();
-            empleado.Show();
+            empleado.ShowDialog();
+            this.Close();
         }
 
         private async void AddEmpleado()

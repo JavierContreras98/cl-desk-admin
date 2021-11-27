@@ -88,6 +88,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.label1.TabIndex = 9;
             this.label1.Text = "CLINICA EL CARMELO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -160,7 +161,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.rbEliminar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.rbEliminar.AutoSize = true;
             this.rbEliminar.Location = new System.Drawing.Point(789, 502);
-            this.rbEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.rbEliminar.Name = "rbEliminar";
             this.rbEliminar.Size = new System.Drawing.Size(120, 17);
             this.rbEliminar.TabIndex = 24;
@@ -174,7 +175,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.rbModificar.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.rbModificar.AutoSize = true;
             this.rbModificar.Location = new System.Drawing.Point(125, 502);
-            this.rbModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbModificar.Margin = new System.Windows.Forms.Padding(2);
             this.rbModificar.Name = "rbModificar";
             this.rbModificar.Size = new System.Drawing.Size(127, 17);
             this.rbModificar.TabIndex = 23;
@@ -187,7 +188,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             // 
             this.txtNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNumero.Location = new System.Drawing.Point(393, 539);
-            this.txtNumero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(275, 20);
             this.txtNumero.TabIndex = 22;

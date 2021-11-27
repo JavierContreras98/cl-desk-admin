@@ -36,9 +36,11 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminTipoUsuario
             }
 
             frmAdministrarTipoUsuario tipousuario = new frmAdministrarTipoUsuario();
-            this.Close();
+
+            this.Hide();
+            tipousuario.ShowDialog();
             tipousuario.Refresh();
-            tipousuario.Show();
+            this.Close();
         }
 
         private async void AddTipousuario()

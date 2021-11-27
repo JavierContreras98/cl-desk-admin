@@ -7,23 +7,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using cl_desk_admin.CapaVista.ViewCompartidas;
-using cl_desk_admin.CapaVista.ViewAdministradorGeneral;
 using System.Net;
 using System.IO;
 using System.Net.Http;
-
-
 
 namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
 {
@@ -46,14 +34,6 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         public frmAdministrarEmpleados()
         {
             InitializeComponent();
-        }
-
-        private void frmAdministrarEmpleados_Load(object sender, EventArgs e)
-        {
-            dgvEmpleado.Refresh();
-            this.Refresh();
-            GetAllEmpleado();
-            radioButtonValidation();
         }
 
         private async void GetAllEmpleado()
@@ -102,7 +82,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
         {
             frmAgregarEmpleado agregarempleado = new frmAgregarEmpleado();
             this.Hide();
-            agregarempleado.Show();
+            agregarempleado.ShowDialog();
+            this.Close();
+
         }
 
         private void btnEliminarEmpleado_Click(object sender, EventArgs e)
@@ -157,14 +139,29 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             }
         }
 
+        private void frmAdministrarEmpleados_Load_1(object sender, EventArgs e)
+        {
+            dgvEmpleado.Refresh();
+            this.Refresh();
+            GetAllEmpleado();
+            radioButtonValidation();
+        }
+
         private void btnMenuPrincipal_Click(object sender, EventArgs e)
         {
-            frmMenuAdminGeneral menuPricipal = new frmMenuAdminGeneral();
+            ViewAdministradorGeneral.frmMenuAdminGeneral menuPricipal = new ViewAdministradorGeneral.frmMenuAdminGeneral();
 
             this.Hide();
             menuPricipal.ShowDialog();
             this.Close();
         }
+
+        private void btnModificarEmpleado_Click_1(object sender, EventArgs e)
+        {
+            AdminEmpleados.frmModificarEmpleado empleado = new AdminEmpleados.frmModificarEmpleado();
+            this.Hide();
+            empleado.ShowDialog();
+            this.Close();
+        }
     }
 }
-

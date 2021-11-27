@@ -137,8 +137,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             {
                 frmModificarDepartamento modificarDepartamento = new frmModificarDepartamento();
                 modificarDepartamento.Id = Convert.ToInt32(txtNumero.Text);
-                modificarDepartamento.Show();
+
                 this.Hide();
+                modificarDepartamento.ShowDialog();
+                this.Close();
             }
         }
 
@@ -149,6 +151,11 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             this.Hide();
             menuPricipal.ShowDialog();
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

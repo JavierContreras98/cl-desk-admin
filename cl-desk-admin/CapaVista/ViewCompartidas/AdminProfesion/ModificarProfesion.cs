@@ -37,10 +37,13 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
         private void btnModificar_Click(object sender, EventArgs e)
         {
             actualizarProfesion(Id);
-            AdministrarProfesion profesiones = new AdministrarProfesion();
+
+            AdministrarProfesion profesion = new AdministrarProfesion();
             this.Hide();
-            profesiones.Show();
-            profesiones.Refresh();
+            profesion.Refresh();
+            profesion.ShowDialog();
+            this.Close();
+
         }
 
         private async void actualizarProfesion(int id)

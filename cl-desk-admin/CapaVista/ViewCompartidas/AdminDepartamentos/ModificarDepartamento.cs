@@ -112,5 +112,9 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminDepartamentos
             return await sr.ReadToEndAsync();
         }
 
+        private void lblBanner_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -84,8 +84,11 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
         private void btnCrearUsuario_Click(object sender, EventArgs e)
         {
             frmAgregarUsuario agregarUsuario = new frmAgregarUsuario();
+
             this.Hide();
-            agregarUsuario.Show();
+            agregarUsuario.ShowDialog();
+            this.Close();
+
         }
 
         private void btnModificarUsuario_Click(object sender, EventArgs e)
@@ -101,8 +104,12 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             {
                 ModificarUsuario modificarUsuario = new ModificarUsuario();
                 modificarUsuario.Id = Convert.ToInt32(txtNumero.Text);
-                modificarUsuario.Show();
+
                 this.Hide();
+                modificarUsuario.ShowDialog();
+                modificarUsuario.Refresh();
+                this.Close();
+
             }
         }
 

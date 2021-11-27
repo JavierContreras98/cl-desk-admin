@@ -82,8 +82,11 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminTipoUsuario
         private void btnCrearTipoUsuario_Click(object sender, EventArgs e)
         {
             frmAgregarTipoUsuario agregarTipoUsuario = new frmAgregarTipoUsuario();
+
             this.Hide();
-            agregarTipoUsuario.Show();
+            agregarTipoUsuario.ShowDialog();
+            this.Close();
+
         }
 
         private void btnModificarTipoUsuario_Click(object sender, EventArgs e)
@@ -99,8 +102,10 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminTipoUsuario
             {
                 frmModificarTipoUsuario modificarTipousuario = new frmModificarTipoUsuario();
                 modificarTipousuario.Id = Convert.ToInt32(txtNumero.Text);
-                modificarTipousuario.Show();
                 this.Hide();
+                modificarTipousuario.ShowDialog();
+                this.Close();
+
             }
         }
 

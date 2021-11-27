@@ -35,9 +35,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
             }
 
             AdministrarProfesion profesion = new AdministrarProfesion();
-            this.Close();
+            this.Hide();
             profesion.Refresh();
-            profesion.Show();
+            profesion.ShowDialog();
+            this.Close();
         }
 
         private async void AddProfesion()

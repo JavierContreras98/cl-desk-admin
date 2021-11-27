@@ -83,8 +83,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
         private void btnCrearProfesion_Click(object sender, EventArgs e)
         {
             AgregarProfesion agregarProfesion = new AgregarProfesion();
+
             this.Hide();
-            agregarProfesion.Show();
+            agregarProfesion.ShowDialog();
+            this.Close();
         }
 
         private void btnModificarProfesion_Click(object sender, EventArgs e)
@@ -100,8 +102,10 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminProfesion
             {
                 ModificarProfesion modificarProfesion= new ModificarProfesion();
                 modificarProfesion.Id = Convert.ToInt32(txtNumero.Text);
-                modificarProfesion.Show();
+
                 this.Hide();
+                modificarProfesion.ShowDialog();
+                this.Close();
             }
         }
 

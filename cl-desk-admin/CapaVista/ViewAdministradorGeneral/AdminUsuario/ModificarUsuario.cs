@@ -34,6 +34,9 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
 
         private async void ModificarUsuario_Load(object sender, EventArgs e)
         {
+            lblId.Text = Id.ToString();
+            this.CargarDatos();
+
             string respuesta = await GetHttp();
             List<Tipo_UsuarioModels> lst = JsonConvert.DeserializeObject<List<Tipo_UsuarioModels>>(respuesta);
             cbxUsuario.DataSource = lst;
@@ -41,8 +44,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             cbxUsuario.DisplayMember = "NOMBRE";
             cbxUsuario.Refresh();
 
-            lblId.Text = Id.ToString();
-            this.CargarDatos();
+            
         }
 
         private async void CargarDatos()
@@ -52,6 +54,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             txtNombre.Text = res[0].NOM_USUARIO;
             txtDescripcion.Text = res[0].PASS;
             cbxUsuario.Text = res[0].TIPO_USUARIO;
+
         }
 
         private async Task<string> GetHttp()

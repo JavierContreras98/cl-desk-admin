@@ -49,9 +49,11 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral.AdminUsuario
             }
 
             frmAdministrarUsuario adminUsuario = new frmAdministrarUsuario();
-            this.Close();
+
+            this.Hide();
+            adminUsuario.ShowDialog();
             adminUsuario.Refresh();
-            adminUsuario.Show();
+            this.Close();
         }
 
         private async void AddUsuario()

@@ -13,34 +13,54 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
 {
     public partial class frmModificarEmpleado : Form
     {
         string URI_EMPLEADO = "https://localhost:44310/api/Empleado";
 
+
+
         string URI_TIPO_DOCUMENTO = "https://localhost:44310/api/tipo_documento";
+
+
 
         string URI_PROFESION = "https://localhost:44310/api/profesion";
 
+
+
         string URI_USUARIO = "https://localhost:44310/api/Usuario";
+
+
 
         int id;
 
+
+
         string data;
+
+
 
         public int Id { get => id; set => id = value; }
         public string Data { get => data; set => data = value; }
+
+
 
         public frmModificarEmpleado()
         {
             InitializeComponent();
         }
 
+
+
         private async void frmModificarEmpleado_Load(object sender, EventArgs e)
         {
             lbID.Text = Id.ToString();
             this.CargarDatos();
+
+
 
             string respuesta = await GetHttp();
             List<Tipo_DocumentoModels> lst = JsonConvert.DeserializeObject<List<Tipo_DocumentoModels>>(respuesta);
@@ -49,12 +69,16 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             cbxTipodocumentos.DisplayMember = "NOMBRE";
             cbxTipodocumentos.Refresh();
 
+
+
             string respuesta2 = await GetHttp2();
             List<ProfesionModels> lst2 = JsonConvert.DeserializeObject<List<ProfesionModels>>(respuesta2);
             cbxProfesion.DataSource = lst2;
             cbxProfesion.ValueMember = "ID";
             cbxProfesion.DisplayMember = "NOMBRE";
             cbxProfesion.Refresh();
+
+
 
             string respuesta3 = await GetHttp3();
             List<UsuarioModels> lst3 = JsonConvert.DeserializeObject<List<UsuarioModels>>(respuesta3);
@@ -64,6 +88,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             cbxUsuario.Refresh();
         }
 
+
+
         private void btnCrear_Click(object sender, EventArgs e)
         {
             actualizarEmpleado(Id);
@@ -72,6 +98,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             departamentos.Show();
             departamentos.Refresh();
         }
+
+
 
         private async void actualizarEmpleado(int id)
         {
@@ -86,15 +114,21 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             empleado.Telefono = txtTelefono.Text;
             empleado.Num_documento = txtNombredocumento.Text;
 
+
+
             empleado.Id_tipo_doc = Convert.ToInt32(cbxTipodocumentos.SelectedValue);
             empleado.Id_profesion = Convert.ToInt32(cbxProfesion.SelectedValue);
             empleado.Id_usuario = Convert.ToInt32(cbxUsuario.SelectedValue);
+
+
 
             using (var client = new HttpClient())
             {
                 HttpResponseMessage responseMessage = await client.PutAsJsonAsync(URI_EMPLEADO + "/" + empleado.Id, empleado);
                 if (responseMessage.IsSuccessStatusCode)
                 {
+
+
 
                 }
                 else
@@ -103,6 +137,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
                 }
             }
         }
+
+
 
         private async Task<string> Get(int id)
         {
@@ -117,6 +153,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
                         {
                             return Data;
 
+
+
                         }
                     }
                 }
@@ -124,11 +162,15 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             return string.Empty;
         }
 
-       
+
+
+
         private async void CargarDatos()
         {
             var response = await Get(Id);
             var res = JsonConvert.DeserializeObject<dynamic>(response);
+
+
 
             txtPrimerNombre.Text = res[0].PRIMER_NOM;
             txtSegundoNombre.Text = res[0].SEGUNDO_NOM;
@@ -139,11 +181,17 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             txtTelefono.Text = res[0].TELEFONO;
             txtNombredocumento.Text = res[0].NUM_DOCUMENTO;
 
-           cbxTipodocumentos.Text = res[0].TIPO_DOCUMENTO;
+
+
+            cbxTipodocumentos.Text = res[0].TIPO_DOCUMENTO;
             cbxProfesion.Text = res[0].PROFESION;
             cbxUsuario.Text = res[0].NOM_USUARIO;
 
+
+
         }
+
+
 
         private async Task<string> GetHttp()
         {
@@ -153,6 +201,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             return await sr.ReadToEndAsync();
         }
 
+
+
         private async Task<string> GetHttp2()
         {
             WebRequest oRequest2 = WebRequest.Create(URI_PROFESION);
@@ -161,6 +211,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             return await sr2.ReadToEndAsync();
         }
 
+
+
         private async Task<string> GetHttp3()
         {
             WebRequest oRequest3 = WebRequest.Create(URI_USUARIO);
@@ -168,6 +220,8 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             StreamReader sr3 = new StreamReader(oResponse3.GetResponseStream());
             return await sr3.ReadToEndAsync();
         }
+
+
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {

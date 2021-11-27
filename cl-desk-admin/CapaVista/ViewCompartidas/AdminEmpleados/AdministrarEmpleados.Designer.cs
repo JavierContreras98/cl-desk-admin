@@ -108,6 +108,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.btnModificarEmpleado.Text = "MODIFICAR";
             this.btnModificarEmpleado.UseMnemonic = false;
             this.btnModificarEmpleado.UseVisualStyleBackColor = false;
+            this.btnModificarEmpleado.Click += new System.EventHandler(this.btnModificarEmpleado_Click_1);
             // 
             // btnEliminarEmpleado
             // 
@@ -136,7 +137,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.rbModificar.TabStop = true;
             this.rbModificar.Text = "Activar para modificar";
             this.rbModificar.UseVisualStyleBackColor = true;
-            this.rbModificar.CheckedChanged += new System.EventHandler(this.frmAdministrarEmpleados_Load);
+            this.rbModificar.CheckedChanged += new System.EventHandler(this.frmAdministrarEmpleados_Load_1);
             // 
             // rbEliminar
             // 
@@ -149,7 +150,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.rbEliminar.TabStop = true;
             this.rbEliminar.Text = "Activiar para eliminar";
             this.rbEliminar.UseVisualStyleBackColor = true;
-            this.rbEliminar.CheckedChanged += new System.EventHandler(this.frmAdministrarEmpleados_Load);
+            this.rbEliminar.CheckedChanged += new System.EventHandler(this.frmAdministrarEmpleados_Load_1);
             // 
             // lblInformacion
             // 
@@ -191,6 +192,7 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEmpleados
             this.Name = "frmAdministrarEmpleados";
             this.Text = "Administrar Empleado";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmAdministrarEmpleados_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
