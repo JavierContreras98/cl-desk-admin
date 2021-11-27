@@ -81,6 +81,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorNivelUno
             this.btnAdministrarEspecialidades.TabIndex = 35;
             this.btnAdministrarEspecialidades.Text = "ADMINISTRAR ESPECIALIDADES";
             this.btnAdministrarEspecialidades.UseVisualStyleBackColor = false;
+            this.btnAdministrarEspecialidades.Click += new System.EventHandler(this.btnAdministrarEspecialidades_Click);
             // 
             // label3
             // 

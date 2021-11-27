@@ -17,6 +17,11 @@ namespace cl_desk_admin
 {
     public partial class Form1 : Form
     {
+
+        int cbxTipo;
+
+        public int CbxTipo { get => cbxTipo; set => cbxTipo = value; }
+
         public Form1()
         {
             InitializeComponent();
@@ -40,29 +45,66 @@ namespace cl_desk_admin
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT NOM_USUARIO, PASS FROM USUARIO WHERE NOM_USUARIO='" + txtUsuario.Text + "' AND PASS='" + txtPassword.Text + "'", conexion))
+                    if (cbxTipoUsuario.SelectedIndex == 0)
                     {
-                        SqlDataReader dr = cmd.ExecuteReader();
-                        if (dr.Read())
+                        using (SqlCommand cmd = new SqlCommand("SELECT NOM_USUARIO, PASS FROM USUARIO WHERE NOM_USUARIO='" + txtUsuario.Text + "' AND PASS='" + txtPassword.Text + "' AND ID_TIPO = 1", conexion))
                         {
+                            SqlDataReader dr = cmd.ExecuteReader();
+                            if (dr.Read())
+                            {
 
-                            frmMenuAdminGeneral menuPrincipal = new frmMenuAdminGeneral();
+                                frmMenuAdminGeneral menuPrincipal = new frmMenuAdminGeneral();
 
-                            this.Hide();
-                            menuPrincipal.ShowDialog();
-                            this.Close();
+                                this.Hide();
+                                menuPrincipal.ShowDialog();
+                                this.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Datos incorrectos.");
+                            }
                         }
-                        else
-                        {
-                            MessageBox.Show("Datos incorrectos.");
-                        }
+                        CbxTipo = 0;
                     }
+                    else if(cbxTipoUsuario.SelectedIndex == 1)
+                    {
+                        using (SqlCommand cmd = new SqlCommand("SELECT NOM_USUARIO, PASS FROM USUARIO WHERE NOM_USUARIO='" + txtUsuario.Text + "' AND PASS='" + txtPassword.Text + "' AND ID_TIPO = 2", conexion))
+                        {
+                            SqlDataReader dr = cmd.ExecuteReader();
+                            if (dr.Read())
+                            {
+
+                                frmMenuAdminNivelUno menuPrincipal = new frmMenuAdminNivelUno();
+
+                                this.Hide();
+                                menuPrincipal.ShowDialog();
+                                this.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Datos incorrectos.");
+                            }
+                        }
+                        CbxTipo = 1;
+                    }
+                    else
+                    {
+                        lblMensaje.Text = "SELECCIONE LA OPCION DEL TIPO DE USUARIO A INICIAR SESION";
+                    }
+                    //label1.Text = CbxTipo;
+
+                    
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

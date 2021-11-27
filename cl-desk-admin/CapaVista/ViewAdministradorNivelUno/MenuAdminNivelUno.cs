@@ -16,5 +16,14 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorNivelUno
         {
             InitializeComponent();
         }
+
+        private void btnAdministrarEspecialidades_Click(object sender, EventArgs e)
+        {
+            ViewCompartidas.AdminEspecialidades.AdministrarEspecialidades adminEspecialidades = new ViewCompartidas.AdminEspecialidades.AdministrarEspecialidades();
+
+            this.Hide();
+            adminEspecialidades.ShowDialog();
+            this.Close();
+        }
     }
 }

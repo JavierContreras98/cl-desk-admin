@@ -68,6 +68,7 @@ namespace cl_desk_admin
             this.label1.TabIndex = 17;
             this.label1.Text = "CLINICA EL CARMELO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cbxTipoUsuario
             // 
