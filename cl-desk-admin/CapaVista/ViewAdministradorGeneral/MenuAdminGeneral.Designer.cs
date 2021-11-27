@@ -38,15 +38,16 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarTipoUsuario = new System.Windows.Forms.Button();
             this.btnAdministrarPaciente = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAdministrarCitas = new System.Windows.Forms.Button();
-            this.btnAdministrarDepartamentos = new System.Windows.Forms.Button();
-            this.btnAdministrarEmpleado = new System.Windows.Forms.Button();
-            this.btnAdministrarHorarioCita = new System.Windows.Forms.Button();
-            this.btnAdministrarMunicipio = new System.Windows.Forms.Button();
-            this.btnAdministrarPais = new System.Windows.Forms.Button();
-            this.btnAdministrarProfesion = new System.Windows.Forms.Button();
-            this.btnAdministrarTipoDoc = new System.Windows.Forms.Button();
             this.btnAdministrarTipoSangre = new System.Windows.Forms.Button();
+            this.btnAdministrarTipoDoc = new System.Windows.Forms.Button();
+            this.btnAdministrarProfesion = new System.Windows.Forms.Button();
+            this.btnAdministrarPais = new System.Windows.Forms.Button();
+            this.btnAdministrarMunicipio = new System.Windows.Forms.Button();
+            this.btnAdministrarHorarioCita = new System.Windows.Forms.Button();
+            this.btnAdministrarEmpleado = new System.Windows.Forms.Button();
+            this.btnAdministrarDepartamentos = new System.Windows.Forms.Button();
+            this.btnAdministrarCitas = new System.Windows.Forms.Button();
+            this.btnMenuReportes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,110 +190,20 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.panel1.Size = new System.Drawing.Size(774, 449);
             this.panel1.TabIndex = 37;
             // 
-            // btnAdministrarCitas
+            // btnAdministrarTipoSangre
             // 
-            this.btnAdministrarCitas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdministrarCitas.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAdministrarCitas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdministrarCitas.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnAdministrarCitas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarCitas.Location = new System.Drawing.Point(641, 217);
-            this.btnAdministrarCitas.Name = "btnAdministrarCitas";
-            this.btnAdministrarCitas.Size = new System.Drawing.Size(119, 50);
-            this.btnAdministrarCitas.TabIndex = 37;
-            this.btnAdministrarCitas.Text = "ADMINISTRAR CITAS";
-            this.btnAdministrarCitas.UseVisualStyleBackColor = false;
-            this.btnAdministrarCitas.Click += new System.EventHandler(this.btnAdministrarCitas_Click);
-            // 
-            // btnAdministrarDepartamentos
-            // 
-            this.btnAdministrarDepartamentos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdministrarDepartamentos.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAdministrarDepartamentos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdministrarDepartamentos.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnAdministrarDepartamentos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarDepartamentos.Location = new System.Drawing.Point(168, 217);
-            this.btnAdministrarDepartamentos.Name = "btnAdministrarDepartamentos";
-            this.btnAdministrarDepartamentos.Size = new System.Drawing.Size(119, 50);
-            this.btnAdministrarDepartamentos.TabIndex = 38;
-            this.btnAdministrarDepartamentos.Text = "ADMINISTRAR DEPARTAMENTO";
-            this.btnAdministrarDepartamentos.UseVisualStyleBackColor = false;
-            this.btnAdministrarDepartamentos.Click += new System.EventHandler(this.btnAdministrarDepartamentos_Click);
-            // 
-            // btnAdministrarEmpleado
-            // 
-            this.btnAdministrarEmpleado.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdministrarEmpleado.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAdministrarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdministrarEmpleado.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnAdministrarEmpleado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarEmpleado.Location = new System.Drawing.Point(484, 94);
-            this.btnAdministrarEmpleado.Name = "btnAdministrarEmpleado";
-            this.btnAdministrarEmpleado.Size = new System.Drawing.Size(119, 50);
-            this.btnAdministrarEmpleado.TabIndex = 39;
-            this.btnAdministrarEmpleado.Text = "ADMINISTRAR EMPLEADO";
-            this.btnAdministrarEmpleado.UseVisualStyleBackColor = false;
-            this.btnAdministrarEmpleado.Click += new System.EventHandler(this.btnAdministrarEmpleado_Click);
-            // 
-            // btnAdministrarHorarioCita
-            // 
-            this.btnAdministrarHorarioCita.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdministrarHorarioCita.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAdministrarHorarioCita.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdministrarHorarioCita.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnAdministrarHorarioCita.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarHorarioCita.Location = new System.Drawing.Point(546, 345);
-            this.btnAdministrarHorarioCita.Name = "btnAdministrarHorarioCita";
-            this.btnAdministrarHorarioCita.Size = new System.Drawing.Size(119, 50);
-            this.btnAdministrarHorarioCita.TabIndex = 40;
-            this.btnAdministrarHorarioCita.Text = "ADMINISTRAR HORARIO DE CITAS";
-            this.btnAdministrarHorarioCita.UseVisualStyleBackColor = false;
-            this.btnAdministrarHorarioCita.Click += new System.EventHandler(this.btnAdministrarHorarioCita_Click);
-            // 
-            // btnAdministrarMunicipio
-            // 
-            this.btnAdministrarMunicipio.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnAdministrarMunicipio.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAdministrarMunicipio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdministrarMunicipio.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnAdministrarMunicipio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarMunicipio.Location = new System.Drawing.Point(324, 217);
-            this.btnAdministrarMunicipio.Name = "btnAdministrarMunicipio";
-            this.btnAdministrarMunicipio.Size = new System.Drawing.Size(119, 50);
-            this.btnAdministrarMunicipio.TabIndex = 41;
-            this.btnAdministrarMunicipio.Text = "ADMINISTRAR MUNICIPIO";
-            this.btnAdministrarMunicipio.UseVisualStyleBackColor = false;
-            this.btnAdministrarMunicipio.Click += new System.EventHandler(this.btnAdministrarMunicipio_Click);
-            // 
-            // btnAdministrarPais
-            // 
-            this.btnAdministrarPais.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdministrarPais.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAdministrarPais.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdministrarPais.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnAdministrarPais.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarPais.Location = new System.Drawing.Point(8, 217);
-            this.btnAdministrarPais.Name = "btnAdministrarPais";
-            this.btnAdministrarPais.Size = new System.Drawing.Size(119, 50);
-            this.btnAdministrarPais.TabIndex = 42;
-            this.btnAdministrarPais.Text = "ADMINISTRAR PAIS";
-            this.btnAdministrarPais.UseVisualStyleBackColor = false;
-            this.btnAdministrarPais.Click += new System.EventHandler(this.btnAdministrarPais_Click);
-            // 
-            // btnAdministrarProfesion
-            // 
-            this.btnAdministrarProfesion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdministrarProfesion.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAdministrarProfesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdministrarProfesion.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnAdministrarProfesion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarProfesion.Location = new System.Drawing.Point(324, 94);
-            this.btnAdministrarProfesion.Name = "btnAdministrarProfesion";
-            this.btnAdministrarProfesion.Size = new System.Drawing.Size(119, 50);
-            this.btnAdministrarProfesion.TabIndex = 43;
-            this.btnAdministrarProfesion.Text = "ADMINISTRAR PROFESION";
-            this.btnAdministrarProfesion.UseVisualStyleBackColor = false;
-            this.btnAdministrarProfesion.Click += new System.EventHandler(this.btnAdministrarProfesion_Click);
+            this.btnAdministrarTipoSangre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAdministrarTipoSangre.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAdministrarTipoSangre.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdministrarTipoSangre.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
+            this.btnAdministrarTipoSangre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAdministrarTipoSangre.Location = new System.Drawing.Point(392, 345);
+            this.btnAdministrarTipoSangre.Name = "btnAdministrarTipoSangre";
+            this.btnAdministrarTipoSangre.Size = new System.Drawing.Size(119, 50);
+            this.btnAdministrarTipoSangre.TabIndex = 45;
+            this.btnAdministrarTipoSangre.Text = "ADMINISTRAR TIPO SANGRE";
+            this.btnAdministrarTipoSangre.UseVisualStyleBackColor = false;
+            this.btnAdministrarTipoSangre.Click += new System.EventHandler(this.btnAdministrarTipoSangre_Click);
             // 
             // btnAdministrarTipoDoc
             // 
@@ -309,20 +220,125 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarTipoDoc.UseVisualStyleBackColor = false;
             this.btnAdministrarTipoDoc.Click += new System.EventHandler(this.btnAdministrarTipoDoc_Click);
             // 
-            // btnAdministrarTipoSangre
+            // btnAdministrarProfesion
             // 
-            this.btnAdministrarTipoSangre.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdministrarTipoSangre.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAdministrarTipoSangre.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdministrarTipoSangre.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
-            this.btnAdministrarTipoSangre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdministrarTipoSangre.Location = new System.Drawing.Point(392, 345);
-            this.btnAdministrarTipoSangre.Name = "btnAdministrarTipoSangre";
-            this.btnAdministrarTipoSangre.Size = new System.Drawing.Size(119, 50);
-            this.btnAdministrarTipoSangre.TabIndex = 45;
-            this.btnAdministrarTipoSangre.Text = "ADMINISTRAR TIPO SANGRE";
-            this.btnAdministrarTipoSangre.UseVisualStyleBackColor = false;
-            this.btnAdministrarTipoSangre.Click += new System.EventHandler(this.btnAdministrarTipoSangre_Click);
+            this.btnAdministrarProfesion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAdministrarProfesion.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAdministrarProfesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdministrarProfesion.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
+            this.btnAdministrarProfesion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAdministrarProfesion.Location = new System.Drawing.Point(324, 94);
+            this.btnAdministrarProfesion.Name = "btnAdministrarProfesion";
+            this.btnAdministrarProfesion.Size = new System.Drawing.Size(119, 50);
+            this.btnAdministrarProfesion.TabIndex = 43;
+            this.btnAdministrarProfesion.Text = "ADMINISTRAR PROFESION";
+            this.btnAdministrarProfesion.UseVisualStyleBackColor = false;
+            this.btnAdministrarProfesion.Click += new System.EventHandler(this.btnAdministrarProfesion_Click);
+            // 
+            // btnAdministrarPais
+            // 
+            this.btnAdministrarPais.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAdministrarPais.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAdministrarPais.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdministrarPais.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
+            this.btnAdministrarPais.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAdministrarPais.Location = new System.Drawing.Point(8, 217);
+            this.btnAdministrarPais.Name = "btnAdministrarPais";
+            this.btnAdministrarPais.Size = new System.Drawing.Size(119, 50);
+            this.btnAdministrarPais.TabIndex = 42;
+            this.btnAdministrarPais.Text = "ADMINISTRAR PAIS";
+            this.btnAdministrarPais.UseVisualStyleBackColor = false;
+            this.btnAdministrarPais.Click += new System.EventHandler(this.btnAdministrarPais_Click);
+            // 
+            // btnAdministrarMunicipio
+            // 
+            this.btnAdministrarMunicipio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnAdministrarMunicipio.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAdministrarMunicipio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdministrarMunicipio.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
+            this.btnAdministrarMunicipio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAdministrarMunicipio.Location = new System.Drawing.Point(324, 217);
+            this.btnAdministrarMunicipio.Name = "btnAdministrarMunicipio";
+            this.btnAdministrarMunicipio.Size = new System.Drawing.Size(119, 50);
+            this.btnAdministrarMunicipio.TabIndex = 41;
+            this.btnAdministrarMunicipio.Text = "ADMINISTRAR MUNICIPIO";
+            this.btnAdministrarMunicipio.UseVisualStyleBackColor = false;
+            this.btnAdministrarMunicipio.Click += new System.EventHandler(this.btnAdministrarMunicipio_Click);
+            // 
+            // btnAdministrarHorarioCita
+            // 
+            this.btnAdministrarHorarioCita.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAdministrarHorarioCita.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAdministrarHorarioCita.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdministrarHorarioCita.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
+            this.btnAdministrarHorarioCita.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAdministrarHorarioCita.Location = new System.Drawing.Point(546, 345);
+            this.btnAdministrarHorarioCita.Name = "btnAdministrarHorarioCita";
+            this.btnAdministrarHorarioCita.Size = new System.Drawing.Size(119, 50);
+            this.btnAdministrarHorarioCita.TabIndex = 40;
+            this.btnAdministrarHorarioCita.Text = "ADMINISTRAR HORARIO DE CITAS";
+            this.btnAdministrarHorarioCita.UseVisualStyleBackColor = false;
+            this.btnAdministrarHorarioCita.Click += new System.EventHandler(this.btnAdministrarHorarioCita_Click);
+            // 
+            // btnAdministrarEmpleado
+            // 
+            this.btnAdministrarEmpleado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAdministrarEmpleado.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAdministrarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdministrarEmpleado.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
+            this.btnAdministrarEmpleado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAdministrarEmpleado.Location = new System.Drawing.Point(484, 94);
+            this.btnAdministrarEmpleado.Name = "btnAdministrarEmpleado";
+            this.btnAdministrarEmpleado.Size = new System.Drawing.Size(119, 50);
+            this.btnAdministrarEmpleado.TabIndex = 39;
+            this.btnAdministrarEmpleado.Text = "ADMINISTRAR EMPLEADO";
+            this.btnAdministrarEmpleado.UseVisualStyleBackColor = false;
+            this.btnAdministrarEmpleado.Click += new System.EventHandler(this.btnAdministrarEmpleado_Click);
+            // 
+            // btnAdministrarDepartamentos
+            // 
+            this.btnAdministrarDepartamentos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAdministrarDepartamentos.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAdministrarDepartamentos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdministrarDepartamentos.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
+            this.btnAdministrarDepartamentos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAdministrarDepartamentos.Location = new System.Drawing.Point(168, 217);
+            this.btnAdministrarDepartamentos.Name = "btnAdministrarDepartamentos";
+            this.btnAdministrarDepartamentos.Size = new System.Drawing.Size(119, 50);
+            this.btnAdministrarDepartamentos.TabIndex = 38;
+            this.btnAdministrarDepartamentos.Text = "ADMINISTRAR DEPARTAMENTO";
+            this.btnAdministrarDepartamentos.UseVisualStyleBackColor = false;
+            this.btnAdministrarDepartamentos.Click += new System.EventHandler(this.btnAdministrarDepartamentos_Click);
+            // 
+            // btnAdministrarCitas
+            // 
+            this.btnAdministrarCitas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAdministrarCitas.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAdministrarCitas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdministrarCitas.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
+            this.btnAdministrarCitas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAdministrarCitas.Location = new System.Drawing.Point(641, 217);
+            this.btnAdministrarCitas.Name = "btnAdministrarCitas";
+            this.btnAdministrarCitas.Size = new System.Drawing.Size(119, 50);
+            this.btnAdministrarCitas.TabIndex = 37;
+            this.btnAdministrarCitas.Text = "ADMINISTRAR CITAS";
+            this.btnAdministrarCitas.UseVisualStyleBackColor = false;
+            this.btnAdministrarCitas.Click += new System.EventHandler(this.btnAdministrarCitas_Click);
+            // 
+            // btnMenuReportes
+            // 
+            this.btnMenuReportes.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnMenuReportes.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnMenuReportes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMenuReportes.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold);
+            this.btnMenuReportes.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMenuReportes.Location = new System.Drawing.Point(894, 51);
+            this.btnMenuReportes.Name = "btnMenuReportes";
+            this.btnMenuReportes.Size = new System.Drawing.Size(119, 50);
+            this.btnMenuReportes.TabIndex = 38;
+            this.btnMenuReportes.Text = "REPORTES";
+            this.btnMenuReportes.UseVisualStyleBackColor = false;
+            this.btnMenuReportes.Click += new System.EventHandler(this.btnMenuReportes_Click);
             // 
             // frmMenuAdminGeneral
             // 
@@ -330,6 +346,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.Controls.Add(this.btnMenuReportes);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -362,5 +379,6 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
         private System.Windows.Forms.Button btnAdministrarHorarioCita;
         private System.Windows.Forms.Button btnAdministrarEmpleado;
         private System.Windows.Forms.Button btnAdministrarDepartamentos;
+        private System.Windows.Forms.Button btnMenuReportes;
     }
 }

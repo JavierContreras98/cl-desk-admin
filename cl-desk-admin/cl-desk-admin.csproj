@@ -369,6 +369,12 @@
     <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ModificarTipoSangre.Designer.cs">
       <DependentUpon>ModificarTipoSangre.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaVista\ViewReportes\MenuReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaVista\ViewReportes\MenuReportes.Designer.cs">
+      <DependentUpon>MenuReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaVista\ViewReportes\ReporteEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -525,6 +531,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminTipoSangre\ModificarTipoSangre.resx">
       <DependentUpon>ModificarTipoSangre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\ViewReportes\MenuReportes.resx">
+      <DependentUpon>MenuReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ViewReportes\ReporteEmpleados.resx">
       <DependentUpon>ReporteEmpleados.cs</DependentUpon>

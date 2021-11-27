@@ -153,5 +153,14 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             adminHorario.ShowDialog();
             this.Close();
         }
+
+        private void btnMenuReportes_Click(object sender, EventArgs e)
+        {
+            ViewReportes.frmMenuReportes menuReportes = new ViewReportes.frmMenuReportes();
+
+            this.Hide();
+            menuReportes.ShowDialog();
+            this.Close();
+        }
     }
 }
