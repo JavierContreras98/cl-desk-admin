@@ -27,7 +27,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
 
         private void ReporteFechasPacientes_Load(object sender, EventArgs e)
         {
-            this.sP_CREATE_REPORT1TableAdapter.Fill(this.cLCARMELODBDataSet1.SP_CREATE_REPORT1, fecha1, fecha2);
+            this.sP_CREATE_REPORT1TableAdapter.Fill(this.cLCARMELODBDataSet1.SP_CREATE_REPORT1, Fecha1, Fecha2);
             this.rvPacienteFechas.RefreshReport();
         }
 
@@ -37,10 +37,13 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             rvPacienteFechas.LocalReport.Refresh();
 
             frmReporte1FechasPacientes Mostrar = new frmReporte1FechasPacientes();
+            this.Hide();
+
             Mostrar.Fecha1 = dtpFechaInicial.Value;
             Mostrar.Fecha2 = dtFechaFinal.Value;
             Mostrar.ShowDialog();
 
+            this.Close();
 
 
         }

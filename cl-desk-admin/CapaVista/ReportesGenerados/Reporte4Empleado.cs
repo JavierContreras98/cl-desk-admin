@@ -19,7 +19,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
 
         private void ReporteEmpleado_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'cLCARMELODBDataSet.SP_CREATE_REPORT4' Puede moverla o quitarla según sea necesario.
+             
         
             // TODO: esta línea de código carga datos en la tabla 'cLCARMELODBDataSet.SP_CREATE_REPORT4' Puede moverla o quitarla según sea necesario.
             this.sP_CREATE_REPORT4TableAdapter.Fill(this.cLCARMELODBDataSet.SP_CREATE_REPORT4);
