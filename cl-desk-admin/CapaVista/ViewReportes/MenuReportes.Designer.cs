@@ -124,6 +124,7 @@ namespace cl_desk_admin.CapaVista.ViewReportes
             this.btnReporte4.Text = "REPORTE PLANILLA DE LOS EMPLEADOS DE LA CLINICA";
             this.btnReporte4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnReporte4.UseVisualStyleBackColor = false;
+            this.btnReporte4.Click += new System.EventHandler(this.btnReporte4_Click);
             // 
             // btnReporte3
             // 

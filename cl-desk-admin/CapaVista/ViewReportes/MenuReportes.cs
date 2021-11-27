@@ -42,5 +42,13 @@ namespace cl_desk_admin.CapaVista.ViewReportes
             reportEmpleados.ShowDialog();
             this.Close();
         }
+
+        private void btnReporte4_Click(object sender, EventArgs e)
+        {
+            ReporteEmpleados empleados = new ReporteEmpleados();
+            this.Hide();
+            empleados.ShowDialog();
+            this.Close();
+        }
     }
 }
