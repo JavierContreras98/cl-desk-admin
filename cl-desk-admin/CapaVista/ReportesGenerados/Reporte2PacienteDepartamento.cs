@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using cl_desk_admin.CapaModels;
 
 namespace cl_desk_admin.CapaVista.ReportesGenerados
 {
@@ -17,14 +18,33 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             InitializeComponent();
         }
 
+        int iddepto;
+
+        public int Iddepto { get => iddepto; set => iddepto = value; }
+
         private void frmReportePacienteDepartamento_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'cLCARMELODBDataSet2.SP_CREATE_REPORT2' Puede moverla o quitarla según sea necesario.
+           
+            List<DepartamentoModels> lst = new List<DepartamentoModels>();
+            cbxDepartamentos.DataSource = lst;
+            cbxDepartamentos.ValueMember = "ID";
+            cbxDepartamentos.DisplayMember = "NOMBRE";
+            cbxDepartamentos.Refresh();
 
-            this.rvPacientesDepto.Refresh();
 
-
+            this.sP_CREATE_REPORT2TableAdapter.Fill(this.cLCARMELODBDataSet2.SP_CREATE_REPORT2, Iddepto);
             this.rvPacientesDepto.RefreshReport();
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            rvPacientesDepto.LocalReport.Refresh();
+
+            frmReporte2PacienteDepartamento Mostrar = new frmReporte2PacienteDepartamento();
+            Mostrar.Iddepto = Convert.ToInt32(cbxDepartamentos.SelectedValue); 
+            Mostrar.ShowDialog();
+
         }
     }
 }

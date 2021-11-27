@@ -39,11 +39,9 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cLCARMELODBDataSet1 = new cl_desk_admin.CLCARMELODBDataSet1();
-            this.cLCARMELODBDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sPCREATEREPORT1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sP_CREATE_REPORT1TableAdapter = new cl_desk_admin.CLCARMELODBDataSet1TableAdapters.SP_CREATE_REPORT1TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPCREATEREPORT1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,15 +130,10 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.cLCARMELODBDataSet1.DataSetName = "CLCARMELODBDataSet1";
             this.cLCARMELODBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // cLCARMELODBDataSet1BindingSource
-            // 
-            this.cLCARMELODBDataSet1BindingSource.DataSource = this.cLCARMELODBDataSet1;
-            this.cLCARMELODBDataSet1BindingSource.Position = 0;
-            // 
             // sPCREATEREPORT1BindingSource
             // 
             this.sPCREATEREPORT1BindingSource.DataMember = "SP_CREATE_REPORT1";
-            this.sPCREATEREPORT1BindingSource.DataSource = this.cLCARMELODBDataSet1BindingSource;
+            this.sPCREATEREPORT1BindingSource.DataSource = this.cLCARMELODBDataSet1;
             // 
             // sP_CREATE_REPORT1TableAdapter
             // 
@@ -164,7 +157,6 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ReporteFechasPacientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPCREATEREPORT1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -180,7 +172,6 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.BindingSource sPCREATEREPORT1BindingSource;
-        private System.Windows.Forms.BindingSource cLCARMELODBDataSet1BindingSource;
         private CLCARMELODBDataSet1 cLCARMELODBDataSet1;
         private CLCARMELODBDataSet1TableAdapters.SP_CREATE_REPORT1TableAdapter sP_CREATE_REPORT1TableAdapter;
     }

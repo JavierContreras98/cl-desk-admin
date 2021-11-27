@@ -67,6 +67,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.btnReporte.TabIndex = 7;
             this.btnReporte.Text = "GENERAR REPORTE";
             this.btnReporte.UseVisualStyleBackColor = false;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
             // 
             // cbxDepartamentos
             // 

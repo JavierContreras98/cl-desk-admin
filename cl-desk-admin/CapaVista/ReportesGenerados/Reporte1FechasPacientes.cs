@@ -19,30 +19,27 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             InitializeComponent();
         }
 
+        private DateTime fecha2;
+        private DateTime fecha1;
+
+        public DateTime Fecha1 { get => fecha1; set => fecha1 = value; }
+        public DateTime Fecha2 { get => fecha2; set => fecha2 = value; }
+
         private void ReporteFechasPacientes_Load(object sender, EventArgs e)
         {
-
+            this.sP_CREATE_REPORT1TableAdapter.Fill(this.cLCARMELODBDataSet1.SP_CREATE_REPORT1, fecha1, fecha2);
             this.rvPacienteFechas.RefreshReport();
         }
 
         private void btnReporte_Click(object sender, EventArgs e)
         {
-            SqlConnection Conexion = new SqlConnection("Data Source =DESKTOP-4EK7VVO\\SQLEXPRESS02; Initial Catalog = CLCARMELODB; Integrated Security = True");
-
-            SqlDataAdapter da = new SqlDataAdapter("SP_CREATE_REPORT1", Conexion);
-            DataTable dt = new DataTable();
-
-            da.SelectCommand.CommandType = CommandType.StoredProcedure;
-
-            da.SelectCommand.Parameters.Add("@FECHA_INICIAL", SqlDbType.DateTime).Value = Convert.ToDateTime(dtpFechaInicial.Value);
-            da.SelectCommand.Parameters.Add("@FECHA_FINAL", SqlDbType.DateTime).Value = Convert.ToDateTime(dtFechaFinal.Value);
-
-
-            rvPacienteFechas.LocalReport.DataSources.Clear();
-            ReportDataSource rp = new ReportDataSource("Reporte1",dt);
-
-            rvPacienteFechas.LocalReport.DataSources.Add(rp);
+          
             rvPacienteFechas.LocalReport.Refresh();
+
+            frmReporte1FechasPacientes Mostrar = new frmReporte1FechasPacientes();
+            Mostrar.Fecha1 = dtpFechaInicial.Value;
+            Mostrar.Fecha2 = dtFechaFinal.Value;
+            Mostrar.ShowDialog();
 
 
 
