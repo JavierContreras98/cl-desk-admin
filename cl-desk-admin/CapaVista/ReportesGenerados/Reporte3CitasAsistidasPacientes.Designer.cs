@@ -30,7 +30,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.sPCREATEREPORT3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cLCARMELODBDataSet3 = new cl_desk_admin.CLCARMELODBDataSet3();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,6 +42,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.dtpFechaInicial = new System.Windows.Forms.DateTimePicker();
             this.cbxPaciente = new System.Windows.Forms.ComboBox();
             this.sP_CREATE_REPORT3TableAdapter = new cl_desk_admin.CLCARMELODBDataSet3TableAdapters.SP_CREATE_REPORT3TableAdapter();
+            this.btnMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.sPCREATEREPORT3BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet3)).BeginInit();
             this.SuspendLayout();
@@ -74,9 +75,9 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rvPacienteDepartamento.BackColor = System.Drawing.SystemColors.Info;
-            reportDataSource3.Name = "Reporte3";
-            reportDataSource3.Value = this.sPCREATEREPORT3BindingSource;
-            this.rvPacienteDepartamento.LocalReport.DataSources.Add(reportDataSource3);
+            reportDataSource2.Name = "Reporte3";
+            reportDataSource2.Value = this.sPCREATEREPORT3BindingSource;
+            this.rvPacienteDepartamento.LocalReport.DataSources.Add(reportDataSource2);
             this.rvPacienteDepartamento.LocalReport.ReportEmbeddedResource = "cl_desk_admin.CapaVista.Reportes.ReporteCitasAsistidasPacientes.rdlc";
             this.rvPacienteDepartamento.Location = new System.Drawing.Point(12, 128);
             this.rvPacienteDepartamento.Name = "rvPacienteDepartamento";
@@ -102,7 +103,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(305, 68);
+            this.label3.Location = new System.Drawing.Point(234, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 12);
             this.label3.TabIndex = 16;
@@ -121,9 +122,9 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             // dtFechaFinal
             // 
             this.dtFechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFechaFinal.Location = new System.Drawing.Point(307, 97);
+            this.dtFechaFinal.Location = new System.Drawing.Point(236, 97);
             this.dtFechaFinal.Name = "dtFechaFinal";
-            this.dtFechaFinal.Size = new System.Drawing.Size(218, 20);
+            this.dtFechaFinal.Size = new System.Drawing.Size(163, 20);
             this.dtFechaFinal.TabIndex = 14;
             // 
             // dtpFechaInicial
@@ -131,22 +132,35 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.dtpFechaInicial.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaInicial.Location = new System.Drawing.Point(16, 97);
             this.dtpFechaInicial.Name = "dtpFechaInicial";
-            this.dtpFechaInicial.Size = new System.Drawing.Size(189, 20);
+            this.dtpFechaInicial.Size = new System.Drawing.Size(169, 20);
             this.dtpFechaInicial.TabIndex = 13;
             // 
             // cbxPaciente
             // 
             this.cbxPaciente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxPaciente.FormattingEnabled = true;
-            this.cbxPaciente.Location = new System.Drawing.Point(572, 97);
+            this.cbxPaciente.Location = new System.Drawing.Point(433, 97);
             this.cbxPaciente.Name = "cbxPaciente";
-            this.cbxPaciente.Size = new System.Drawing.Size(251, 21);
+            this.cbxPaciente.Size = new System.Drawing.Size(214, 21);
             this.cbxPaciente.TabIndex = 17;
-            this.cbxPaciente.SelectedIndexChanged += new System.EventHandler(this.cbxPaciente_SelectedIndexChanged);
             // 
             // sP_CREATE_REPORT3TableAdapter
             // 
             this.sP_CREATE_REPORT3TableAdapter.ClearBeforeFill = true;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMenu.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Location = new System.Drawing.Point(666, 68);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(164, 49);
+            this.btnMenu.TabIndex = 18;
+            this.btnMenu.Text = "MENU PRINCIPAL";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // frmReporte3CitasAsistidasPacientes
             // 
@@ -154,6 +168,7 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.cbxPaciente);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -185,5 +200,6 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
         private System.Windows.Forms.BindingSource sPCREATEREPORT3BindingSource;
         private CLCARMELODBDataSet3 cLCARMELODBDataSet3;
         private CLCARMELODBDataSet3TableAdapters.SP_CREATE_REPORT3TableAdapter sP_CREATE_REPORT3TableAdapter;
+        private System.Windows.Forms.Button btnMenu;
     }
 }

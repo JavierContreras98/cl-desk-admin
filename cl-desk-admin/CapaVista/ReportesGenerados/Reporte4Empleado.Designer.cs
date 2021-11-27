@@ -30,15 +30,26 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.sPCREATEREPORT4BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cLCARMELODBDataSet = new cl_desk_admin.CLCARMELODBDataSet();
             this.rvReporteEmpleado = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label1 = new System.Windows.Forms.Label();
-            this.cLCARMELODBDataSet = new cl_desk_admin.CLCARMELODBDataSet();
-            this.sPCREATEREPORT4BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sP_CREATE_REPORT4TableAdapter = new cl_desk_admin.CLCARMELODBDataSetTableAdapters.SP_CREATE_REPORT4TableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet)).BeginInit();
+            this.btnMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.sPCREATEREPORT4BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // sPCREATEREPORT4BindingSource
+            // 
+            this.sPCREATEREPORT4BindingSource.DataMember = "SP_CREATE_REPORT4";
+            this.sPCREATEREPORT4BindingSource.DataSource = this.cLCARMELODBDataSet;
+            // 
+            // cLCARMELODBDataSet
+            // 
+            this.cLCARMELODBDataSet.DataSetName = "CLCARMELODBDataSet";
+            this.cLCARMELODBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // rvReporteEmpleado
             // 
@@ -46,14 +57,14 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rvReporteEmpleado.BackColor = System.Drawing.SystemColors.Info;
-            reportDataSource1.Name = "Reporte4";
-            reportDataSource1.Value = this.sPCREATEREPORT4BindingSource;
-            this.rvReporteEmpleado.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "Reporte4";
+            reportDataSource2.Value = this.sPCREATEREPORT4BindingSource;
+            this.rvReporteEmpleado.LocalReport.DataSources.Add(reportDataSource2);
             this.rvReporteEmpleado.LocalReport.ReportEmbeddedResource = "cl_desk_admin.CapaVista.Reportes.ReporteEmpleado.rdlc";
-            this.rvReporteEmpleado.Location = new System.Drawing.Point(12, 50);
+            this.rvReporteEmpleado.Location = new System.Drawing.Point(12, 124);
             this.rvReporteEmpleado.Name = "rvReporteEmpleado";
             this.rvReporteEmpleado.ServerReport.BearerToken = null;
-            this.rvReporteEmpleado.Size = new System.Drawing.Size(1001, 550);
+            this.rvReporteEmpleado.Size = new System.Drawing.Size(1001, 476);
             this.rvReporteEmpleado.TabIndex = 0;
             // 
             // label1
@@ -68,19 +79,23 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.label1.Text = "CLINICA EL CARMELO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // cLCARMELODBDataSet
-            // 
-            this.cLCARMELODBDataSet.DataSetName = "CLCARMELODBDataSet";
-            this.cLCARMELODBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sPCREATEREPORT4BindingSource
-            // 
-            this.sPCREATEREPORT4BindingSource.DataMember = "SP_CREATE_REPORT4";
-            this.sPCREATEREPORT4BindingSource.DataSource = this.cLCARMELODBDataSet;
-            // 
             // sP_CREATE_REPORT4TableAdapter
             // 
             this.sP_CREATE_REPORT4TableAdapter.ClearBeforeFill = true;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMenu.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Location = new System.Drawing.Point(849, 52);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(164, 49);
+            this.btnMenu.TabIndex = 14;
+            this.btnMenu.Text = "MENU PRINCIPAL";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // frmReporteEmpleado
             // 
@@ -88,13 +103,14 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rvReporteEmpleado);
             this.Name = "frmReporteEmpleado";
             this.Text = "Reporte(4) Datos Empleado";
             this.Load += new System.EventHandler(this.ReporteEmpleado_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPCREATEREPORT4BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLCARMELODBDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -106,5 +122,6 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
         private CLCARMELODBDataSet cLCARMELODBDataSet;
         private System.Windows.Forms.BindingSource sPCREATEREPORT4BindingSource;
         private CLCARMELODBDataSetTableAdapters.SP_CREATE_REPORT4TableAdapter sP_CREATE_REPORT4TableAdapter;
+        private System.Windows.Forms.Button btnMenu;
     }
 }

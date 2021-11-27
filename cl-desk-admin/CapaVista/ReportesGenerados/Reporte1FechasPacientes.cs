@@ -52,5 +52,13 @@ namespace cl_desk_admin.CapaVista.ReportesGenerados
         {
 
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            frmReporteMenu regresar = new frmReporteMenu();
+            this.Hide();
+            regresar.ShowDialog();
+            this.Close();
+        }
     }
 }

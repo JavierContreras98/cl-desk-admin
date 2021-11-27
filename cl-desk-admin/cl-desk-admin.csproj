@@ -114,6 +114,12 @@
     <Compile Include="CapaVista\ReportesGenerados\Reporte2PacienteDepartamento.Designer.cs">
       <DependentUpon>Reporte2PacienteDepartamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaVista\ReportesGenerados\ReporteMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaVista\ReportesGenerados\ReporteMenu.Designer.cs">
+      <DependentUpon>ReporteMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaVista\ViewAdministradorGeneral\AdminHistorialCita\AdministarHistorialCitas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -429,6 +435,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\ReportesGenerados\Reporte2PacienteDepartamento.resx">
       <DependentUpon>Reporte2PacienteDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\ReportesGenerados\ReporteMenu.resx">
+      <DependentUpon>ReporteMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaVista\Reportes\ReporteCitasAsistidasPacientes.rdlc" />
     <EmbeddedResource Include="CapaVista\Reportes\ReportePacienteDepto.rdlc" />
