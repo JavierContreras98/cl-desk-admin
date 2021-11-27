@@ -80,6 +80,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarEspecialidades.TabIndex = 35;
             this.btnAdministrarEspecialidades.Text = "ADMINISTRAR ESPECIALIDADES";
             this.btnAdministrarEspecialidades.UseVisualStyleBackColor = false;
+            this.btnAdministrarEspecialidades.Click += new System.EventHandler(this.btnAdministrarEspecialidades_Click);
             // 
             // btnAdministrarInforMedico
             // 
@@ -94,6 +95,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarInforMedico.TabIndex = 33;
             this.btnAdministrarInforMedico.Text = "ADMINISTRAR INFORMACION DE MEDICOS";
             this.btnAdministrarInforMedico.UseVisualStyleBackColor = false;
+            this.btnAdministrarInforMedico.Click += new System.EventHandler(this.btnAdministrarInforMedico_Click);
             // 
             // btnCerrarSesion
             // 
@@ -108,6 +110,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnCerrarSesion.TabIndex = 28;
             this.btnCerrarSesion.Text = "CERRAR SESION";
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // btnAdministrarHistorialCitas
             // 
@@ -136,6 +139,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarUsuario.TabIndex = 23;
             this.btnAdministrarUsuario.Text = "ADMINISTRAR USUARIO";
             this.btnAdministrarUsuario.UseVisualStyleBackColor = false;
+            this.btnAdministrarUsuario.Click += new System.EventHandler(this.btnAdministrarUsuario_Click);
             // 
             // btnAdministrarTipoUsuario
             // 
@@ -151,6 +155,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarTipoUsuario.Text = "ADMINISTRAR TIPO DE USUARIO";
             this.btnAdministrarTipoUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAdministrarTipoUsuario.UseVisualStyleBackColor = false;
+            this.btnAdministrarTipoUsuario.Click += new System.EventHandler(this.btnAdministrarTipoUsuario_Click);
             // 
             // btnAdministrarPaciente
             // 
@@ -165,6 +170,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarPaciente.TabIndex = 36;
             this.btnAdministrarPaciente.Text = "ADMINISTRAR PACIENTES";
             this.btnAdministrarPaciente.UseVisualStyleBackColor = false;
+            this.btnAdministrarPaciente.Click += new System.EventHandler(this.btnAdministrarPaciente_Click);
             // 
             // panel1
             // 
@@ -196,6 +202,7 @@ namespace cl_desk_admin.CapaVista.ViewAdministradorGeneral
             this.btnAdministrarCitas.TabIndex = 37;
             this.btnAdministrarCitas.Text = "ADMINISTRAR CITAS";
             this.btnAdministrarCitas.UseVisualStyleBackColor = false;
+            this.btnAdministrarCitas.Click += new System.EventHandler(this.btnAdministrarCitas_Click);
             // 
             // frmMenuAdminGeneral
             // 
