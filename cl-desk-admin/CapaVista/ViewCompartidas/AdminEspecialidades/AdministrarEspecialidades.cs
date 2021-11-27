@@ -142,27 +142,11 @@ namespace cl_desk_admin.CapaVista.ViewCompartidas.AdminEspecialidades
 
         private void btnMenuPrincipal_Click(object sender, EventArgs e)
         {
-            Form1 login = new Form1();
-            int id = login.CbxTipo;
-
-            if (id == 0)
-            {
                 frmMenuAdminGeneral menuPricipal = new frmMenuAdminGeneral();
 
                 this.Hide();
                 menuPricipal.ShowDialog();
                 this.Close();
-
-            }else if(id == 1)
-            {
-                ViewAdministradorNivelUno.frmMenuAdminNivelUno menuPricipal = new ViewAdministradorNivelUno.frmMenuAdminNivelUno();
-
-                this.Hide();
-                menuPricipal.ShowDialog();
-                this.Close();
-            }
-
-            
         }
     }
 }
