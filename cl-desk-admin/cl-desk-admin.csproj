@@ -368,6 +368,17 @@
     <Compile Include="CapaVista\ViewCompartidas\AdminTipoSangre\ModificarTipoSangre.Designer.cs">
       <DependentUpon>ModificarTipoSangre.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaVista\ViewReportes\ReporteEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaVista\ViewReportes\ReporteEmpleados.Designer.cs">
+      <DependentUpon>ReporteEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPrincipal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </Compile>
     <Compile Include="IniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -514,6 +525,9 @@
     <EmbeddedResource Include="CapaVista\ViewCompartidas\AdminTipoSangre\ModificarTipoSangre.resx">
       <DependentUpon>ModificarTipoSangre.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CapaVista\ViewReportes\ReporteEmpleados.resx">
+      <DependentUpon>ReporteEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IniciarSesion.resx">
       <DependentUpon>IniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
@@ -527,6 +541,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ViewInforme\ReporteEmpleados.rdlc" />
+    <None Include="DataSetPrincipal.xsc">
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPrincipal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPrincipal.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetPrincipal.xss">
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
